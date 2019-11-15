@@ -47,64 +47,19 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             this.name = name;
         }
 
-        public int getStrength()
+        public int[] getAttributes()
         {
-            return strength;
+            return new int[] { strength, dexterity, constitution, intelligence, wisdom, charisma };
         }
 
-        public void setStrength(int value)
+        public void setAttributes(int[] values)
         {
-            strength = value;
-        }
-
-        public int getDexterity()
-        {
-            return dexterity;
-        }
-
-        public void setDexterity(int value)
-        {
-            dexterity = value;
-        }
-
-        public int getConstitution()
-        {
-            return constitution;
-        }
-
-        public void setConstitution(int value)
-        {
-            constitution = value;
-        }
-
-        public int getIntelligence()
-        {
-            return intelligence;
-        }
-
-        public void setIntelligence(int value)
-        {
-            intelligence = value;
-        }
-
-        public int getWisdom()
-        {
-            return wisdom;
-        }
-
-        public void setWisdom(int value)
-        {
-            wisdom = value;
-        }
-
-        public int getCharisma()
-        {
-            return charisma;
-        }
-
-        public void setCharisma(int value)
-        {
-            charisma = value;
+            strength = values[0];
+            dexterity = values[1];
+            constitution = values[2];
+            intelligence = values[3];
+            wisdom = values[4];
+            charisma = values[5];
         }
 
         public void spendPoint(int pointsSpent)

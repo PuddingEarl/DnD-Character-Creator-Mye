@@ -96,205 +96,123 @@ namespace DnD_Character_Creator_Mye
             return 1000;
         }
 
-        //This method updates the displayed attributes to include racial modifiers. It is to be applied after every change made to the base attributes
+        //This method changes an attribute for point buy purposes. It should only be run out of the +/- buttons.
+        private void changeAttributes(int attributeID, int changeValue)
+        {
+            int[] currentValues = currentCharacter.getAttributes();
+            int previousPointsValue = checkPointsSpent(currentValues[attributeID]);
+            int pointsSpent = checkPointsSpent(currentValues[attributeID] + changeValue);
+            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
+            {
+                currentValues[attributeID] += changeValue;
+                currentCharacter.setAttributes(currentValues);
+                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
+                refreshAttributes();
+            }
+
+        }
+
+        //This method updates the displayed attributes to include racial modifiers. It is to be applied after every change made to the base attributes. When races are added, a consideration for sub 10 attributes should be made but that's a later me problem.
         private void refreshAttributes()
         {
+            int[] currentValues = currentCharacter.getAttributes();
+            textBoxStr.Text = currentValues[0].ToString();
+            textBoxStrBonus.Text = "+" + checkBonusValue(currentValues[0]).ToString();
+            textBoxStrPB.Text = checkPointsSpent(currentValues[0]).ToString();
 
+            textBoxDex.Text = currentValues[1].ToString();
+            textBoxDexBonus.Text = "+" + checkBonusValue(currentValues[1]).ToString();
+            textBoxDexPB.Text = checkPointsSpent(currentValues[1]).ToString();
+
+            textBoxCon.Text = currentValues[2].ToString();
+            textBoxConBonus.Text = "+" + checkBonusValue(currentValues[2]).ToString();
+            textBoxConPB.Text = checkPointsSpent(currentValues[2]).ToString();
+
+            textBoxInt.Text = currentValues[3].ToString();
+            textBoxIntBonus.Text = "+" + checkBonusValue(currentValues[3]).ToString();
+            textBoxIntPB.Text = checkPointsSpent(currentValues[3]).ToString();
+
+            textBoxWis.Text = currentValues[4].ToString();
+            textBoxWisBonus.Text = "+" + checkBonusValue(currentValues[4]).ToString();
+            textBoxWisPB.Text = checkPointsSpent(currentValues[4]).ToString();
+
+            textBoxCha.Text = currentValues[5].ToString();
+            textBoxChaBonus.Text = "+" + checkBonusValue(currentValues[5]).ToString();
+            textBoxChaPB.Text = checkPointsSpent(currentValues[5]).ToString();
+
+            textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
+
+        }
+
+        //This method checks the attribute bonus
+        private int checkBonusValue(int value)
+        {
+            int toBeReturned;
+            toBeReturned = (value - 10) / 2;
+            return toBeReturned;
         }
 
 
         private void buttonPlusStrength_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getStrength();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue + 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setStrength(currentValue + 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxStr.Text = (currentValue + 1).ToString();
-                textBoxStrPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(0, 1);
         }
 
        
 
         private void buttonMinusStrength_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getStrength();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue - 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setStrength(currentValue - 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxStr.Text = (currentValue - 1).ToString();
-                textBoxStrPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(0, -1);
         }
 
         private void buttonPlusDex_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getDexterity();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue + 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setDexterity(currentValue + 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxDex.Text = (currentValue + 1).ToString();
-                textBoxDexPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(1, 1);
         }
 
         private void buttonMinusDex_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getDexterity();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue - 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setDexterity(currentValue - 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxDex.Text = (currentValue - 1).ToString();
-                textBoxDexPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(1, -1);
         }
 
         private void buttonPlusCon_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getConstitution();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue + 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setConstitution(currentValue + 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxCon.Text = (currentValue + 1).ToString();
-                textBoxConPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(2, 1);
         }
 
         private void buttonMinusCon_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getConstitution();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue - 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setConstitution(currentValue - 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxCon.Text = (currentValue - 1).ToString();
-                textBoxConPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(2, -1);
         }
 
         private void buttonPlusInt_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getIntelligence();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue + 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setIntelligence(currentValue + 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxInt.Text = (currentValue + 1).ToString();
-                textBoxIntPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(3, 1);
         }
 
         private void buttonMinusInt_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getIntelligence();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue - 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setIntelligence(currentValue - 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxInt.Text = (currentValue - 1).ToString();
-                textBoxIntPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(3, -1);
         }
 
         private void buttonPlusWis_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getWisdom();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue + 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setWisdom(currentValue + 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxWis.Text = (currentValue + 1).ToString();
-                textBoxWisPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(4, 1);
         }
 
         private void buttonMinusWis_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getWisdom();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue - 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setWisdom(currentValue - 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxWis.Text = (currentValue - 1).ToString();
-                textBoxWisPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(4, -1);
         }
 
         private void buttonPlusCha_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getCharisma();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue + 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setCharisma(currentValue + 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxCha.Text = (currentValue + 1).ToString();
-                textBoxChaPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(5, 1);
         }
 
         private void buttonMinusCha_Click(object sender, EventArgs e)
         {
-            int currentValue = currentCharacter.getCharisma();
-            int previousPointsValue = checkPointsSpent(currentValue);
-            int pointsSpent = checkPointsSpent(currentValue - 1);
-            if (pointsSpent != 1000 && pointsSpent - previousPointsValue <= (currentCharacter.checkPointCap() - currentCharacter.checkPoint()))
-            {
-                currentCharacter.setCharisma(currentValue - 1);
-                currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                textBoxCha.Text = (currentValue - 1).ToString();
-                textBoxChaPB.Text = pointsSpent.ToString();
-                textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
-            }
-            refreshAttributes();
+            changeAttributes(5, -1);
         }
 
         #endregion
