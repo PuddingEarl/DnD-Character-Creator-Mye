@@ -58,6 +58,13 @@ namespace DnD_Character_Creator_Mye
             textBoxChaPB.Text = "0";
 
             textBoxPoints.Text = points.ToString();
+
+            Race.prepareRace();
+            List<Race> races = Race.getRaces();
+            foreach (Race race in races)
+            {
+                comboBoxRace.Items.Add(race.getName());
+            }
         }
 
         #region Attributes
@@ -116,29 +123,36 @@ namespace DnD_Character_Creator_Mye
         private void refreshAttributes()
         {
             int[] currentValues = currentCharacter.getAttributes();
-            textBoxStr.Text = currentValues[0].ToString();
-            textBoxStrBonus.Text = "+" + checkBonusValue(currentValues[0]).ToString();
-            textBoxStrPB.Text = checkPointsSpent(currentValues[0]).ToString();
+            int[] racialBonuses = currentCharacter.getRace().getAttributeBonuses();
+            int str = currentValues[0] + racialBonuses[0];
+            textBoxStr.Text = str.ToString();
+            textBoxStrBonus.Text = "+" + checkBonusValue(str).ToString();
+            textBoxStrPB.Text = checkPointsSpent(str).ToString();
 
-            textBoxDex.Text = currentValues[1].ToString();
-            textBoxDexBonus.Text = "+" + checkBonusValue(currentValues[1]).ToString();
-            textBoxDexPB.Text = checkPointsSpent(currentValues[1]).ToString();
+            int dex = currentValues[1] + racialBonuses[1];
+            textBoxDex.Text = dex.ToString();
+            textBoxDexBonus.Text = "+" + checkBonusValue(dex).ToString();
+            textBoxDexPB.Text = checkPointsSpent(dex).ToString();
 
-            textBoxCon.Text = currentValues[2].ToString();
-            textBoxConBonus.Text = "+" + checkBonusValue(currentValues[2]).ToString();
-            textBoxConPB.Text = checkPointsSpent(currentValues[2]).ToString();
+            int con = currentValues[2] + racialBonuses[2];
+            textBoxCon.Text = con.ToString();
+            textBoxConBonus.Text = "+" + checkBonusValue(con).ToString();
+            textBoxConPB.Text = checkPointsSpent(con).ToString();
 
-            textBoxInt.Text = currentValues[3].ToString();
-            textBoxIntBonus.Text = "+" + checkBonusValue(currentValues[3]).ToString();
-            textBoxIntPB.Text = checkPointsSpent(currentValues[3]).ToString();
+            int intel = currentValues[3] + racialBonuses[3];
+            textBoxInt.Text = intel.ToString();
+            textBoxIntBonus.Text = "+" + checkBonusValue(intel).ToString();
+            textBoxIntPB.Text = checkPointsSpent(intel).ToString();
 
-            textBoxWis.Text = currentValues[4].ToString();
-            textBoxWisBonus.Text = "+" + checkBonusValue(currentValues[4]).ToString();
-            textBoxWisPB.Text = checkPointsSpent(currentValues[4]).ToString();
+            int wis = currentValues[4] + racialBonuses[4];
+            textBoxWis.Text = wis.ToString();
+            textBoxWisBonus.Text = "+" + checkBonusValue(wis).ToString();
+            textBoxWisPB.Text = checkPointsSpent(wis).ToString();
 
-            textBoxCha.Text = currentValues[5].ToString();
-            textBoxChaBonus.Text = "+" + checkBonusValue(currentValues[5]).ToString();
-            textBoxChaPB.Text = checkPointsSpent(currentValues[5]).ToString();
+            int cha = currentValues[5] + racialBonuses[5];
+            textBoxCha.Text = cha.ToString();
+            textBoxChaBonus.Text = "+" + checkBonusValue(cha).ToString();
+            textBoxChaPB.Text = checkPointsSpent(cha).ToString();
 
             textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
 
@@ -216,5 +230,10 @@ namespace DnD_Character_Creator_Mye
         }
 
         #endregion
+
+        private void comboBoxRace_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentCharacter.setRace(Race.findRace(comboBoxRace.SelectedItem.ToString()));
+        }
     }
 }

@@ -137,6 +137,7 @@
             this.comboBoxRace.Name = "comboBoxRace";
             this.comboBoxRace.Size = new System.Drawing.Size(121, 21);
             this.comboBoxRace.TabIndex = 4;
+            this.comboBoxRace.SelectedIndexChanged += new System.EventHandler(this.comboBoxRace_SelectedIndexChanged);
             // 
             // panelAttributes
             // 

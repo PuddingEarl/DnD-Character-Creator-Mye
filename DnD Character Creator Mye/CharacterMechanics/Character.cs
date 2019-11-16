@@ -76,5 +76,15 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         {
             return pointBuyTotal;
         }
+
+        public Race getRace()
+        {
+            return race;
+        }
+
+        public void setRace(Race race)
+        {
+            this.race = race;
+        }
     }
 }
