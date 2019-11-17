@@ -123,36 +123,65 @@ namespace DnD_Character_Creator_Mye
         private void refreshAttributes()
         {
             int[] currentValues = currentCharacter.getAttributes();
-            int[] racialBonuses = currentCharacter.getRace().getAttributeBonuses();
+            int[] racialBonuses = new int[] { 0, 0, 0, 0, 0, 0 };
+            if (currentCharacter.getRace() != null)
+            {
+                racialBonuses = currentCharacter.getRace().getAttributeBonuses();
+            }
+
             int str = currentValues[0] + racialBonuses[0];
             textBoxStr.Text = str.ToString();
             textBoxStrBonus.Text = "+" + checkBonusValue(str).ToString();
             textBoxStrPB.Text = checkPointsSpent(str).ToString();
+            if(textBoxStrPB.Text == "1000")
+            {
+                textBoxStrPB.Text = "0";
+            }
 
             int dex = currentValues[1] + racialBonuses[1];
             textBoxDex.Text = dex.ToString();
             textBoxDexBonus.Text = "+" + checkBonusValue(dex).ToString();
             textBoxDexPB.Text = checkPointsSpent(dex).ToString();
+            if (textBoxDexPB.Text == "1000")
+            {
+                textBoxDexPB.Text = "0";
+            }
 
             int con = currentValues[2] + racialBonuses[2];
             textBoxCon.Text = con.ToString();
             textBoxConBonus.Text = "+" + checkBonusValue(con).ToString();
             textBoxConPB.Text = checkPointsSpent(con).ToString();
+            if (textBoxConPB.Text == "1000")
+            {
+                textBoxConPB.Text = "0";
+            }
 
             int intel = currentValues[3] + racialBonuses[3];
             textBoxInt.Text = intel.ToString();
             textBoxIntBonus.Text = "+" + checkBonusValue(intel).ToString();
             textBoxIntPB.Text = checkPointsSpent(intel).ToString();
+            if (textBoxIntPB.Text == "1000")
+            {
+                textBoxIntPB.Text = "0";
+            }
 
             int wis = currentValues[4] + racialBonuses[4];
             textBoxWis.Text = wis.ToString();
             textBoxWisBonus.Text = "+" + checkBonusValue(wis).ToString();
             textBoxWisPB.Text = checkPointsSpent(wis).ToString();
+            if (textBoxWisPB.Text == "1000")
+            {
+                textBoxWisPB.Text = "0";
+            }
 
             int cha = currentValues[5] + racialBonuses[5];
             textBoxCha.Text = cha.ToString();
             textBoxChaBonus.Text = "+" + checkBonusValue(cha).ToString();
             textBoxChaPB.Text = checkPointsSpent(cha).ToString();
+            if (textBoxChaPB.Text == "1000")
+            {
+                textBoxChaPB.Text = "0";
+            }
 
             textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
 
@@ -166,13 +195,19 @@ namespace DnD_Character_Creator_Mye
             return toBeReturned;
         }
 
+        private void randomizeAttributes()
+        {
+            Random rand = new Random();
+            while(currentCharacter.checkPoint() != currentCharacter.checkPointCap())
+            {
+                changeAttributes(rand.Next(0, 6), rand.Next(1, 4));
+            }
+        }
 
         private void buttonPlusStrength_Click(object sender, EventArgs e)
         {
             changeAttributes(0, 1);
         }
-
-       
 
         private void buttonMinusStrength_Click(object sender, EventArgs e)
         {
@@ -234,6 +269,12 @@ namespace DnD_Character_Creator_Mye
         private void comboBoxRace_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentCharacter.setRace(Race.findRace(comboBoxRace.SelectedItem.ToString()));
+            refreshAttributes();
+        }
+
+        private void buttonRandomize_Click(object sender, EventArgs e)
+        {
+            randomizeAttributes();
         }
     }
 }

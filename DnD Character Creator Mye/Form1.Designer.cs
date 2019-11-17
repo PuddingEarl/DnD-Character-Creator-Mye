@@ -74,6 +74,7 @@
             this.labelDex = new System.Windows.Forms.Label();
             this.labelStr = new System.Windows.Forms.Label();
             this.labelAttributes = new System.Windows.Forms.Label();
+            this.buttonRandomize = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.SuspendLayout();
@@ -141,6 +142,7 @@
             // 
             // panelAttributes
             // 
+            this.panelAttributes.Controls.Add(this.buttonRandomize);
             this.panelAttributes.Controls.Add(this.textBoxPoints);
             this.panelAttributes.Controls.Add(this.buttonPlusCha);
             this.panelAttributes.Controls.Add(this.buttonMinusCha);
@@ -526,6 +528,16 @@
             this.labelAttributes.TabIndex = 6;
             this.labelAttributes.Text = "Attributes";
             // 
+            // buttonRandomize
+            // 
+            this.buttonRandomize.Location = new System.Drawing.Point(150, 216);
+            this.buttonRandomize.Name = "buttonRandomize";
+            this.buttonRandomize.Size = new System.Drawing.Size(75, 23);
+            this.buttonRandomize.TabIndex = 6;
+            this.buttonRandomize.Text = "Randomize";
+            this.buttonRandomize.UseVisualStyleBackColor = true;
+            this.buttonRandomize.Click += new System.EventHandler(this.buttonRandomize_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -597,6 +609,7 @@
         private System.Windows.Forms.Label labelAttributes;
         private System.Windows.Forms.ToolStripMenuItem newCharacterToolStripMenuItem;
         private System.Windows.Forms.TextBox textBoxPoints;
+        private System.Windows.Forms.Button buttonRandomize;
     }
 }
 
