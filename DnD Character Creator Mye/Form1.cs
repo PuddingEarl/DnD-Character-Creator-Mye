@@ -204,6 +204,30 @@ namespace DnD_Character_Creator_Mye
             }
         }
 
+        private void randomizeFavoredAttribute()
+        {
+            Random rand = new Random();
+            int favoredAttribute = rand.Next(0, 6);
+            int secondaryAttribute = favoredAttribute;
+            while(secondaryAttribute == favoredAttribute)
+            {
+                secondaryAttribute = rand.Next(0, 6);
+            }
+            int tertiaryAttribute = secondaryAttribute;
+            while(tertiaryAttribute == secondaryAttribute || tertiaryAttribute == favoredAttribute)
+            {
+                tertiaryAttribute = rand.Next(0, 6);
+            }
+            changeAttributes(favoredAttribute, 8);
+            changeAttributes(secondaryAttribute, 6);
+            changeAttributes(tertiaryAttribute, 4);
+            while (currentCharacter.checkPoint() != currentCharacter.checkPointCap())
+            {
+                changeAttributes(rand.Next(0, 6), 1);
+            }
+        }
+
+
         private void buttonPlusStrength_Click(object sender, EventArgs e)
         {
             changeAttributes(0, 1);
@@ -274,7 +298,8 @@ namespace DnD_Character_Creator_Mye
 
         private void buttonRandomize_Click(object sender, EventArgs e)
         {
-            randomizeAttributes();
+            //randomizeAttributes();
+            randomizeFavoredAttribute();
         }
     }
 }

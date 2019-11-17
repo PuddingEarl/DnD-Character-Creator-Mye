@@ -75,6 +75,10 @@
             this.labelStr = new System.Windows.Forms.Label();
             this.labelAttributes = new System.Windows.Forms.Label();
             this.buttonRandomize = new System.Windows.Forms.Button();
+            this.listBoxClasses = new System.Windows.Forms.ListBox();
+            this.labelClasses = new System.Windows.Forms.Label();
+            this.buttonAddClass = new System.Windows.Forms.Button();
+            this.buttonRemoveClassLevel = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.SuspendLayout();
@@ -538,11 +542,51 @@
             this.buttonRandomize.UseVisualStyleBackColor = true;
             this.buttonRandomize.Click += new System.EventHandler(this.buttonRandomize_Click);
             // 
+            // listBoxClasses
+            // 
+            this.listBoxClasses.FormattingEnabled = true;
+            this.listBoxClasses.Location = new System.Drawing.Point(289, 24);
+            this.listBoxClasses.Name = "listBoxClasses";
+            this.listBoxClasses.Size = new System.Drawing.Size(238, 56);
+            this.listBoxClasses.TabIndex = 6;
+            // 
+            // labelClasses
+            // 
+            this.labelClasses.AutoSize = true;
+            this.labelClasses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClasses.Location = new System.Drawing.Point(218, 24);
+            this.labelClasses.Name = "labelClasses";
+            this.labelClasses.Size = new System.Drawing.Size(65, 20);
+            this.labelClasses.TabIndex = 7;
+            this.labelClasses.Text = "Classes";
+            // 
+            // buttonAddClass
+            // 
+            this.buttonAddClass.Location = new System.Drawing.Point(533, 24);
+            this.buttonAddClass.Name = "buttonAddClass";
+            this.buttonAddClass.Size = new System.Drawing.Size(129, 23);
+            this.buttonAddClass.TabIndex = 27;
+            this.buttonAddClass.Text = "Add Class Level";
+            this.buttonAddClass.UseVisualStyleBackColor = true;
+            // 
+            // buttonRemoveClassLevel
+            // 
+            this.buttonRemoveClassLevel.Location = new System.Drawing.Point(533, 53);
+            this.buttonRemoveClassLevel.Name = "buttonRemoveClassLevel";
+            this.buttonRemoveClassLevel.Size = new System.Drawing.Size(129, 23);
+            this.buttonRemoveClassLevel.TabIndex = 28;
+            this.buttonRemoveClassLevel.Text = "Remove Class Level";
+            this.buttonRemoveClassLevel.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 535);
+            this.Controls.Add(this.buttonRemoveClassLevel);
+            this.Controls.Add(this.buttonAddClass);
+            this.Controls.Add(this.labelClasses);
+            this.Controls.Add(this.listBoxClasses);
             this.Controls.Add(this.panelAttributes);
             this.Controls.Add(this.comboBoxRace);
             this.Controls.Add(this.labelRace);
@@ -610,6 +654,10 @@
         private System.Windows.Forms.ToolStripMenuItem newCharacterToolStripMenuItem;
         private System.Windows.Forms.TextBox textBoxPoints;
         private System.Windows.Forms.Button buttonRandomize;
+        private System.Windows.Forms.ListBox listBoxClasses;
+        private System.Windows.Forms.Label labelClasses;
+        private System.Windows.Forms.Button buttonAddClass;
+        private System.Windows.Forms.Button buttonRemoveClassLevel;
     }
 }
 
