@@ -8,5 +8,10 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 {
     class ClassLevel
     {
+        public ClassLevel(string data)
+        {
+
+        }
+
     }
 }
