@@ -65,6 +65,13 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             this.enabledBonusFeats = enabledBonusFeats;
         }
 
+        public Feat(string data)
+        {
+            string[] splitData = data.Split('-');
+            name = splitData[0];
+            description = splitData[1];
+        }
+
         public static List<Feat> getFeatList()
         {
             return availableFeats;
