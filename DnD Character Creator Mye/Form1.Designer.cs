@@ -36,6 +36,7 @@
             this.labelRace = new System.Windows.Forms.Label();
             this.comboBoxRace = new System.Windows.Forms.ComboBox();
             this.panelAttributes = new System.Windows.Forms.Panel();
+            this.buttonRandomize = new System.Windows.Forms.Button();
             this.textBoxPoints = new System.Windows.Forms.TextBox();
             this.buttonPlusCha = new System.Windows.Forms.Button();
             this.buttonMinusCha = new System.Windows.Forms.Button();
@@ -74,11 +75,11 @@
             this.labelDex = new System.Windows.Forms.Label();
             this.labelStr = new System.Windows.Forms.Label();
             this.labelAttributes = new System.Windows.Forms.Label();
-            this.buttonRandomize = new System.Windows.Forms.Button();
             this.listBoxClasses = new System.Windows.Forms.ListBox();
             this.labelClasses = new System.Windows.Forms.Label();
             this.buttonAddClass = new System.Windows.Forms.Button();
             this.buttonRemoveClassLevel = new System.Windows.Forms.Button();
+            this.comboBoxRandomizationMethods = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +147,7 @@
             // 
             // panelAttributes
             // 
+            this.panelAttributes.Controls.Add(this.comboBoxRandomizationMethods);
             this.panelAttributes.Controls.Add(this.buttonRandomize);
             this.panelAttributes.Controls.Add(this.textBoxPoints);
             this.panelAttributes.Controls.Add(this.buttonPlusCha);
@@ -189,6 +191,16 @@
             this.panelAttributes.Name = "panelAttributes";
             this.panelAttributes.Size = new System.Drawing.Size(338, 258);
             this.panelAttributes.TabIndex = 5;
+            // 
+            // buttonRandomize
+            // 
+            this.buttonRandomize.Location = new System.Drawing.Point(150, 216);
+            this.buttonRandomize.Name = "buttonRandomize";
+            this.buttonRandomize.Size = new System.Drawing.Size(75, 23);
+            this.buttonRandomize.TabIndex = 6;
+            this.buttonRandomize.Text = "Randomize";
+            this.buttonRandomize.UseVisualStyleBackColor = true;
+            this.buttonRandomize.Click += new System.EventHandler(this.buttonRandomize_Click);
             // 
             // textBoxPoints
             // 
@@ -532,16 +544,6 @@
             this.labelAttributes.TabIndex = 6;
             this.labelAttributes.Text = "Attributes";
             // 
-            // buttonRandomize
-            // 
-            this.buttonRandomize.Location = new System.Drawing.Point(150, 216);
-            this.buttonRandomize.Name = "buttonRandomize";
-            this.buttonRandomize.Size = new System.Drawing.Size(75, 23);
-            this.buttonRandomize.TabIndex = 6;
-            this.buttonRandomize.Text = "Randomize";
-            this.buttonRandomize.UseVisualStyleBackColor = true;
-            this.buttonRandomize.Click += new System.EventHandler(this.buttonRandomize_Click);
-            // 
             // listBoxClasses
             // 
             this.listBoxClasses.FormattingEnabled = true;
@@ -577,6 +579,17 @@
             this.buttonRemoveClassLevel.TabIndex = 28;
             this.buttonRemoveClassLevel.Text = "Remove Class Level";
             this.buttonRemoveClassLevel.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxRandomizationMethods
+            // 
+            this.comboBoxRandomizationMethods.FormattingEnabled = true;
+            this.comboBoxRandomizationMethods.Items.AddRange(new object[] {
+            "Default",
+            "Minmax"});
+            this.comboBoxRandomizationMethods.Location = new System.Drawing.Point(7, 218);
+            this.comboBoxRandomizationMethods.Name = "comboBoxRandomizationMethods";
+            this.comboBoxRandomizationMethods.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxRandomizationMethods.TabIndex = 29;
             // 
             // Form1
             // 
@@ -658,6 +671,7 @@
         private System.Windows.Forms.Label labelClasses;
         private System.Windows.Forms.Button buttonAddClass;
         private System.Windows.Forms.Button buttonRemoveClassLevel;
+        private System.Windows.Forms.ComboBox comboBoxRandomizationMethods;
     }
 }
 
