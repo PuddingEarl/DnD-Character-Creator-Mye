@@ -15,11 +15,60 @@ namespace DnD_Character_Creator_Mye
     public partial class Form1 : Form
     {
         Character currentCharacter;
+        List<Panel> skillPanels;
 
         public Form1()
         {
             InitializeComponent();
             NewCharacterForm.form = this;
+
+            #region Skill Panel Setup
+
+            skillPanels = new List<Panel>();
+            skillPanels.Add(panelAppraise);
+            skillPanels.Add(panelBalance);
+            skillPanels.Add(panelBluff);
+            skillPanels.Add(panelClimb);
+            skillPanels.Add(panelConcentration);
+            skillPanels.Add(panelCraft);
+            skillPanels.Add(panelDecipher);
+            skillPanels.Add(panelDiplomacy);
+            skillPanels.Add(panelDisableDevice);
+            skillPanels.Add(panelDisguise);
+            skillPanels.Add(panelEscapeArtist);
+            skillPanels.Add(panelForgery);
+            skillPanels.Add(panelGatherInfo);
+            skillPanels.Add(panelHandleAnimal);
+            skillPanels.Add(panelHeal);
+            skillPanels.Add(panelHide);
+            skillPanels.Add(panelIntimidate);
+            skillPanels.Add(panelKnowArcana);
+            skillPanels.Add(panelKnowArch);
+            skillPanels.Add(panelKnowGeo);
+            skillPanels.Add(panelKnowHis);
+            skillPanels.Add(panelKnowLocal);
+            skillPanels.Add(panelKnowMilitary);
+            skillPanels.Add(panelKnowNature);
+            skillPanels.Add(panelKnowNobility);
+            skillPanels.Add(panelKnowReligion);
+            skillPanels.Add(panelListen);
+            skillPanels.Add(panelMoveSilently);
+            skillPanels.Add(panelOpenLock);
+            skillPanels.Add(panelPerform);
+            skillPanels.Add(panelProfession);
+            skillPanels.Add(panelRide);
+            skillPanels.Add(panelSearch);
+            skillPanels.Add(panelSenseMotive);
+            skillPanels.Add(panelSleightofHand);
+            skillPanels.Add(panelSpellcraft);
+            skillPanels.Add(panelSpot);
+            skillPanels.Add(panelSurvival);
+            skillPanels.Add(panelSwim);
+            skillPanels.Add(panelTumble);
+            skillPanels.Add(panelUseMagicDevice);
+            skillPanels.Add(panelUseRope);
+
+            #endregion
         }
 
         private void newCharacterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -299,14 +348,158 @@ namespace DnD_Character_Creator_Mye
         {
             if(currentCharacter != null)
             {
-                List<Skill> skills = currentCharacter.getSkills();
-                listBoxSkill.Items.Clear();
-                foreach (Skill skill in skills)
+                if(checkBoxSkillToggle.Checked == true)
                 {
-                    string output = skill.returnSkillInput(checkBoxSkillToggle.Checked);
-                    if(output != null)
+                    foreach(Panel panel in skillPanels)
                     {
-                        listBoxSkill.Items.Add(output);
+                        panel.Show();
+                    }
+                }
+                else
+                {
+                    foreach(Panel panel in skillPanels)
+                    {
+                        panel.Hide();
+                        List<Skill> skills = currentCharacter.getSkills();
+                        foreach (Skill skill in skills)
+                        {
+                            string name = skill.returnName();
+                            if (name != null && skill.getClassSkill())
+                            {
+                                switch (name)
+                                {
+                                    case "Appraise":
+                                        panelAppraise.Show();
+                                        break;
+                                    case "Balance":
+                                        panelBalance.Show();
+                                        break;
+                                    case "Bluff":
+                                        panelBluff.Show();
+                                        break;
+                                    case "Climb":
+                                        panelClimb.Show();
+                                        break;
+                                    case "Concentration":
+                                        panelConcentration.Show();
+                                        break;
+                                    case "Craft":
+                                        panelCraft.Show();
+                                        break;
+                                    case "Decipher Script":
+                                        panelDecipher.Show();
+                                        break;
+                                    case "Diplomacy":
+                                        panelDiplomacy.Show();
+                                        break;
+                                    case "Disable Device":
+                                        panelDisableDevice.Show();
+                                        break;
+                                    case "Disguise":
+                                        panelDisguise.Show();
+                                        break;
+                                    case "Escape Artist":
+                                        panelEscapeArtist.Show();
+                                        break;
+                                    case "Forgery":
+                                        panelForgery.Show();
+                                        break;
+                                    case "Gather Info":
+                                        panelGatherInfo.Show();
+                                        break;
+                                    case "Handle Animal":
+                                        panelHandleAnimal.Show();
+                                        break;
+                                    case "Heal":
+                                        panelHeal.Show();
+                                        break;
+                                    case "Hide":
+                                        panelHide.Show();
+                                        break;
+                                    case "Intimidate":
+                                        panelIntimidate.Show();
+                                        break;
+                                    case "Jump":
+                                        panelJump.Show();
+                                        break;
+                                    case "Knowledge:Arcana":
+                                        panelKnowArcana.Show();
+                                        break;
+                                    case "Knowledge:Architecture and Engineering":
+                                        panelKnowArch.Show();
+                                        break;
+                                    case "Knowledge:Geography":
+                                        panelKnowGeo.Show();
+                                        break;
+                                    case "Knowledge:History":
+                                        panelKnowHis.Show();
+                                        break;
+                                    case "Knowledge:Local":
+                                        panelKnowLocal.Show();
+                                        break;
+                                    case "Knowledge:Military":
+                                        panelKnowMilitary.Show();
+                                        break;
+                                    case "Knowledge:Nature":
+                                        panelKnowNature.Show();
+                                        break;
+                                    case "Knowledge:Nobility":
+                                        panelKnowNobility.Show();
+                                        break;
+                                    case "Knowledge:Religion":
+                                        panelKnowReligion.Show();
+                                        break;
+                                    case "Listen":
+                                        panelListen.Show();
+                                        break;
+                                    case "Move Silently":
+                                        panelMoveSilently.Show();
+                                        break;
+                                    case "Open Lock":
+                                        panelOpenLock.Show();
+                                        break;
+                                    case "Perform":
+                                        panelPerform.Show();
+                                        break;
+                                    case "Profession":
+                                        panelProfession.Show();
+                                        break;
+                                    case "Ride":
+                                        panelRide.Show();
+                                        break;
+                                    case "Search":
+                                        panelSearch.Show();
+                                        break;
+                                    case "Sense Motive":
+                                        panelSenseMotive.Show();
+                                        break;
+                                    case "Sleight of Hand":
+                                        panelSleightofHand.Show();
+                                        break;
+                                    case "Spellcraft":
+                                        panelSpellcraft.Show();
+                                        break;
+                                    case "Spot":
+                                        panelSpot.Show();
+                                        break;
+                                    case "Survival":
+                                        panelSurvival.Show();
+                                        break;
+                                    case "Swim":
+                                        panelSwim.Show();
+                                        break;
+                                    case "Tumble":
+                                        panelTumble.Show();
+                                        break;
+                                    case "Use Magic Device":
+                                        panelUseMagicDevice.Show();
+                                        break;
+                                    case "Use Rope":
+                                        panelUseRope.Show();
+                                        break;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -330,6 +523,11 @@ namespace DnD_Character_Creator_Mye
         private void checkBoxSkillToggle_CheckedChanged(object sender, EventArgs e)
         {
             refreshSkill();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

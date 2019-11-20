@@ -155,5 +155,10 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         {
             classSkill = newValue;
         }
+
+        public bool getClassSkill()
+        {
+            return classSkill;
+        }
     }
 }
