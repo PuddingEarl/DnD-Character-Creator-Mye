@@ -78,5 +78,10 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             this.manaGainStatic = manaGainStatic;
             this.proficiencyIDs = proficiencyIDs;
         }
+
+        public List<Skill> returnSkills()
+        {
+            return skillList;
+        }
     }
 }

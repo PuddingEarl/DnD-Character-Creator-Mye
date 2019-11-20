@@ -31,6 +31,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         List<Spell> knownSpells = new List<Spell>();
         List<Feat> ownedFeats = new List<Feat>();
         List<Equipment> ownedEquipment = new List<Equipment>();
+        List<Class> takenClasses = new List<Class>();
 
         int pointBuyTotal;
         int pointBuyCurrent;
@@ -82,8 +83,31 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return race;
         }
 
+
+        //This method changes the character's race, and sets up their new skills. Need to add feats later.
         public void setRace(Race race)
         {
+            //This section indexes all class skills that are from classes, and then removes racial skills not added by one or more classes.
+            if(this.race != null)
+            {
+                List<Skill> classSkills = new List<Skill>();
+                foreach (Class characterClass in takenClasses)
+                {
+                    Skill.fuseList(classSkills, characterClass.returnSkills());
+                }
+
+                List<Skill> previousRaceSkill = this.race.getSkills();
+
+                foreach (Skill skill in this.race.getSkills())
+                {
+                    if (Skill.findSkills(skill.returnName(), classSkills) == null)
+                    {
+                        Skill.findSkills(skill.returnName(), skills).setClassSkill(false);
+                    }
+                }
+            }
+
+            //This section sets the race and new class skills of the race.
             this.race = race;
             foreach(Skill skill in race.getSkills())
             {

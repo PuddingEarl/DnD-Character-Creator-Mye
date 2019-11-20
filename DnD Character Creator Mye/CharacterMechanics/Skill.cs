@@ -89,6 +89,25 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return null;
         }
 
+        static public List<Skill> fuseList(List<Skill> list1, List<Skill> list2)
+        {
+            List<Skill> toBeReturned = new List<Skill>();
+            foreach(Skill skill in list1)
+            {
+                toBeReturned.Add(skill);
+            }
+            foreach(Skill skill in list2)
+            {
+                if(findSkills(skill.returnName(), toBeReturned) == null)
+                {
+                    toBeReturned.Add(skill);
+                }
+            }
+
+            return toBeReturned;
+
+        }
+
         public Skill(string name, int attribute)
         {
             this.name = name;
