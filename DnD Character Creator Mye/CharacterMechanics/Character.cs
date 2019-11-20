@@ -28,9 +28,9 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         int fortSave;
         int refSave;
         int willSave;
-        List<Spell> knownSpells;
-        List<Feat> ownedFeats;
-        List<Equipment> ownedEquipment;
+        List<Spell> knownSpells = new List<Spell>();
+        List<Feat> ownedFeats = new List<Feat>();
+        List<Equipment> ownedEquipment = new List<Equipment>();
 
         int pointBuyTotal;
         int pointBuyCurrent;
@@ -85,6 +85,20 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         public void setRace(Race race)
         {
             this.race = race;
+            foreach(Skill skill in race.getSkills())
+            {
+                Skill.findSkills(skill.returnName(), skills).setClassSkill(true);
+            }
+        }
+
+        public List<Skill> getSkills()
+        {
+            return skills;
+        }
+
+        public void setSkills(List<Skill> skills)
+        {
+            this.skills = skills;
         }
     }
 }

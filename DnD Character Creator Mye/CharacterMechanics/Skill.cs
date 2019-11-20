@@ -60,11 +60,28 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             skills.Add(new Skill("Use Rope", 1));
         }
 
+        static public List<Skill> getSkills()
+        {
+            return skills;
+        }
+
         static public Skill findSkills(string name)
         {
             foreach(Skill skill in skills)
             {
                 if(skill.returnName() == name)
+                {
+                    return skill;
+                }
+            }
+            return null;
+        }
+
+        static public Skill findSkills(string name, List<Skill> skills)
+        {
+            foreach (Skill skill in skills)
+            {
+                if (skill.returnName() == name)
                 {
                     return skill;
                 }
@@ -78,9 +95,46 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             associatedAttribute = attribute;
         }
 
-        private string returnName()
+        public string returnName()
         {
             return name;
+        }
+
+        public string returnSkillInput(bool isClass)
+        {
+            string toBeReturned = null;
+            if (isClass == true || isClass == false && classSkill == true)
+            {
+                string attribute = null;
+                switch (associatedAttribute)
+                {
+                    case 0:
+                        attribute = "(STR)";
+                        break;
+                    case 1:
+                        attribute = "(DEX)";
+                        break;
+                    case 2:
+                        attribute = "(CON)";
+                        break;
+                    case 3:
+                        attribute = "(INT)";
+                        break;
+                    case 4:
+                        attribute = "(WIS)";
+                        break;
+                    case 5:
+                        attribute = "(CHA)";
+                        break;
+                }
+                toBeReturned = name + " " + attribute + ": " + value.ToString();
+            }
+            return toBeReturned;
+        }
+
+        public void setClassSkill(bool newValue)
+        {
+            classSkill = newValue;
         }
     }
 }

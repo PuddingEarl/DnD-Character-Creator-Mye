@@ -36,6 +36,7 @@
             this.labelRace = new System.Windows.Forms.Label();
             this.comboBoxRace = new System.Windows.Forms.ComboBox();
             this.panelAttributes = new System.Windows.Forms.Panel();
+            this.comboBoxRandomizationMethods = new System.Windows.Forms.ComboBox();
             this.buttonRandomize = new System.Windows.Forms.Button();
             this.textBoxPoints = new System.Windows.Forms.TextBox();
             this.buttonPlusCha = new System.Windows.Forms.Button();
@@ -79,7 +80,12 @@
             this.labelClasses = new System.Windows.Forms.Label();
             this.buttonAddClass = new System.Windows.Forms.Button();
             this.buttonRemoveClassLevel = new System.Windows.Forms.Button();
-            this.comboBoxRandomizationMethods = new System.Windows.Forms.ComboBox();
+            this.listBoxFeats = new System.Windows.Forms.ListBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.listBoxSkill = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.checkBoxSkillToggle = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +113,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(703, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1086, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -147,6 +153,7 @@
             // 
             // panelAttributes
             // 
+            this.panelAttributes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelAttributes.Controls.Add(this.comboBoxRandomizationMethods);
             this.panelAttributes.Controls.Add(this.buttonRandomize);
             this.panelAttributes.Controls.Add(this.textBoxPoints);
@@ -191,6 +198,17 @@
             this.panelAttributes.Name = "panelAttributes";
             this.panelAttributes.Size = new System.Drawing.Size(338, 258);
             this.panelAttributes.TabIndex = 5;
+            // 
+            // comboBoxRandomizationMethods
+            // 
+            this.comboBoxRandomizationMethods.FormattingEnabled = true;
+            this.comboBoxRandomizationMethods.Items.AddRange(new object[] {
+            "Default",
+            "Minmax"});
+            this.comboBoxRandomizationMethods.Location = new System.Drawing.Point(7, 218);
+            this.comboBoxRandomizationMethods.Name = "comboBoxRandomizationMethods";
+            this.comboBoxRandomizationMethods.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxRandomizationMethods.TabIndex = 29;
             // 
             // buttonRandomize
             // 
@@ -580,22 +598,70 @@
             this.buttonRemoveClassLevel.Text = "Remove Class Level";
             this.buttonRemoveClassLevel.UseVisualStyleBackColor = true;
             // 
-            // comboBoxRandomizationMethods
+            // listBoxFeats
             // 
-            this.comboBoxRandomizationMethods.FormattingEnabled = true;
-            this.comboBoxRandomizationMethods.Items.AddRange(new object[] {
-            "Default",
-            "Minmax"});
-            this.comboBoxRandomizationMethods.Location = new System.Drawing.Point(7, 218);
-            this.comboBoxRandomizationMethods.Name = "comboBoxRandomizationMethods";
-            this.comboBoxRandomizationMethods.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxRandomizationMethods.TabIndex = 29;
+            this.listBoxFeats.FormattingEnabled = true;
+            this.listBoxFeats.Location = new System.Drawing.Point(360, 109);
+            this.listBoxFeats.Name = "listBoxFeats";
+            this.listBoxFeats.Size = new System.Drawing.Size(167, 173);
+            this.listBoxFeats.TabIndex = 29;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(533, 111);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(158, 256);
+            this.richTextBox1.TabIndex = 30;
+            this.richTextBox1.Text = "";
+            // 
+            // listBoxSkill
+            // 
+            this.listBoxSkill.FormattingEnabled = true;
+            this.listBoxSkill.Location = new System.Drawing.Point(360, 432);
+            this.listBoxSkill.Name = "listBoxSkill";
+            this.listBoxSkill.Size = new System.Drawing.Size(180, 173);
+            this.listBoxSkill.TabIndex = 31;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(360, 611);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 23);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Increase Skill";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(455, 611);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 23);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Decrease Skill";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSkillToggle
+            // 
+            this.checkBoxSkillToggle.AutoSize = true;
+            this.checkBoxSkillToggle.Location = new System.Drawing.Point(360, 409);
+            this.checkBoxSkillToggle.Name = "checkBoxSkillToggle";
+            this.checkBoxSkillToggle.Size = new System.Drawing.Size(126, 17);
+            this.checkBoxSkillToggle.TabIndex = 34;
+            this.checkBoxSkillToggle.Text = "Show non-class skills";
+            this.checkBoxSkillToggle.UseVisualStyleBackColor = true;
+            this.checkBoxSkillToggle.CheckedChanged += new System.EventHandler(this.checkBoxSkillToggle_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(703, 535);
+            this.ClientSize = new System.Drawing.Size(1086, 646);
+            this.Controls.Add(this.checkBoxSkillToggle);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBoxSkill);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.listBoxFeats);
             this.Controls.Add(this.buttonRemoveClassLevel);
             this.Controls.Add(this.buttonAddClass);
             this.Controls.Add(this.labelClasses);
@@ -672,6 +738,12 @@
         private System.Windows.Forms.Button buttonAddClass;
         private System.Windows.Forms.Button buttonRemoveClassLevel;
         private System.Windows.Forms.ComboBox comboBoxRandomizationMethods;
+        private System.Windows.Forms.ListBox listBoxFeats;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ListBox listBoxSkill;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBoxSkillToggle;
     }
 }
 

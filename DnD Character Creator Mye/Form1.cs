@@ -59,12 +59,15 @@ namespace DnD_Character_Creator_Mye
 
             textBoxPoints.Text = points.ToString();
 
+            Skill.initializeSkills();
             Race.prepareRace();
             List<Race> races = Race.getRaces();
             foreach (Race race in races)
             {
                 comboBoxRace.Items.Add(race.getName());
             }
+            currentCharacter.setSkills(Skill.getSkills());
+            refreshSkill();
         }
 
         #region Attributes
@@ -290,16 +293,43 @@ namespace DnD_Character_Creator_Mye
 
         #endregion
 
+        #region Skills
+
+        private void refreshSkill()
+        {
+            if(currentCharacter != null)
+            {
+                List<Skill> skills = currentCharacter.getSkills();
+                listBoxSkill.Items.Clear();
+                foreach (Skill skill in skills)
+                {
+                    string output = skill.returnSkillInput(checkBoxSkillToggle.Checked);
+                    if(output != null)
+                    {
+                        listBoxSkill.Items.Add(output);
+                    }
+                }
+            }
+        }
+
+        #endregion
+
         private void comboBoxRace_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentCharacter.setRace(Race.findRace(comboBoxRace.SelectedItem.ToString()));
             refreshAttributes();
+            refreshSkill();
         }
 
         private void buttonRandomize_Click(object sender, EventArgs e)
         {
             //randomizeAttributes();
             randomizeFavoredAttribute();
+        }
+
+        private void checkBoxSkillToggle_CheckedChanged(object sender, EventArgs e)
+        {
+            refreshSkill();
         }
     }
 }
