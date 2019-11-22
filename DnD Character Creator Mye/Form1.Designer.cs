@@ -82,9 +82,6 @@
             this.buttonRemoveClassLevel = new System.Windows.Forms.Button();
             this.listBoxFeats = new System.Windows.Forms.ListBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.listBoxSkill = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.checkBoxSkillToggle = new System.Windows.Forms.CheckBox();
             this.panelSkills = new System.Windows.Forms.Panel();
             this.panelUseRope = new System.Windows.Forms.Panel();
@@ -262,13 +259,6 @@
             this.textBox59 = new System.Windows.Forms.TextBox();
             this.textBox60 = new System.Windows.Forms.TextBox();
             this.labelKnowArcana = new System.Windows.Forms.Label();
-            this.panelJump = new System.Windows.Forms.Panel();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.labelJump = new System.Windows.Forms.Label();
             this.panelIntimidate = new System.Windows.Forms.Panel();
             this.button37 = new System.Windows.Forms.Button();
             this.button38 = new System.Windows.Forms.Button();
@@ -374,7 +364,7 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.labelBluff = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            //this.panel3 = new System.Windows.Forms.Panel();
             this.panelBalance = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -382,12 +372,12 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.labelBalance = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            //this.button5 = new System.Windows.Forms.Button();
+            //this.button6 = new System.Windows.Forms.Button();
+            //this.textBox4 = new System.Windows.Forms.TextBox();
+            //this.textBox5 = new System.Windows.Forms.TextBox();
+            //this.textBox6 = new System.Windows.Forms.TextBox();
+            //this.label2 = new System.Windows.Forms.Label();
             this.panelAppraise = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -395,6 +385,13 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.labelAppraise = new System.Windows.Forms.Label();
+            this.labelJump = new System.Windows.Forms.Label();
+            this.textBox57 = new System.Windows.Forms.TextBox();
+            this.textBox56 = new System.Windows.Forms.TextBox();
+            this.textBox55 = new System.Windows.Forms.TextBox();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.panelJump = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.panelSkills.SuspendLayout();
@@ -423,7 +420,6 @@
             this.panelKnowGeo.SuspendLayout();
             this.panelKnowArch.SuspendLayout();
             this.panelKnowArcana.SuspendLayout();
-            this.panelJump.SuspendLayout();
             this.panelIntimidate.SuspendLayout();
             this.panelHide.SuspendLayout();
             this.panelHeal.SuspendLayout();
@@ -439,9 +435,10 @@
             this.panelConcentration.SuspendLayout();
             this.panelClimb.SuspendLayout();
             this.panelBluff.SuspendLayout();
-            this.panel3.SuspendLayout();
+            //this.panel3.SuspendLayout();
             this.panelBalance.SuspendLayout();
             this.panelAppraise.SuspendLayout();
+            this.panelJump.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxName
@@ -968,36 +965,10 @@
             this.richTextBox1.TabIndex = 30;
             this.richTextBox1.Text = "";
             // 
-            // listBoxSkill
-            // 
-            this.listBoxSkill.FormattingEnabled = true;
-            this.listBoxSkill.Location = new System.Drawing.Point(360, 432);
-            this.listBoxSkill.Name = "listBoxSkill";
-            this.listBoxSkill.Size = new System.Drawing.Size(180, 173);
-            this.listBoxSkill.TabIndex = 31;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(360, 611);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Increase Skill";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(455, 611);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 23);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Decrease Skill";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // checkBoxSkillToggle
             // 
             this.checkBoxSkillToggle.AutoSize = true;
-            this.checkBoxSkillToggle.Location = new System.Drawing.Point(360, 409);
+            this.checkBoxSkillToggle.Location = new System.Drawing.Point(725, 396);
             this.checkBoxSkillToggle.Name = "checkBoxSkillToggle";
             this.checkBoxSkillToggle.Size = new System.Drawing.Size(126, 17);
             this.checkBoxSkillToggle.TabIndex = 34;
@@ -1050,7 +1021,8 @@
             this.panelSkills.Controls.Add(this.panelConcentration);
             this.panelSkills.Controls.Add(this.panelClimb);
             this.panelSkills.Controls.Add(this.panelBluff);
-            this.panelSkills.Controls.Add(this.panel3);
+            this.panelSkills.Controls.Add(this.panelBalance);
+            //this.panelSkills.Controls.Add(this.panel3);
             this.panelSkills.Controls.Add(this.panelAppraise);
             this.panelSkills.Location = new System.Drawing.Point(724, 419);
             this.panelSkills.Name = "panelSkills";
@@ -2732,73 +2704,6 @@
             this.labelKnowArcana.TabIndex = 26;
             this.labelKnowArcana.Text = "Knowledge:Arcana";
             // 
-            // panelJump
-            // 
-            this.panelJump.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelJump.Controls.Add(this.button39);
-            this.panelJump.Controls.Add(this.button40);
-            this.panelJump.Controls.Add(this.textBox55);
-            this.panelJump.Controls.Add(this.textBox56);
-            this.panelJump.Controls.Add(this.textBox57);
-            this.panelJump.Controls.Add(this.labelJump);
-            this.panelJump.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelJump.Location = new System.Drawing.Point(0, 969);
-            this.panelJump.Name = "panelJump";
-            this.panelJump.Size = new System.Drawing.Size(331, 57);
-            this.panelJump.TabIndex = 17;
-            // 
-            // button39
-            // 
-            this.button39.Location = new System.Drawing.Point(297, 19);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(25, 20);
-            this.button39.TabIndex = 29;
-            this.button39.Text = "+";
-            this.button39.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            this.button40.Location = new System.Drawing.Point(266, 19);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(25, 20);
-            this.button40.TabIndex = 24;
-            this.button40.Text = "-";
-            this.button40.UseVisualStyleBackColor = true;
-            // 
-            // textBox55
-            // 
-            this.textBox55.Location = new System.Drawing.Point(225, 18);
-            this.textBox55.Name = "textBox55";
-            this.textBox55.ReadOnly = true;
-            this.textBox55.Size = new System.Drawing.Size(35, 20);
-            this.textBox55.TabIndex = 27;
-            // 
-            // textBox56
-            // 
-            this.textBox56.Location = new System.Drawing.Point(184, 18);
-            this.textBox56.Name = "textBox56";
-            this.textBox56.ReadOnly = true;
-            this.textBox56.Size = new System.Drawing.Size(35, 20);
-            this.textBox56.TabIndex = 28;
-            // 
-            // textBox57
-            // 
-            this.textBox57.Location = new System.Drawing.Point(143, 18);
-            this.textBox57.Name = "textBox57";
-            this.textBox57.ReadOnly = true;
-            this.textBox57.Size = new System.Drawing.Size(35, 20);
-            this.textBox57.TabIndex = 25;
-            // 
-            // labelJump
-            // 
-            this.labelJump.AutoSize = true;
-            this.labelJump.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJump.Location = new System.Drawing.Point(3, 18);
-            this.labelJump.Name = "labelJump";
-            this.labelJump.Size = new System.Drawing.Size(48, 20);
-            this.labelJump.TabIndex = 26;
-            this.labelJump.Text = "Jump";
-            // 
             // panelIntimidate
             // 
             this.panelIntimidate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -3806,18 +3711,18 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.panelBalance);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.textBox6);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 57);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(331, 57);
-            this.panel3.TabIndex = 1;
+            //this.panel3.Controls.Add(this.panelBalance);
+            //this.panel3.Controls.Add(this.button5);
+            //this.panel3.Controls.Add(this.button6);
+            //this.panel3.Controls.Add(this.textBox4);
+            //this.panel3.Controls.Add(this.textBox5);
+            //this.panel3.Controls.Add(this.textBox6);
+            //this.panel3.Controls.Add(this.label2);
+            //this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            //this.panel3.Location = new System.Drawing.Point(0, 57);
+            //this.panel3.Name = "panel3";
+            //this.panel3.Size = new System.Drawing.Size(331, 57);
+            //this.panel3.TabIndex = 1;
             // 
             // panelBalance
             // 
@@ -3885,58 +3790,58 @@
             this.labelBalance.Size = new System.Drawing.Size(67, 20);
             this.labelBalance.TabIndex = 26;
             this.labelBalance.Text = "Balance";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(234, 19);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(25, 20);
-            this.button5.TabIndex = 29;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(203, 19);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(25, 20);
-            this.button6.TabIndex = 24;
-            this.button6.Text = "-";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(162, 18);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(35, 20);
-            this.textBox4.TabIndex = 27;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(121, 18);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(35, 20);
-            this.textBox5.TabIndex = 28;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(80, 18);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(35, 20);
-            this.textBox6.TabIndex = 25;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Strength";
+            //// 
+            //// button5
+            //// 
+            //this.button5.Location = new System.Drawing.Point(234, 19);
+            //this.button5.Name = "button5";
+            //this.button5.Size = new System.Drawing.Size(25, 20);
+            //this.button5.TabIndex = 29;
+            //this.button5.Text = "+";
+            //this.button5.UseVisualStyleBackColor = true;
+            //// 
+            //// button6
+            //// 
+            //this.button6.Location = new System.Drawing.Point(203, 19);
+            //this.button6.Name = "button6";
+            //this.button6.Size = new System.Drawing.Size(25, 20);
+            //this.button6.TabIndex = 24;
+            //this.button6.Text = "-";
+            //this.button6.UseVisualStyleBackColor = true;
+            //// 
+            //// textBox4
+            //// 
+            //this.textBox4.Location = new System.Drawing.Point(162, 18);
+            //this.textBox4.Name = "textBox4";
+            //this.textBox4.ReadOnly = true;
+            //this.textBox4.Size = new System.Drawing.Size(35, 20);
+            //this.textBox4.TabIndex = 27;
+            //// 
+            //// textBox5
+            //// 
+            //this.textBox5.Location = new System.Drawing.Point(121, 18);
+            //this.textBox5.Name = "textBox5";
+            //this.textBox5.ReadOnly = true;
+            //this.textBox5.Size = new System.Drawing.Size(35, 20);
+            //this.textBox5.TabIndex = 28;
+            //// 
+            //// textBox6
+            //// 
+            //this.textBox6.Location = new System.Drawing.Point(80, 18);
+            //this.textBox6.Name = "textBox6";
+            //this.textBox6.ReadOnly = true;
+            //this.textBox6.Size = new System.Drawing.Size(35, 20);
+            //this.textBox6.TabIndex = 25;
+            //// 
+            //// label2
+            //// 
+            //this.label2.AutoSize = true;
+            //this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.label2.Location = new System.Drawing.Point(3, 18);
+            //this.label2.Name = "label2";
+            //this.label2.Size = new System.Drawing.Size(71, 20);
+            //this.label2.TabIndex = 26;
+            //this.label2.Text = "Strength";
             // 
             // panelAppraise
             // 
@@ -4005,6 +3910,73 @@
             this.labelAppraise.TabIndex = 26;
             this.labelAppraise.Text = "Appraise";
             // 
+            // labelJump
+            // 
+            this.labelJump.AutoSize = true;
+            this.labelJump.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJump.Location = new System.Drawing.Point(3, 18);
+            this.labelJump.Name = "labelJump";
+            this.labelJump.Size = new System.Drawing.Size(48, 20);
+            this.labelJump.TabIndex = 26;
+            this.labelJump.Text = "Jump";
+            // 
+            // textBox57
+            // 
+            this.textBox57.Location = new System.Drawing.Point(143, 18);
+            this.textBox57.Name = "textBox57";
+            this.textBox57.ReadOnly = true;
+            this.textBox57.Size = new System.Drawing.Size(35, 20);
+            this.textBox57.TabIndex = 25;
+            // 
+            // textBox56
+            // 
+            this.textBox56.Location = new System.Drawing.Point(184, 18);
+            this.textBox56.Name = "textBox56";
+            this.textBox56.ReadOnly = true;
+            this.textBox56.Size = new System.Drawing.Size(35, 20);
+            this.textBox56.TabIndex = 28;
+            // 
+            // textBox55
+            // 
+            this.textBox55.Location = new System.Drawing.Point(225, 18);
+            this.textBox55.Name = "textBox55";
+            this.textBox55.ReadOnly = true;
+            this.textBox55.Size = new System.Drawing.Size(35, 20);
+            this.textBox55.TabIndex = 27;
+            // 
+            // button40
+            // 
+            this.button40.Location = new System.Drawing.Point(266, 19);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(25, 20);
+            this.button40.TabIndex = 24;
+            this.button40.Text = "-";
+            this.button40.UseVisualStyleBackColor = true;
+            // 
+            // button39
+            // 
+            this.button39.Location = new System.Drawing.Point(297, 19);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(25, 20);
+            this.button39.TabIndex = 29;
+            this.button39.Text = "+";
+            this.button39.UseVisualStyleBackColor = true;
+            // 
+            // panelJump
+            // 
+            this.panelJump.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelJump.Controls.Add(this.button39);
+            this.panelJump.Controls.Add(this.button40);
+            this.panelJump.Controls.Add(this.textBox55);
+            this.panelJump.Controls.Add(this.textBox56);
+            this.panelJump.Controls.Add(this.textBox57);
+            this.panelJump.Controls.Add(this.labelJump);
+            this.panelJump.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelJump.Location = new System.Drawing.Point(0, 969);
+            this.panelJump.Name = "panelJump";
+            this.panelJump.Size = new System.Drawing.Size(331, 57);
+            this.panelJump.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4012,9 +3984,6 @@
             this.ClientSize = new System.Drawing.Size(1086, 646);
             this.Controls.Add(this.panelSkills);
             this.Controls.Add(this.checkBoxSkillToggle);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBoxSkill);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.listBoxFeats);
             this.Controls.Add(this.buttonRemoveClassLevel);
@@ -4086,8 +4055,6 @@
             this.panelKnowArch.PerformLayout();
             this.panelKnowArcana.ResumeLayout(false);
             this.panelKnowArcana.PerformLayout();
-            this.panelJump.ResumeLayout(false);
-            this.panelJump.PerformLayout();
             this.panelIntimidate.ResumeLayout(false);
             this.panelIntimidate.PerformLayout();
             this.panelHide.ResumeLayout(false);
@@ -4118,12 +4085,14 @@
             this.panelClimb.PerformLayout();
             this.panelBluff.ResumeLayout(false);
             this.panelBluff.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            //this.panel3.ResumeLayout(false);
+            //this.panel3.PerformLayout();
             this.panelBalance.ResumeLayout(false);
             this.panelBalance.PerformLayout();
             this.panelAppraise.ResumeLayout(false);
             this.panelAppraise.PerformLayout();
+            this.panelJump.ResumeLayout(false);
+            this.panelJump.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4185,9 +4154,6 @@
         private System.Windows.Forms.ComboBox comboBoxRandomizationMethods;
         private System.Windows.Forms.ListBox listBoxFeats;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ListBox listBoxSkill;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBoxSkillToggle;
         private System.Windows.Forms.Panel panelSkills;
         private System.Windows.Forms.Panel panelClimb;
@@ -4204,7 +4170,7 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label labelBluff;
-        private System.Windows.Forms.Panel panel3;
+        //private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelBalance;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
@@ -4212,12 +4178,12 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label labelBalance;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label2;
+        //private System.Windows.Forms.Button button5;
+        //private System.Windows.Forms.Button button6;
+        //private System.Windows.Forms.TextBox textBox4;
+        //private System.Windows.Forms.TextBox textBox5;
+        //private System.Windows.Forms.TextBox textBox6;
+        //private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelAppraise;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -4267,13 +4233,6 @@
         private System.Windows.Forms.TextBox textBox59;
         private System.Windows.Forms.TextBox textBox60;
         private System.Windows.Forms.Label labelKnowArcana;
-        private System.Windows.Forms.Panel panelJump;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.Label labelJump;
         private System.Windows.Forms.Panel panelIntimidate;
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button button38;
@@ -4498,6 +4457,13 @@
         private System.Windows.Forms.TextBox textBox113;
         private System.Windows.Forms.TextBox textBox114;
         private System.Windows.Forms.Label labelSpellcraft;
+        private System.Windows.Forms.Panel panelJump;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.TextBox textBox55;
+        private System.Windows.Forms.TextBox textBox56;
+        private System.Windows.Forms.TextBox textBox57;
+        private System.Windows.Forms.Label labelJump;
     }
 }
 

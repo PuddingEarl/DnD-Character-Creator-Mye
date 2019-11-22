@@ -42,6 +42,7 @@ namespace DnD_Character_Creator_Mye
             skillPanels.Add(panelHeal);
             skillPanels.Add(panelHide);
             skillPanels.Add(panelIntimidate);
+            skillPanels.Add(panelJump);
             skillPanels.Add(panelKnowArcana);
             skillPanels.Add(panelKnowArch);
             skillPanels.Add(panelKnowGeo);
