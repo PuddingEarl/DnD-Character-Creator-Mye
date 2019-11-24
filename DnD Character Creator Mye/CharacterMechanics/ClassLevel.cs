@@ -14,11 +14,12 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         int refSave;
         int willSave;
         List<Feat> features;
+        List<Feat> optionFeatures;
 
 
         public ClassLevel(string data)
         {
-            string[] brokenData = data.Split(',');
+            string[] brokenData = data.Split('=');
             int level;
             int.TryParse(brokenData[0], out level);
             this.level = level;
@@ -35,10 +36,23 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             this.refSave = refSave;
             this.willSave = willSave;
 
+            string[] brokenFeatures = brokenData[5].Split('+');
             features = new List<Feat>();
-            foreach(string x in brokenData)
+            foreach(string x in brokenFeatures)
             {
-                features.Add(new Feat(x));
+                if(x != " ")
+                {
+                    features.Add(new Feat(x));
+                }
+            }
+            optionFeatures = new List<Feat>();
+            string[] brokenOptions = brokenData[6].Split('+');
+            foreach(string x in brokenOptions)
+            {
+                if (x != " ")
+                {
+                    optionFeatures.Add(new Feat(x));
+                }
             }
 
         }

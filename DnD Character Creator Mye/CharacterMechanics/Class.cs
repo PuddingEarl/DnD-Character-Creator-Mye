@@ -19,6 +19,11 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         List<int> proficiencyIDs;
         List<Spell> learnableSpells;
 
+        static List<Class> baseClasses = new List<Class>();
+        static List<Class> prestigeClasses = new List<Class>();
+
+
+        //Unpack Class builds classes out of .txt files.
         static public Class unpackClass(string line)
         {
             Class toBeReturned = null;
@@ -54,7 +59,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                     proficiency.Add(temp);
                 }
             }
-            string[] levels = brokenString[8].Split('.');
+            string[] levels = brokenString[8].Split('#');
             List<ClassLevel> classLevels = new List<ClassLevel>();
             foreach(string level in levels)
             {
@@ -63,6 +68,11 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 
             toBeReturned = new Class(name, classLevels, skillGain, hitPointGainDice, hitPointGainStatic, manaGainDice, manaGainStatic, skillList, proficiency);
             return toBeReturned;
+        }
+
+        static public void addBaseClass(Class givenClass)
+        {
+            baseClasses.Add(givenClass);
         }
 
 

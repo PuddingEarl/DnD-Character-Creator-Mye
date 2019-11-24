@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 using DnD_Character_Creator_Mye.CharacterMechanics;
 using DnD_Character_Creator_Mye.SecondaryForms;
 
@@ -70,6 +71,13 @@ namespace DnD_Character_Creator_Mye
             skillPanels.Add(panelUseRope);
 
             #endregion
+
+            string[] classNames = Directory.GetFiles("CharacterClasses/BaseClasses", "*.txt");
+            foreach(string name in classNames)
+            {
+                string classFileOutput = File.ReadAllText(name);
+                Class.addBaseClass(Class.unpackClass(classFileOutput));
+            }
         }
 
         private void newCharacterToolStripMenuItem_Click(object sender, EventArgs e)
