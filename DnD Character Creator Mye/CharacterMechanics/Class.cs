@@ -67,6 +67,10 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             }
 
             toBeReturned = new Class(name, classLevels, skillGain, hitPointGainDice, hitPointGainStatic, manaGainDice, manaGainStatic, skillList, proficiency);
+            foreach(ClassLevel level in classLevels)
+            {
+
+            }
             return toBeReturned;
         }
 
@@ -92,6 +96,45 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         public List<Skill> returnSkills()
         {
             return skillList;
+        }
+
+        public string returnName()
+        {
+            return name;
+        }
+
+        static public Class findClass(string name)
+        {
+            foreach(Class searchedClass in baseClasses)
+            {
+                if(searchedClass.name == name)
+                {
+                    return searchedClass;
+                }
+            }
+            foreach(Class searchedClass in prestigeClasses)
+            {
+                if (searchedClass.name == name)
+                {
+                    return searchedClass;
+                }
+            }
+            return null;
+        }
+
+        public int returnLevelCount()
+        {
+            return levels.Count();
+        }
+
+        static public List<Class> returnBaseClasses()
+        {
+            return baseClasses;
+        }
+        
+        static public List<Class> returnPrestigeClasses()
+        {
+            return prestigeClasses;
         }
     }
 }

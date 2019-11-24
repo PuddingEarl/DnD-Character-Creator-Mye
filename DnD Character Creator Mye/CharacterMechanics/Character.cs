@@ -124,5 +124,28 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         {
             this.skills = skills;
         }
+
+        public List<ClassLevel> returnClassLevels()
+        {
+            return takenLevels;
+        }
+
+        public int findClassLevel(Class givenClass)
+        {
+            int levelCount = 0;
+            foreach(ClassLevel level in takenLevels)
+            {
+                if(level.returnClass() == givenClass)
+                {
+                    levelCount += 1;
+                }
+            }
+            return levelCount;
+        }
+
+        public void addClassLevel(ClassLevel toBeAdded)
+        {
+            takenLevels.Add(toBeAdded);
+        }
     }
 }

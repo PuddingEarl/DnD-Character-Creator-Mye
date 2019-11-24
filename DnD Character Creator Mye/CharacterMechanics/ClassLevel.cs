@@ -15,7 +15,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         int willSave;
         List<Feat> features;
         List<Feat> optionFeatures;
-
+        Class owningClass;
 
         public ClassLevel(string data)
         {
@@ -55,6 +55,16 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                 }
             }
 
+        }
+
+        public void setClass(Class owningClass)
+        {
+            this.owningClass = owningClass;
+        }
+
+        public Class returnClass()
+        {
+            return owningClass;
         }
 
     }

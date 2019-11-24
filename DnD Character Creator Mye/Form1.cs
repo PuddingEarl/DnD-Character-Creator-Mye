@@ -538,5 +538,11 @@ namespace DnD_Character_Creator_Mye
         {
 
         }
+
+        private void buttonAddClass_Click(object sender, EventArgs e)
+        {
+            AddClassForm newForm = new AddClassForm(currentCharacter);
+            newForm.Show();
+        }
     }
 }
