@@ -69,7 +69,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             toBeReturned = new Class(name, classLevels, skillGain, hitPointGainDice, hitPointGainStatic, manaGainDice, manaGainStatic, skillList, proficiency);
             foreach(ClassLevel level in classLevels)
             {
-
+                level.setClass(toBeReturned);
             }
             return toBeReturned;
         }
@@ -118,6 +118,15 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                 {
                     return searchedClass;
                 }
+            }
+            return null;
+        }
+
+        public ClassLevel returnClassLevel(int levelNumber)
+        {
+            if(levelNumber < levels.Count())
+            {
+                return levels[levelNumber];
             }
             return null;
         }

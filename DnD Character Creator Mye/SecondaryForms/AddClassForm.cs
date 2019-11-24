@@ -45,11 +45,19 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             string[] brokenLevel = listBoxClasses.SelectedItem.ToString().Split('(');
-            string className = brokenLevel[0].Trim();
-            Class nextClass = Class.findClass(className);
-            if(nextClass != null)
+            if(brokenLevel.Count() == 2)
             {
-
+                string className = brokenLevel[0].Trim();
+                Class nextClass = Class.findClass(className);
+                if (nextClass != null)
+                {
+                    ClassLevel addedLevel = nextClass.returnClassLevel(currentCharacter.findClassLevel(nextClass));
+                    if (addedLevel != null)
+                    {
+                        currentCharacter.addClassLevel(addedLevel);
+                        Close();
+                    }
+                }
             }
         }
     }
