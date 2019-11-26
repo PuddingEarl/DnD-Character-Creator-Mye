@@ -81,7 +81,7 @@
             this.buttonAddClass = new System.Windows.Forms.Button();
             this.buttonRemoveClassLevel = new System.Windows.Forms.Button();
             this.listBoxFeats = new System.Windows.Forms.ListBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxFeatDescription = new System.Windows.Forms.RichTextBox();
             this.checkBoxSkillToggle = new System.Windows.Forms.CheckBox();
             this.panelSkills = new System.Windows.Forms.Panel();
             this.panelUseRope = new System.Windows.Forms.Panel();
@@ -949,14 +949,15 @@
             this.listBoxFeats.Name = "listBoxFeats";
             this.listBoxFeats.Size = new System.Drawing.Size(167, 173);
             this.listBoxFeats.TabIndex = 29;
+            this.listBoxFeats.SelectedIndexChanged += new System.EventHandler(this.listBoxFeats_SelectedIndexChanged);
             // 
-            // richTextBox1
+            // richTextBoxFeatDescription
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(533, 111);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(158, 256);
-            this.richTextBox1.TabIndex = 30;
-            this.richTextBox1.Text = "";
+            this.richTextBoxFeatDescription.Location = new System.Drawing.Point(533, 111);
+            this.richTextBoxFeatDescription.Name = "richTextBoxFeatDescription";
+            this.richTextBoxFeatDescription.Size = new System.Drawing.Size(158, 256);
+            this.richTextBoxFeatDescription.TabIndex = 30;
+            this.richTextBoxFeatDescription.Text = "";
             // 
             // checkBoxSkillToggle
             // 
@@ -3909,7 +3910,7 @@
             this.ClientSize = new System.Drawing.Size(1086, 646);
             this.Controls.Add(this.panelSkills);
             this.Controls.Add(this.checkBoxSkillToggle);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.richTextBoxFeatDescription);
             this.Controls.Add(this.listBoxFeats);
             this.Controls.Add(this.buttonRemoveClassLevel);
             this.Controls.Add(this.buttonAddClass);
@@ -4076,7 +4077,7 @@
         private System.Windows.Forms.Button buttonRemoveClassLevel;
         private System.Windows.Forms.ComboBox comboBoxRandomizationMethods;
         private System.Windows.Forms.ListBox listBoxFeats;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBoxFeatDescription;
         private System.Windows.Forms.CheckBox checkBoxSkillToggle;
         private System.Windows.Forms.Panel panelSkills;
         private System.Windows.Forms.Panel panelClimb;

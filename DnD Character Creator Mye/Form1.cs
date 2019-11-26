@@ -22,6 +22,7 @@ namespace DnD_Character_Creator_Mye
         {
             InitializeComponent();
             NewCharacterForm.form = this;
+            Character.form = this;
 
             #region Skill Panel Setup
 
@@ -71,13 +72,6 @@ namespace DnD_Character_Creator_Mye
             skillPanels.Add(panelUseRope);
 
             #endregion
-
-            string[] classNames = Directory.GetFiles("CharacterClasses/BaseClasses", "*.txt");
-            foreach(string name in classNames)
-            {
-                string classFileOutput = File.ReadAllText(name);
-                Class.addBaseClass(Class.unpackClass(classFileOutput));
-            }
         }
 
         private void newCharacterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -125,7 +119,22 @@ namespace DnD_Character_Creator_Mye
                 comboBoxRace.Items.Add(race.getName());
             }
             currentCharacter.setSkills(Skill.getSkills());
+            string[] classNames = Directory.GetFiles("CharacterClasses/BaseClasses", "*.txt");
+            foreach (string className in classNames)
+            {
+                string classFileOutput = File.ReadAllText(className);
+                Class.addBaseClass(Class.unpackClass(classFileOutput));
+            }
             refreshSkill();
+            refreshFeats();
+        }
+
+        public void refreshSheet()
+        {
+            refreshAttributes();
+            refreshFeats();
+            refreshSkill();
+            refreshClassList();
         }
 
         #region Attributes
@@ -516,6 +525,46 @@ namespace DnD_Character_Creator_Mye
 
         #endregion
 
+        #region Feats
+
+        private void refreshFeats()
+        {
+            if(currentCharacter != null)
+            {
+                listBoxFeats.Items.Clear();
+                foreach(Feat feat in currentCharacter.returnOwnedFeats())
+                {
+                    listBoxFeats.Items.Add(feat.returnName());
+                }
+            }
+        }
+
+        #endregion
+
+        #region Classes
+
+        private void refreshClassList()
+        {
+            if(currentCharacter != null)
+            {
+                listBoxClasses.Items.Clear();
+                List<Class> classNames = new List<Class>();
+                foreach (ClassLevel levels in currentCharacter.returnClassLevels())
+                {
+                    if (classNames.Contains(levels.returnClass()) == false)
+                    {
+                        classNames.Add(levels.returnClass());
+                    }
+                }
+                foreach (Class relevantClass in classNames)
+                {
+                    listBoxClasses.Items.Add(relevantClass.returnName() + " (" + currentCharacter.findClassLevel(relevantClass) + ")");
+                }
+            }
+        }
+
+        #endregion
+
         private void comboBoxRace_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentCharacter.setRace(Race.findRace(comboBoxRace.SelectedItem.ToString()));
@@ -543,6 +592,17 @@ namespace DnD_Character_Creator_Mye
         {
             AddClassForm newForm = new AddClassForm(currentCharacter);
             newForm.Show();
+        }
+
+        private void listBoxFeats_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach(Feat feat in currentCharacter.returnOwnedFeats())
+            {
+                if(feat.returnName() == listBoxFeats.SelectedItem.ToString())
+                {
+                    richTextBoxFeatDescription.Text = feat.returnDescription();
+                }
+            }
         }
     }
 }

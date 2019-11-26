@@ -36,6 +36,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         int pointBuyTotal;
         int pointBuyCurrent;
 
+        static public Form1 form;
+
         public Character(int pointBuyValue, string name)
         {
             strength = 10;
@@ -160,6 +162,19 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             {
                 ownedFeats.Add(feat);
             }
+            if(toBeAdded.returnLevel() == 1)
+            {
+                foreach(Skill skill in toBeAdded.returnClass().returnSkills())
+                {
+                    skill.setClassSkill(true);
+                }
+            }
+            form.refreshSheet();
+        }
+
+        public List<Feat> returnOwnedFeats()
+        {
+            return ownedFeats;
         }
 
         public void addClassLevel(ClassLevel toBeAdded, Feat chosenFeat)
@@ -180,6 +195,14 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                 ownedFeats.Add(feat);
             }
             ownedFeats.Add(chosenFeat);
+            if (toBeAdded.returnLevel() == 1)
+            {
+                foreach (Skill skill in toBeAdded.returnClass().returnSkills())
+                {
+                    skill.setClassSkill(true);
+                }
+            }
+            form.refreshSheet();
         }
     }
 }
