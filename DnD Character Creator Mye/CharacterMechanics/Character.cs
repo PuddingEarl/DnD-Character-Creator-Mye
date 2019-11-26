@@ -146,6 +146,40 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         public void addClassLevel(ClassLevel toBeAdded)
         {
             takenLevels.Add(toBeAdded);
+            foreach(ClassLevel level in takenLevels)
+            {
+                if(level.returnClass() == toBeAdded.returnClass() && (level.returnLevel() + 1) == toBeAdded.returnLevel())
+                {
+                    BAB += (toBeAdded.returnBab() - level.returnBab());
+                    fortSave += (toBeAdded.returnFort() - level.returnFort());
+                    refSave += (toBeAdded.returnRef() - level.returnRef());
+                    willSave += (toBeAdded.returnWill() - level.returnWill());
+                }
+            }
+            foreach(Feat feat in toBeAdded.returnFeats())
+            {
+                ownedFeats.Add(feat);
+            }
+        }
+
+        public void addClassLevel(ClassLevel toBeAdded, Feat chosenFeat)
+        {
+            takenLevels.Add(toBeAdded);
+            foreach (ClassLevel level in takenLevels)
+            {
+                if (level.returnClass() == toBeAdded.returnClass() && (level.returnLevel() + 1) == toBeAdded.returnLevel())
+                {
+                    BAB += (toBeAdded.returnBab() - level.returnBab());
+                    fortSave += (toBeAdded.returnFort() - level.returnFort());
+                    refSave += (toBeAdded.returnRef() - level.returnRef());
+                    willSave += (toBeAdded.returnWill() - level.returnWill());
+                }
+            }
+            foreach (Feat feat in toBeAdded.returnFeats())
+            {
+                ownedFeats.Add(feat);
+            }
+            ownedFeats.Add(chosenFeat);
         }
     }
 }

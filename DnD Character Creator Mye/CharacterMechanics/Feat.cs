@@ -77,6 +77,16 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return availableFeats;
         }
 
+
+        public string returnName()
+        {
+            return name;
+        }
+
+        public string returnDescription()
+        {
+            return description;
+        }
         
     }
 }

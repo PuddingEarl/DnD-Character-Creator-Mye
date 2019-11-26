@@ -67,5 +67,40 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return owningClass;
         }
 
+        public int returnLevel()
+        {
+            return level;
+        }
+
+        public int returnBab()
+        {
+            return babBonus;
+        }
+
+        public int returnFort()
+        {
+            return fortSave;
+        }
+
+        public int returnRef()
+        {
+            return refSave;
+        }
+
+        public int returnWill()
+        {
+            return willSave;
+        }
+
+        public List<Feat> returnFeats()
+        {
+            return features;
+        }
+
+        public List<Feat> returnOptions()
+        {
+            return optionFeatures;
+        }
+
     }
 }

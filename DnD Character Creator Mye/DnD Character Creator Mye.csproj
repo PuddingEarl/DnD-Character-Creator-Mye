@@ -76,6 +76,12 @@
     <Compile Include="SecondaryForms\NewCharacterForm.Designer.cs">
       <DependentUpon>NewCharacterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SecondaryForms\OptionalFeatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondaryForms\OptionalFeatureForm.Designer.cs">
+      <DependentUpon>OptionalFeatureForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SecondaryForms\NewCharacterForm.resx">
       <DependentUpon>NewCharacterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondaryForms\OptionalFeatureForm.resx">
+      <DependentUpon>OptionalFeatureForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
