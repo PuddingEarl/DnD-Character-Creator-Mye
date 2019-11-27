@@ -145,6 +145,46 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return levelCount;
         }
 
+        public int getHP()
+        {
+            return hp;
+        }
+
+        public int getMana()
+        {
+            return mana;
+        }
+
+        public int getBAB()
+        {
+            return BAB;
+        }
+
+        public int getAC()
+        {
+            return AC;
+        }
+
+        public int getFort()
+        {
+            return fortSave;
+        }
+
+        public int getRef()
+        {
+            return refSave;
+        }
+
+        public int getWill()
+        {
+            return willSave;
+        }
+
+        public int getManaRegen()
+        {
+            return manaRegen;
+        }
+
         public void addClassLevel(ClassLevel toBeAdded)
         {
             takenLevels.Add(toBeAdded);

@@ -385,6 +385,23 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.labelAppraise = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelHP = new System.Windows.Forms.Label();
+            this.textBoxHP = new System.Windows.Forms.TextBox();
+            this.labelMana = new System.Windows.Forms.Label();
+            this.textBoxMana = new System.Windows.Forms.TextBox();
+            this.labelAC = new System.Windows.Forms.Label();
+            this.textBoxAC = new System.Windows.Forms.TextBox();
+            this.textBoxManaRegen = new System.Windows.Forms.TextBox();
+            this.labelManaRegen = new System.Windows.Forms.Label();
+            this.labelBAB = new System.Windows.Forms.Label();
+            this.labelFort = new System.Windows.Forms.Label();
+            this.labelRefSave = new System.Windows.Forms.Label();
+            this.labelWillSave = new System.Windows.Forms.Label();
+            this.textBoxRef = new System.Windows.Forms.TextBox();
+            this.textBoxBAB = new System.Windows.Forms.TextBox();
+            this.textBoxFort = new System.Windows.Forms.TextBox();
+            this.textBoxWill = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.panelSkills.SuspendLayout();
@@ -431,6 +448,7 @@
             this.panelBluff.SuspendLayout();
             this.panelBalance.SuspendLayout();
             this.panelAppraise.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxName
@@ -3903,11 +3921,180 @@
             this.labelAppraise.TabIndex = 26;
             this.labelAppraise.Text = "Appraise";
             // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.textBoxWill);
+            this.panel1.Controls.Add(this.textBoxFort);
+            this.panel1.Controls.Add(this.textBoxBAB);
+            this.panel1.Controls.Add(this.textBoxRef);
+            this.panel1.Controls.Add(this.labelWillSave);
+            this.panel1.Controls.Add(this.labelRefSave);
+            this.panel1.Controls.Add(this.labelFort);
+            this.panel1.Controls.Add(this.labelBAB);
+            this.panel1.Controls.Add(this.labelManaRegen);
+            this.panel1.Controls.Add(this.textBoxManaRegen);
+            this.panel1.Controls.Add(this.textBoxAC);
+            this.panel1.Controls.Add(this.labelAC);
+            this.panel1.Controls.Add(this.textBoxMana);
+            this.panel1.Controls.Add(this.labelMana);
+            this.panel1.Controls.Add(this.textBoxHP);
+            this.panel1.Controls.Add(this.labelHP);
+            this.panel1.Location = new System.Drawing.Point(16, 373);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(338, 143);
+            this.panel1.TabIndex = 36;
+            // 
+            // labelHP
+            // 
+            this.labelHP.AutoSize = true;
+            this.labelHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHP.Location = new System.Drawing.Point(4, 29);
+            this.labelHP.Name = "labelHP";
+            this.labelHP.Size = new System.Drawing.Size(31, 20);
+            this.labelHP.TabIndex = 7;
+            this.labelHP.Text = "HP";
+            // 
+            // textBoxHP
+            // 
+            this.textBoxHP.Location = new System.Drawing.Point(111, 29);
+            this.textBoxHP.Name = "textBoxHP";
+            this.textBoxHP.ReadOnly = true;
+            this.textBoxHP.Size = new System.Drawing.Size(54, 20);
+            this.textBoxHP.TabIndex = 30;
+            // 
+            // labelMana
+            // 
+            this.labelMana.AutoSize = true;
+            this.labelMana.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMana.Location = new System.Drawing.Point(3, 54);
+            this.labelMana.Name = "labelMana";
+            this.labelMana.Size = new System.Drawing.Size(49, 20);
+            this.labelMana.TabIndex = 32;
+            this.labelMana.Text = "Mana";
+            // 
+            // textBoxMana
+            // 
+            this.textBoxMana.Location = new System.Drawing.Point(111, 54);
+            this.textBoxMana.Name = "textBoxMana";
+            this.textBoxMana.ReadOnly = true;
+            this.textBoxMana.Size = new System.Drawing.Size(54, 20);
+            this.textBoxMana.TabIndex = 33;
+            // 
+            // labelAC
+            // 
+            this.labelAC.AutoSize = true;
+            this.labelAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAC.Location = new System.Drawing.Point(4, 106);
+            this.labelAC.Name = "labelAC";
+            this.labelAC.Size = new System.Drawing.Size(31, 20);
+            this.labelAC.TabIndex = 34;
+            this.labelAC.Text = "AC";
+            // 
+            // textBoxAC
+            // 
+            this.textBoxAC.Location = new System.Drawing.Point(111, 106);
+            this.textBoxAC.Name = "textBoxAC";
+            this.textBoxAC.ReadOnly = true;
+            this.textBoxAC.Size = new System.Drawing.Size(54, 20);
+            this.textBoxAC.TabIndex = 35;
+            // 
+            // textBoxManaRegen
+            // 
+            this.textBoxManaRegen.Location = new System.Drawing.Point(111, 80);
+            this.textBoxManaRegen.Name = "textBoxManaRegen";
+            this.textBoxManaRegen.ReadOnly = true;
+            this.textBoxManaRegen.Size = new System.Drawing.Size(54, 20);
+            this.textBoxManaRegen.TabIndex = 36;
+            // 
+            // labelManaRegen
+            // 
+            this.labelManaRegen.AutoSize = true;
+            this.labelManaRegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelManaRegen.Location = new System.Drawing.Point(4, 80);
+            this.labelManaRegen.Name = "labelManaRegen";
+            this.labelManaRegen.Size = new System.Drawing.Size(101, 20);
+            this.labelManaRegen.TabIndex = 37;
+            this.labelManaRegen.Text = "Mana Regen";
+            // 
+            // labelBAB
+            // 
+            this.labelBAB.AutoSize = true;
+            this.labelBAB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBAB.Location = new System.Drawing.Point(171, 29);
+            this.labelBAB.Name = "labelBAB";
+            this.labelBAB.Size = new System.Drawing.Size(42, 20);
+            this.labelBAB.TabIndex = 38;
+            this.labelBAB.Text = "BAB";
+            // 
+            // labelFort
+            // 
+            this.labelFort.AutoSize = true;
+            this.labelFort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFort.Location = new System.Drawing.Point(171, 54);
+            this.labelFort.Name = "labelFort";
+            this.labelFort.Size = new System.Drawing.Size(78, 20);
+            this.labelFort.TabIndex = 39;
+            this.labelFort.Text = "Fort Save";
+            // 
+            // labelRefSave
+            // 
+            this.labelRefSave.AutoSize = true;
+            this.labelRefSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRefSave.Location = new System.Drawing.Point(171, 78);
+            this.labelRefSave.Name = "labelRefSave";
+            this.labelRefSave.Size = new System.Drawing.Size(94, 20);
+            this.labelRefSave.TabIndex = 40;
+            this.labelRefSave.Text = "Reflex Save";
+            // 
+            // labelWillSave
+            // 
+            this.labelWillSave.AutoSize = true;
+            this.labelWillSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWillSave.Location = new System.Drawing.Point(171, 106);
+            this.labelWillSave.Name = "labelWillSave";
+            this.labelWillSave.Size = new System.Drawing.Size(73, 20);
+            this.labelWillSave.TabIndex = 41;
+            this.labelWillSave.Text = "Will Save";
+            // 
+            // textBoxRef
+            // 
+            this.textBoxRef.Location = new System.Drawing.Point(271, 80);
+            this.textBoxRef.Name = "textBoxRef";
+            this.textBoxRef.ReadOnly = true;
+            this.textBoxRef.Size = new System.Drawing.Size(54, 20);
+            this.textBoxRef.TabIndex = 42;
+            // 
+            // textBoxBAB
+            // 
+            this.textBoxBAB.Location = new System.Drawing.Point(271, 29);
+            this.textBoxBAB.Name = "textBoxBAB";
+            this.textBoxBAB.ReadOnly = true;
+            this.textBoxBAB.Size = new System.Drawing.Size(54, 20);
+            this.textBoxBAB.TabIndex = 43;
+            // 
+            // textBoxFort
+            // 
+            this.textBoxFort.Location = new System.Drawing.Point(271, 54);
+            this.textBoxFort.Name = "textBoxFort";
+            this.textBoxFort.ReadOnly = true;
+            this.textBoxFort.Size = new System.Drawing.Size(54, 20);
+            this.textBoxFort.TabIndex = 44;
+            // 
+            // textBoxWill
+            // 
+            this.textBoxWill.Location = new System.Drawing.Point(271, 106);
+            this.textBoxWill.Name = "textBoxWill";
+            this.textBoxWill.ReadOnly = true;
+            this.textBoxWill.Size = new System.Drawing.Size(54, 20);
+            this.textBoxWill.TabIndex = 45;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 646);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSkills);
             this.Controls.Add(this.checkBoxSkillToggle);
             this.Controls.Add(this.richTextBoxFeatDescription);
@@ -4017,6 +4204,8 @@
             this.panelBalance.PerformLayout();
             this.panelAppraise.ResumeLayout(false);
             this.panelAppraise.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4388,6 +4577,23 @@
         private System.Windows.Forms.TextBox textBox56;
         private System.Windows.Forms.TextBox textBox57;
         private System.Windows.Forms.Label labelJump;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBoxWill;
+        private System.Windows.Forms.TextBox textBoxFort;
+        private System.Windows.Forms.TextBox textBoxBAB;
+        private System.Windows.Forms.TextBox textBoxRef;
+        private System.Windows.Forms.Label labelWillSave;
+        private System.Windows.Forms.Label labelRefSave;
+        private System.Windows.Forms.Label labelFort;
+        private System.Windows.Forms.Label labelBAB;
+        private System.Windows.Forms.Label labelManaRegen;
+        private System.Windows.Forms.TextBox textBoxManaRegen;
+        private System.Windows.Forms.TextBox textBoxAC;
+        private System.Windows.Forms.Label labelAC;
+        private System.Windows.Forms.TextBox textBoxMana;
+        private System.Windows.Forms.Label labelMana;
+        private System.Windows.Forms.TextBox textBoxHP;
+        private System.Windows.Forms.Label labelHP;
     }
 }
 

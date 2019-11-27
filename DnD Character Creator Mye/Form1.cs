@@ -135,6 +135,7 @@ namespace DnD_Character_Creator_Mye
             refreshFeats();
             refreshSkill();
             refreshClassList();
+            refreshSecondaryAttributes();
         }
 
         #region Attributes
@@ -255,6 +256,21 @@ namespace DnD_Character_Creator_Mye
 
             textBoxPoints.Text = (currentCharacter.checkPointCap() - currentCharacter.checkPoint()).ToString();
 
+        }
+
+        private void refreshSecondaryAttributes()
+        {
+            if(currentCharacter != null)
+            {
+                textBoxHP.Text = currentCharacter.getHP().ToString();
+                textBoxAC.Text = currentCharacter.getAC().ToString();
+                textBoxMana.Text = currentCharacter.getMana().ToString();
+                textBoxManaRegen.Text = currentCharacter.getManaRegen().ToString();
+                textBoxBAB.Text = currentCharacter.getBAB().ToString();
+                textBoxFort.Text = currentCharacter.getFort().ToString();
+                textBoxRef.Text = currentCharacter.getRef().ToString();
+                textBoxWill.Text = currentCharacter.getWill().ToString();
+            }
         }
 
         //This method checks the attribute bonus
