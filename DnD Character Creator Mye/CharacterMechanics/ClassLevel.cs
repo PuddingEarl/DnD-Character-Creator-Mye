@@ -16,6 +16,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         List<Feat> features;
         List<Feat> optionFeatures;
         Class owningClass;
+        int HPGain;
+        int manaGain;
 
         public ClassLevel(string data)
         {
@@ -60,6 +62,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         public void setClass(Class owningClass)
         {
             this.owningClass = owningClass;
+            HPGain = owningClass.rollHP();
+            manaGain = owningClass.rollMana();
         }
 
         public Class returnClass()
@@ -100,6 +104,16 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         public List<Feat> returnOptions()
         {
             return optionFeatures;
+        }
+
+        public int returnHP()
+        {
+            return HPGain;
+        }
+
+        public int returnMana()
+        {
+            return manaGain;
         }
 
     }

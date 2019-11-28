@@ -99,6 +99,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                 }
 
                 List<Skill> previousRaceSkill = this.race.getSkills();
+                hp -= this.race.getHP();
+                mana -= this.race.getMana();
 
                 foreach (Skill skill in this.race.getSkills())
                 {
@@ -111,6 +113,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 
             //This section sets the race and new class skills of the race.
             this.race = race;
+            hp += race.getHP();
+            mana += race.getMana();
             foreach(Skill skill in race.getSkills())
             {
                 Skill.findSkills(skill.returnName(), skills).setClassSkill(true);
@@ -187,28 +191,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 
         public void addClassLevel(ClassLevel toBeAdded)
         {
-            takenLevels.Add(toBeAdded);
-            foreach(ClassLevel level in takenLevels)
-            {
-                if(level.returnClass() == toBeAdded.returnClass() && (level.returnLevel() + 1) == toBeAdded.returnLevel())
-                {
-                    BAB += (toBeAdded.returnBab() - level.returnBab());
-                    fortSave += (toBeAdded.returnFort() - level.returnFort());
-                    refSave += (toBeAdded.returnRef() - level.returnRef());
-                    willSave += (toBeAdded.returnWill() - level.returnWill());
-                }
-            }
-            foreach(Feat feat in toBeAdded.returnFeats())
-            {
-                ownedFeats.Add(feat);
-            }
-            if(toBeAdded.returnLevel() == 1)
-            {
-                foreach(Skill skill in toBeAdded.returnClass().returnSkills())
-                {
-                    skill.setClassSkill(true);
-                }
-            }
+            addClassLevelBase(toBeAdded);
             form.refreshSheet();
         }
 
@@ -218,6 +201,13 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         }
 
         public void addClassLevel(ClassLevel toBeAdded, Feat chosenFeat)
+        {
+            addClassLevelBase(toBeAdded);
+            ownedFeats.Add(chosenFeat);
+            form.refreshSheet();
+        }
+
+        private void addClassLevelBase(ClassLevel toBeAdded)
         {
             takenLevels.Add(toBeAdded);
             foreach (ClassLevel level in takenLevels)
@@ -234,15 +224,19 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             {
                 ownedFeats.Add(feat);
             }
-            ownedFeats.Add(chosenFeat);
             if (toBeAdded.returnLevel() == 1)
             {
                 foreach (Skill skill in toBeAdded.returnClass().returnSkills())
                 {
                     skill.setClassSkill(true);
                 }
+                BAB += toBeAdded.returnBab();
+                fortSave += toBeAdded.returnFort();
+                refSave += toBeAdded.returnRef();
+                willSave += toBeAdded.returnWill();
             }
-            form.refreshSheet();
+            hp += toBeAdded.returnHP();
+            mana += toBeAdded.returnMana();
         }
     }
 }

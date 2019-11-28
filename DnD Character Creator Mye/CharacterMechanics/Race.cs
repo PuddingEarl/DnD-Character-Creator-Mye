@@ -111,5 +111,15 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         {
             return bonusSkills;
         }
+
+        public int getHP()
+        {
+            return racialHP;
+        }
+
+        public int getMana()
+        {
+            return racialMana;
+        }
     }
 }

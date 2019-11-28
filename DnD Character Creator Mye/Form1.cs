@@ -15,6 +15,8 @@ namespace DnD_Character_Creator_Mye
 {
     public partial class Form1 : Form
     {
+        static public Random rand = new Random();
+
         Character currentCharacter;
         List<Panel> skillPanels;
 
@@ -584,8 +586,7 @@ namespace DnD_Character_Creator_Mye
         private void comboBoxRace_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentCharacter.setRace(Race.findRace(comboBoxRace.SelectedItem.ToString()));
-            refreshAttributes();
-            refreshSkill();
+            refreshSheet();
         }
 
         private void buttonRandomize_Click(object sender, EventArgs e)

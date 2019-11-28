@@ -145,5 +145,21 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         {
             return prestigeClasses;
         }
+
+        public int rollHP()
+        {
+            int toBeReturned;
+            toBeReturned = hitPointGainStatic;
+            toBeReturned += Form1.rand.Next(1, hitPointGainDice + 1);
+            toBeReturned += Form1.rand.Next(1, hitPointGainDice + 1);
+            return toBeReturned;
+        }
+
+        public int rollMana()
+        {
+            int toBeReturned = manaGainStatic;
+            toBeReturned += Form1.rand.Next(1, manaGainDice + 1);
+            return toBeReturned;
+        }
     }
 }
