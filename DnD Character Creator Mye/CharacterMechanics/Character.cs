@@ -32,6 +32,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         List<Feat> ownedFeats = new List<Feat>();
         List<Equipment> ownedEquipment = new List<Equipment>();
         List<Class> takenClasses = new List<Class>();
+        List<int> levelUpAttributeBonuses = new List<int>();
 
         int pointBuyTotal;
         int pointBuyCurrent;
