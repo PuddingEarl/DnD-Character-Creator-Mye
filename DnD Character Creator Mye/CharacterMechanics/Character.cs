@@ -190,20 +190,36 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return manaRegen;
         }
 
-        public void addClassLevel(ClassLevel toBeAdded)
-        {
-            addClassLevelBase(toBeAdded);
-            form.refreshSheet();
-        }
 
         public List<Feat> returnOwnedFeats()
         {
             return ownedFeats;
         }
 
+        public void addClassLevel(ClassLevel toBeAdded)
+        {
+            addClassLevelBase(toBeAdded);
+            form.refreshSheet();
+        }
+
         public void addClassLevel(ClassLevel toBeAdded, Feat chosenFeat)
         {
             addClassLevelBase(toBeAdded);
+            ownedFeats.Add(chosenFeat);
+            form.refreshSheet();
+        }
+
+        public void addClassLevel(ClassLevel toBeAdded, int attributeBonus)
+        {
+            addClassLevelBase(toBeAdded);
+            levelUpAttributeBonuses.Add(attributeBonus);
+            form.refreshSheet();
+        }
+
+        public void addClassLevel(ClassLevel toBeAdded, Feat chosenFeat, int attributeBonus)
+        {
+            addClassLevelBase(toBeAdded);
+            levelUpAttributeBonuses.Add(attributeBonus);
             ownedFeats.Add(chosenFeat);
             form.refreshSheet();
         }
@@ -238,6 +254,11 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             }
             hp += toBeAdded.returnHP();
             mana += toBeAdded.returnMana();
+        }
+
+        public List<int> returnLevelUpBonuses()
+        {
+            return levelUpAttributeBonuses;
         }
     }
 }

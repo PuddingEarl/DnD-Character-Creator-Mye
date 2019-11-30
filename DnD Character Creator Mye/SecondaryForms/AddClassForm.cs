@@ -17,6 +17,7 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
         Feat chosenFeat;
         string className;
         ClassLevel currentlyChosenLevel;
+        int chosenAttribute = -1;
 
         public AddClassForm(Character currentCharacter)
         {
@@ -59,7 +60,7 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
         {
             if(currentlyChosenLevel != null)
             {
-                if((currentlyChosenLevel.returnOptions().Count() != 0 && chosenFeat != null) || currentlyChosenLevel.returnOptions().Count() == 0)
+                if(((currentlyChosenLevel.returnOptions().Count() != 0 && chosenFeat != null) || currentlyChosenLevel.returnOptions().Count() == 0) && (comboBoxAttribute.Items.Count == 0 || chosenAttribute != -1))
                 {
                     sendCharacterLevelUp(currentlyChosenLevel);
                     Close();
@@ -74,16 +75,23 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
 
         public void sendCharacterLevelUp(ClassLevel level)
         {
-            if(chosenFeat == null)
+            if(chosenFeat == null && chosenAttribute == -1)
             {
                 currentCharacter.addClassLevel(level);
-                Close();
+            }
+            else if(chosenFeat == null && chosenAttribute != -1)
+            {
+                currentCharacter.addClassLevel(level, chosenAttribute);
+            }
+            else if(chosenFeat != null && chosenAttribute == -1)
+            {
+                currentCharacter.addClassLevel(level, chosenFeat);
             }
             else
             {
-                currentCharacter.addClassLevel(level, chosenFeat);
-                Close();
+                currentCharacter.addClassLevel(level, chosenFeat, chosenAttribute);
             }
+            Close();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -93,29 +101,52 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
 
         private void comboBoxAttribute_SelectedIndexChanged(object sender, EventArgs e)
         {
+            switch(comboBoxAttribute.SelectedItem.ToString())
+            {
+                case "Strength":
+                    chosenAttribute = 0;
+                    break;
+                case "Dexterity":
+                    chosenAttribute = 1;
+                    break;
+                case "Constitution":
+                    chosenAttribute = 2;
+                    break;
+                case "Intelligence":
+                    chosenAttribute = 3;
+                    break;
+                case "Wisdom":
+                    chosenAttribute = 4;
+                    break;
+                case "Charisma":
+                    chosenAttribute = 5;
+                    break;
 
+            }
         }
 
         private void listBoxClasses_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            string[] brokenLevel = listBoxClasses.SelectedItem.ToString().Split('(');
-            if (brokenLevel.Count() == 2)
+            if (listBoxClasses.SelectedItem != null)
             {
-                className = brokenLevel[0].Trim();
-
-                Class nextClass = Class.findClass(className);
-                if (nextClass != null)
+                string[] brokenLevel = listBoxClasses.SelectedItem.ToString().Split('(');
+                if (brokenLevel.Count() == 2)
                 {
-                    currentlyChosenLevel = nextClass.returnClassLevel(currentCharacter.findClassLevel(nextClass));
-                    if(currentlyChosenLevel != null)
+                    className = brokenLevel[0].Trim();
+
+                    Class nextClass = Class.findClass(className);
+                    if (nextClass != null)
                     {
-                        if(currentlyChosenLevel.returnOptions().Count() != 0)
+                        currentlyChosenLevel = nextClass.returnClassLevel(currentCharacter.findClassLevel(nextClass));
+                        if (currentlyChosenLevel != null)
                         {
-                            comboBoxOptionalFeature.Items.Clear();
-                            foreach(Feat feat in currentlyChosenLevel.returnOptions())
+                            if (currentlyChosenLevel.returnOptions().Count() != 0)
                             {
-                                comboBoxOptionalFeature.Items.Add(feat.returnName());
+                                comboBoxOptionalFeature.Items.Clear();
+                                foreach (Feat feat in currentlyChosenLevel.returnOptions())
+                                {
+                                    comboBoxOptionalFeature.Items.Add(feat.returnName());
+                                }
                             }
                         }
                     }

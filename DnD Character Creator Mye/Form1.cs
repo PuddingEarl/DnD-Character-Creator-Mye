@@ -201,56 +201,64 @@ namespace DnD_Character_Creator_Mye
             {
                 racialBonuses = currentCharacter.getRace().getAttributeBonuses();
             }
+            int[] levelUpBonuses = new int[] { 0, 0, 0, 0, 0, 0 };
+            foreach(int value in currentCharacter.returnLevelUpBonuses())
+            {
+                if(value >= 0 && value <= 5)
+                {
+                    levelUpBonuses[value] += 1;
+                }
+            }
 
-            int str = currentValues[0] + racialBonuses[0];
+            int str = currentValues[0] + racialBonuses[0] + levelUpBonuses[0];
             textBoxStr.Text = str.ToString();
             textBoxStrBonus.Text = "+" + checkBonusValue(str).ToString();
-            textBoxStrPB.Text = checkPointsSpent(str).ToString();
+            textBoxStrPB.Text = checkPointsSpent(currentValues[0]).ToString();
             if(textBoxStrPB.Text == "1000")
             {
                 textBoxStrPB.Text = "0";
             }
 
-            int dex = currentValues[1] + racialBonuses[1];
+            int dex = currentValues[1] + racialBonuses[1] + levelUpBonuses[1];
             textBoxDex.Text = dex.ToString();
             textBoxDexBonus.Text = "+" + checkBonusValue(dex).ToString();
-            textBoxDexPB.Text = checkPointsSpent(dex).ToString();
+            textBoxDexPB.Text = checkPointsSpent(currentValues[1]).ToString();
             if (textBoxDexPB.Text == "1000")
             {
                 textBoxDexPB.Text = "0";
             }
 
-            int con = currentValues[2] + racialBonuses[2];
+            int con = currentValues[2] + racialBonuses[2] + levelUpBonuses[2];
             textBoxCon.Text = con.ToString();
             textBoxConBonus.Text = "+" + checkBonusValue(con).ToString();
-            textBoxConPB.Text = checkPointsSpent(con).ToString();
+            textBoxConPB.Text = checkPointsSpent(currentValues[2]).ToString();
             if (textBoxConPB.Text == "1000")
             {
                 textBoxConPB.Text = "0";
             }
 
-            int intel = currentValues[3] + racialBonuses[3];
+            int intel = currentValues[3] + racialBonuses[3] + levelUpBonuses[3];
             textBoxInt.Text = intel.ToString();
             textBoxIntBonus.Text = "+" + checkBonusValue(intel).ToString();
-            textBoxIntPB.Text = checkPointsSpent(intel).ToString();
+            textBoxIntPB.Text = checkPointsSpent(currentValues[3]).ToString();
             if (textBoxIntPB.Text == "1000")
             {
                 textBoxIntPB.Text = "0";
             }
 
-            int wis = currentValues[4] + racialBonuses[4];
+            int wis = currentValues[4] + racialBonuses[4] + levelUpBonuses[4];
             textBoxWis.Text = wis.ToString();
             textBoxWisBonus.Text = "+" + checkBonusValue(wis).ToString();
-            textBoxWisPB.Text = checkPointsSpent(wis).ToString();
+            textBoxWisPB.Text = checkPointsSpent(currentValues[4]).ToString();
             if (textBoxWisPB.Text == "1000")
             {
                 textBoxWisPB.Text = "0";
             }
 
-            int cha = currentValues[5] + racialBonuses[5];
+            int cha = currentValues[5] + racialBonuses[5] + levelUpBonuses[5];
             textBoxCha.Text = cha.ToString();
             textBoxChaBonus.Text = "+" + checkBonusValue(cha).ToString();
-            textBoxChaPB.Text = checkPointsSpent(cha).ToString();
+            textBoxChaPB.Text = checkPointsSpent(currentValues[5]).ToString();
             if (textBoxChaPB.Text == "1000")
             {
                 textBoxChaPB.Text = "0";
