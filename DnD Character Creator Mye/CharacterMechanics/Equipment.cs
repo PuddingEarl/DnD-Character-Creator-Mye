@@ -8,5 +8,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 {
     class Equipment
     {
+        string name;
+        int value;
+
     }
 }

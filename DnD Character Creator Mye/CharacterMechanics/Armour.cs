@@ -8,5 +8,10 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 {
     class Armour : Equipment
     {
+        public enum armourTypes { Cloth, Leather, Mail, Plate };
+        int type;
+        int ACBonus;
+        int maxDexBonus;
+        int armourPenalty;
     }
 }
