@@ -26,8 +26,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             string[] brokenInformation = weaponInformation.Split(';');
             foreach(string info in brokenInformation)
             {
-                string[] splitWeapon = info.Split('-');
-                if(splitWeapon.Count() != 0)
+                string[] splitWeapon = info.Split('/');
+                if(splitWeapon.Count() == 7)
                 {
                     int type;
                     int.TryParse(splitWeapon[1], out type);

@@ -1,0 +1,64 @@
+Dagger/0/1d4/2/2/10/Piercing,Slashing,Light;
+Sickle/0/1d6/2/1/0/Slashing,Light;
+Warfan/0/1d4/2/1/0/Slashing,Bludgeoning,Multi-Form,Light;
+
+Short Sword/1/1d6/2/2/0/Piercing,Light;
+Long Sword/1/2d4/2/2/0/Slashing;
+Rapier/1/1d6/2/3/0/Piercing,Light;
+Scimitar/1/1d8/2/3/0/Slashing;
+
+Falchion/2/2d4/2/3/0/Slashing;
+Greatsword/2/2d6/2/2/0/Slashing;
+Bastard Sword/2/1d10/2/2/0/Slashing,Multi-Styled;
+Double-Bladed Sword/2/1d6/2/2/0/Slashing,Double;
+Club/3/1d6/2/1/10/Bludgeon,Bashing;
+
+Light Mace/3/1d6/2/1/0/Bludgeon,Bashing;
+Heavy Mace/3/1d8/2/1/0/Bludgeon,Bashing;
+Morning Star/3/1d8/2/1/0/Bludgeon,Piercing,Bashing;
+Sap/3/1d6/2/1/0/Bludgeon,Non Lethal,Light;
+Warhammer/3/1d8/3/1/0/Bludgeon;
+
+Heavy Flail/4/1d10/2/2/0/Bludgeon;
+Greatclub/4/1d10/2/1/0/Bludgeon,Bashing;
+
+Handaxe/5/1d6/3/1/0/Slashing,Light;
+Battleaxe/5/1d8/3/1/0/Slashing;
+
+Greataxe/6/1d12/3/1/0/Slashing;
+Waraxe/6/1d10/3/1/0/Slashing, Multi
+
+Quaterstaff/7/1d6/2/1/0/Bludgeoning,Sweep,Double;
+
+Shortspear/8/1d6/2/1/20/Piercing,Reach;
+Longspear/8/1d8/3/1/0/Piercing,Reach;
+Trident/8/1d8/2/1/10/Piercing,Reach;
+Glaive/8/1d10/3/1/0/Slashing,Reach;
+Guisarme/8/2d4/3/1/0/Slashing,Reach;
+Halberd/8/1d10/3/1/0/Piercing,Slashing;
+Lance/8/1d8/3/1/0/Piercing;
+Ranseur/8/2d4/3/1/0/Piercing,Reach;
+Scyther/8/2d4/4/1/0/Piercing,Reach;
+Polehammer/8/1d10/2/1/0/Bludgeoning,Reach,Bash;
+
+Shortbow/9/1d6/3/1/60/Piercing;
+Longbow/9/1d8/3/1/100/Piercing;
+
+Light Crossbow/10/1d8/2/2/80/Piercing,Reload;
+Heavy Crossbow/10/1d10/2/2/120/Piercing,Reload;
+Repeating Crossbow/10/1d10/2/2/120/Piercing,Magazine,Reload;
+Hand Crossbow/10/1d4/2/2/30/Piercing,Reload;
+
+Throwing Axe/11/1d6/2/1/10/Slashing,Light,Charge;
+Light Hammer/11/1d4/2/1/20/Bludgeon,Light,Charge;
+Javelin/11/1d6/2/1/30/Piercing,Charge;
+Dart/11/1d4/2/1/20/Piercing,Light,Finesse;
+Shuriken/11/1d2/2/1/10/Piercing,Quick;
+Sling/11/1d4/2/1/130/Piercing;
+
+Whip/12/1d4/2/1/0/Reach,Light,Entangling,Slashing,Trip;
+Bolas/12/1d4/2/1/10/Bludgeoning,Entangling;
+Net/12/1d0/0/0/20/Entangling;
+Meteor Hammer/12/1d8/3/1/0/Reach,Bludgeoning,Bashing,Deceptive;
+
+Wand/13/1d4/2/1/60/Magic,Variable,Short Ranged;

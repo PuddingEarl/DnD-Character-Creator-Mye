@@ -129,6 +129,8 @@ namespace DnD_Character_Creator_Mye
             }
             string weaponQualities = File.ReadAllText("WeaponDetails/WeaponQualities.txt");
             WeaponQuality.initializeQualities(weaponQualities);
+            string weapons = File.ReadAllText("WeaponDetails/Weapons.txt");
+            Weapon.initializeWeapons(weapons);
             refreshSkill();
             refreshFeats();
         }
