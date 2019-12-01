@@ -127,6 +127,8 @@ namespace DnD_Character_Creator_Mye
                 string classFileOutput = File.ReadAllText(className);
                 Class.addBaseClass(Class.unpackClass(classFileOutput));
             }
+            string weaponQualities = File.ReadAllText("WeaponDetails/WeaponQualities.txt");
+            WeaponQuality.initializeQualities(weaponQualities);
             refreshSkill();
             refreshFeats();
         }
