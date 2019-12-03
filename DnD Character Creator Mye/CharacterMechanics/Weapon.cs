@@ -15,7 +15,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         int critValue;
         int critRange;
         int range;
-        string name;
+        //string name;
         List<WeaponQuality> weaponQualities;
 
         static public List<Weapon> weapons = new List<Weapon>();
@@ -44,7 +44,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 
         private Weapon(string name, int type, string dice, int critValue, int critRange, int range, string qualities)
         {
-            this.name = name;
+            setName(name);
             this.type = type;
             string[] brokenDice = dice.Split('d');
             int.TryParse(brokenDice[0], out diceNumber);
@@ -64,16 +64,16 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             }
         }
 
-        public string returnName()
-        {
-            return name;
-        }
+        //public string returnName()
+        //{
+        //    return name;
+        //}
 
         public static Weapon findWeapon(string name)
         {
             foreach(Weapon weapon in weapons)
             {
-                if(weapon.name == name)
+                if(weapon.returnName() == name)
                 {
                     return weapon;
                 }

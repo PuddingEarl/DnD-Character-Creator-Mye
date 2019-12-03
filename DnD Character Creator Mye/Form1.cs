@@ -607,8 +607,8 @@ namespace DnD_Character_Creator_Mye
                 if(equipment is Weapon)
                 {
                     //This is bad. Check how to improve it in the near future.
-                    Weapon temp = (Weapon)equipment;
-                    listBoxWeapons.Items.Add(temp.returnName());
+                    //Weapon temp = (Weapon)equipment;
+                    listBoxWeapons.Items.Add(equipment.returnName());
                 }
             }
         }

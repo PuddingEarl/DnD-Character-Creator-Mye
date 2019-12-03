@@ -11,5 +11,15 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         string name;
         int value;
 
+        public string returnName()
+        {
+            return name;
+        }
+
+        public void setName(string name)
+        {
+            this.name = name;
+        }
+
     }
 }
