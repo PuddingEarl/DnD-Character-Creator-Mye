@@ -142,6 +142,7 @@ namespace DnD_Character_Creator_Mye
             refreshSkill();
             refreshClassList();
             refreshSecondaryAttributes();
+            refreshEquipment();
         }
 
         #region Attributes
@@ -595,6 +596,25 @@ namespace DnD_Character_Creator_Mye
 
         #endregion
 
+        #region Equipment
+
+        private void refreshEquipment()
+        {
+            listBoxArmour.Items.Clear();
+            listBoxWeapons.Items.Clear();
+            foreach(Equipment equipment in currentCharacter.returnEquipment())
+            {
+                if(equipment is Weapon)
+                {
+                    //This is bad. Check how to improve it in the near future.
+                    Weapon temp = (Weapon)equipment;
+                    listBoxWeapons.Items.Add(temp.returnName());
+                }
+            }
+        }
+
+        #endregion
+
         private void comboBoxRace_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentCharacter.setRace(Race.findRace(comboBoxRace.SelectedItem.ToString()));
@@ -603,8 +623,15 @@ namespace DnD_Character_Creator_Mye
 
         private void buttonRandomize_Click(object sender, EventArgs e)
         {
-            //randomizeAttributes();
-            randomizeFavoredAttribute();
+            switch(comboBoxRandomizationMethods.SelectedItem.ToString())
+            {
+                case "Default":
+                    randomizeAttributes();
+                    break;
+                case "Minmax":
+                    randomizeFavoredAttribute();
+                    break;
+            }
         }
 
         private void checkBoxSkillToggle_CheckedChanged(object sender, EventArgs e)
@@ -632,6 +659,12 @@ namespace DnD_Character_Creator_Mye
                     richTextBoxFeatDescription.Text = feat.returnDescription();
                 }
             }
+        }
+
+        private void buttonAddEquip_Click(object sender, EventArgs e)
+        {
+            EquipmentAddForm form = new EquipmentAddForm(currentCharacter);
+            form.Show();
         }
     }
 }

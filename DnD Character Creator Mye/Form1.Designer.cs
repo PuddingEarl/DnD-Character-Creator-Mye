@@ -386,22 +386,27 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.labelAppraise = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelHP = new System.Windows.Forms.Label();
-            this.textBoxHP = new System.Windows.Forms.TextBox();
-            this.labelMana = new System.Windows.Forms.Label();
-            this.textBoxMana = new System.Windows.Forms.TextBox();
-            this.labelAC = new System.Windows.Forms.Label();
-            this.textBoxAC = new System.Windows.Forms.TextBox();
-            this.textBoxManaRegen = new System.Windows.Forms.TextBox();
-            this.labelManaRegen = new System.Windows.Forms.Label();
-            this.labelBAB = new System.Windows.Forms.Label();
-            this.labelFort = new System.Windows.Forms.Label();
-            this.labelRefSave = new System.Windows.Forms.Label();
-            this.labelWillSave = new System.Windows.Forms.Label();
-            this.textBoxRef = new System.Windows.Forms.TextBox();
-            this.textBoxBAB = new System.Windows.Forms.TextBox();
-            this.textBoxFort = new System.Windows.Forms.TextBox();
             this.textBoxWill = new System.Windows.Forms.TextBox();
+            this.textBoxFort = new System.Windows.Forms.TextBox();
+            this.textBoxBAB = new System.Windows.Forms.TextBox();
+            this.textBoxRef = new System.Windows.Forms.TextBox();
+            this.labelWillSave = new System.Windows.Forms.Label();
+            this.labelRefSave = new System.Windows.Forms.Label();
+            this.labelFort = new System.Windows.Forms.Label();
+            this.labelBAB = new System.Windows.Forms.Label();
+            this.labelManaRegen = new System.Windows.Forms.Label();
+            this.textBoxManaRegen = new System.Windows.Forms.TextBox();
+            this.textBoxAC = new System.Windows.Forms.TextBox();
+            this.labelAC = new System.Windows.Forms.Label();
+            this.textBoxMana = new System.Windows.Forms.TextBox();
+            this.labelMana = new System.Windows.Forms.Label();
+            this.textBoxHP = new System.Windows.Forms.TextBox();
+            this.labelHP = new System.Windows.Forms.Label();
+            this.listBoxWeapons = new System.Windows.Forms.ListBox();
+            this.listBoxArmour = new System.Windows.Forms.ListBox();
+            this.buttonAddEquip = new System.Windows.Forms.Button();
+            this.buttonRemoveWeapon = new System.Windows.Forms.Button();
+            this.buttonRemoveArmour = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.panelSkills.SuspendLayout();
@@ -3945,107 +3950,37 @@
             this.panel1.Size = new System.Drawing.Size(338, 143);
             this.panel1.TabIndex = 36;
             // 
-            // labelHP
+            // textBoxWill
             // 
-            this.labelHP.AutoSize = true;
-            this.labelHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHP.Location = new System.Drawing.Point(4, 29);
-            this.labelHP.Name = "labelHP";
-            this.labelHP.Size = new System.Drawing.Size(31, 20);
-            this.labelHP.TabIndex = 7;
-            this.labelHP.Text = "HP";
+            this.textBoxWill.Location = new System.Drawing.Point(271, 106);
+            this.textBoxWill.Name = "textBoxWill";
+            this.textBoxWill.ReadOnly = true;
+            this.textBoxWill.Size = new System.Drawing.Size(54, 20);
+            this.textBoxWill.TabIndex = 45;
             // 
-            // textBoxHP
+            // textBoxFort
             // 
-            this.textBoxHP.Location = new System.Drawing.Point(111, 29);
-            this.textBoxHP.Name = "textBoxHP";
-            this.textBoxHP.ReadOnly = true;
-            this.textBoxHP.Size = new System.Drawing.Size(54, 20);
-            this.textBoxHP.TabIndex = 30;
+            this.textBoxFort.Location = new System.Drawing.Point(271, 54);
+            this.textBoxFort.Name = "textBoxFort";
+            this.textBoxFort.ReadOnly = true;
+            this.textBoxFort.Size = new System.Drawing.Size(54, 20);
+            this.textBoxFort.TabIndex = 44;
             // 
-            // labelMana
+            // textBoxBAB
             // 
-            this.labelMana.AutoSize = true;
-            this.labelMana.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMana.Location = new System.Drawing.Point(3, 54);
-            this.labelMana.Name = "labelMana";
-            this.labelMana.Size = new System.Drawing.Size(49, 20);
-            this.labelMana.TabIndex = 32;
-            this.labelMana.Text = "Mana";
+            this.textBoxBAB.Location = new System.Drawing.Point(271, 29);
+            this.textBoxBAB.Name = "textBoxBAB";
+            this.textBoxBAB.ReadOnly = true;
+            this.textBoxBAB.Size = new System.Drawing.Size(54, 20);
+            this.textBoxBAB.TabIndex = 43;
             // 
-            // textBoxMana
+            // textBoxRef
             // 
-            this.textBoxMana.Location = new System.Drawing.Point(111, 54);
-            this.textBoxMana.Name = "textBoxMana";
-            this.textBoxMana.ReadOnly = true;
-            this.textBoxMana.Size = new System.Drawing.Size(54, 20);
-            this.textBoxMana.TabIndex = 33;
-            // 
-            // labelAC
-            // 
-            this.labelAC.AutoSize = true;
-            this.labelAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAC.Location = new System.Drawing.Point(4, 106);
-            this.labelAC.Name = "labelAC";
-            this.labelAC.Size = new System.Drawing.Size(31, 20);
-            this.labelAC.TabIndex = 34;
-            this.labelAC.Text = "AC";
-            // 
-            // textBoxAC
-            // 
-            this.textBoxAC.Location = new System.Drawing.Point(111, 106);
-            this.textBoxAC.Name = "textBoxAC";
-            this.textBoxAC.ReadOnly = true;
-            this.textBoxAC.Size = new System.Drawing.Size(54, 20);
-            this.textBoxAC.TabIndex = 35;
-            // 
-            // textBoxManaRegen
-            // 
-            this.textBoxManaRegen.Location = new System.Drawing.Point(111, 80);
-            this.textBoxManaRegen.Name = "textBoxManaRegen";
-            this.textBoxManaRegen.ReadOnly = true;
-            this.textBoxManaRegen.Size = new System.Drawing.Size(54, 20);
-            this.textBoxManaRegen.TabIndex = 36;
-            // 
-            // labelManaRegen
-            // 
-            this.labelManaRegen.AutoSize = true;
-            this.labelManaRegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelManaRegen.Location = new System.Drawing.Point(4, 80);
-            this.labelManaRegen.Name = "labelManaRegen";
-            this.labelManaRegen.Size = new System.Drawing.Size(101, 20);
-            this.labelManaRegen.TabIndex = 37;
-            this.labelManaRegen.Text = "Mana Regen";
-            // 
-            // labelBAB
-            // 
-            this.labelBAB.AutoSize = true;
-            this.labelBAB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBAB.Location = new System.Drawing.Point(171, 29);
-            this.labelBAB.Name = "labelBAB";
-            this.labelBAB.Size = new System.Drawing.Size(42, 20);
-            this.labelBAB.TabIndex = 38;
-            this.labelBAB.Text = "BAB";
-            // 
-            // labelFort
-            // 
-            this.labelFort.AutoSize = true;
-            this.labelFort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFort.Location = new System.Drawing.Point(171, 54);
-            this.labelFort.Name = "labelFort";
-            this.labelFort.Size = new System.Drawing.Size(78, 20);
-            this.labelFort.TabIndex = 39;
-            this.labelFort.Text = "Fort Save";
-            // 
-            // labelRefSave
-            // 
-            this.labelRefSave.AutoSize = true;
-            this.labelRefSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRefSave.Location = new System.Drawing.Point(171, 78);
-            this.labelRefSave.Name = "labelRefSave";
-            this.labelRefSave.Size = new System.Drawing.Size(94, 20);
-            this.labelRefSave.TabIndex = 40;
-            this.labelRefSave.Text = "Reflex Save";
+            this.textBoxRef.Location = new System.Drawing.Point(271, 80);
+            this.textBoxRef.Name = "textBoxRef";
+            this.textBoxRef.ReadOnly = true;
+            this.textBoxRef.Size = new System.Drawing.Size(54, 20);
+            this.textBoxRef.TabIndex = 42;
             // 
             // labelWillSave
             // 
@@ -4057,43 +3992,162 @@
             this.labelWillSave.TabIndex = 41;
             this.labelWillSave.Text = "Will Save";
             // 
-            // textBoxRef
+            // labelRefSave
             // 
-            this.textBoxRef.Location = new System.Drawing.Point(271, 80);
-            this.textBoxRef.Name = "textBoxRef";
-            this.textBoxRef.ReadOnly = true;
-            this.textBoxRef.Size = new System.Drawing.Size(54, 20);
-            this.textBoxRef.TabIndex = 42;
+            this.labelRefSave.AutoSize = true;
+            this.labelRefSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRefSave.Location = new System.Drawing.Point(171, 78);
+            this.labelRefSave.Name = "labelRefSave";
+            this.labelRefSave.Size = new System.Drawing.Size(94, 20);
+            this.labelRefSave.TabIndex = 40;
+            this.labelRefSave.Text = "Reflex Save";
             // 
-            // textBoxBAB
+            // labelFort
             // 
-            this.textBoxBAB.Location = new System.Drawing.Point(271, 29);
-            this.textBoxBAB.Name = "textBoxBAB";
-            this.textBoxBAB.ReadOnly = true;
-            this.textBoxBAB.Size = new System.Drawing.Size(54, 20);
-            this.textBoxBAB.TabIndex = 43;
+            this.labelFort.AutoSize = true;
+            this.labelFort.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFort.Location = new System.Drawing.Point(171, 54);
+            this.labelFort.Name = "labelFort";
+            this.labelFort.Size = new System.Drawing.Size(78, 20);
+            this.labelFort.TabIndex = 39;
+            this.labelFort.Text = "Fort Save";
             // 
-            // textBoxFort
+            // labelBAB
             // 
-            this.textBoxFort.Location = new System.Drawing.Point(271, 54);
-            this.textBoxFort.Name = "textBoxFort";
-            this.textBoxFort.ReadOnly = true;
-            this.textBoxFort.Size = new System.Drawing.Size(54, 20);
-            this.textBoxFort.TabIndex = 44;
+            this.labelBAB.AutoSize = true;
+            this.labelBAB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBAB.Location = new System.Drawing.Point(171, 29);
+            this.labelBAB.Name = "labelBAB";
+            this.labelBAB.Size = new System.Drawing.Size(42, 20);
+            this.labelBAB.TabIndex = 38;
+            this.labelBAB.Text = "BAB";
             // 
-            // textBoxWill
+            // labelManaRegen
             // 
-            this.textBoxWill.Location = new System.Drawing.Point(271, 106);
-            this.textBoxWill.Name = "textBoxWill";
-            this.textBoxWill.ReadOnly = true;
-            this.textBoxWill.Size = new System.Drawing.Size(54, 20);
-            this.textBoxWill.TabIndex = 45;
+            this.labelManaRegen.AutoSize = true;
+            this.labelManaRegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelManaRegen.Location = new System.Drawing.Point(4, 80);
+            this.labelManaRegen.Name = "labelManaRegen";
+            this.labelManaRegen.Size = new System.Drawing.Size(101, 20);
+            this.labelManaRegen.TabIndex = 37;
+            this.labelManaRegen.Text = "Mana Regen";
+            // 
+            // textBoxManaRegen
+            // 
+            this.textBoxManaRegen.Location = new System.Drawing.Point(111, 80);
+            this.textBoxManaRegen.Name = "textBoxManaRegen";
+            this.textBoxManaRegen.ReadOnly = true;
+            this.textBoxManaRegen.Size = new System.Drawing.Size(54, 20);
+            this.textBoxManaRegen.TabIndex = 36;
+            // 
+            // textBoxAC
+            // 
+            this.textBoxAC.Location = new System.Drawing.Point(111, 106);
+            this.textBoxAC.Name = "textBoxAC";
+            this.textBoxAC.ReadOnly = true;
+            this.textBoxAC.Size = new System.Drawing.Size(54, 20);
+            this.textBoxAC.TabIndex = 35;
+            // 
+            // labelAC
+            // 
+            this.labelAC.AutoSize = true;
+            this.labelAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAC.Location = new System.Drawing.Point(4, 106);
+            this.labelAC.Name = "labelAC";
+            this.labelAC.Size = new System.Drawing.Size(31, 20);
+            this.labelAC.TabIndex = 34;
+            this.labelAC.Text = "AC";
+            // 
+            // textBoxMana
+            // 
+            this.textBoxMana.Location = new System.Drawing.Point(111, 54);
+            this.textBoxMana.Name = "textBoxMana";
+            this.textBoxMana.ReadOnly = true;
+            this.textBoxMana.Size = new System.Drawing.Size(54, 20);
+            this.textBoxMana.TabIndex = 33;
+            // 
+            // labelMana
+            // 
+            this.labelMana.AutoSize = true;
+            this.labelMana.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMana.Location = new System.Drawing.Point(3, 54);
+            this.labelMana.Name = "labelMana";
+            this.labelMana.Size = new System.Drawing.Size(49, 20);
+            this.labelMana.TabIndex = 32;
+            this.labelMana.Text = "Mana";
+            // 
+            // textBoxHP
+            // 
+            this.textBoxHP.Location = new System.Drawing.Point(111, 29);
+            this.textBoxHP.Name = "textBoxHP";
+            this.textBoxHP.ReadOnly = true;
+            this.textBoxHP.Size = new System.Drawing.Size(54, 20);
+            this.textBoxHP.TabIndex = 30;
+            // 
+            // labelHP
+            // 
+            this.labelHP.AutoSize = true;
+            this.labelHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHP.Location = new System.Drawing.Point(4, 29);
+            this.labelHP.Name = "labelHP";
+            this.labelHP.Size = new System.Drawing.Size(31, 20);
+            this.labelHP.TabIndex = 7;
+            this.labelHP.Text = "HP";
+            // 
+            // listBoxWeapons
+            // 
+            this.listBoxWeapons.FormattingEnabled = true;
+            this.listBoxWeapons.Location = new System.Drawing.Point(16, 522);
+            this.listBoxWeapons.Name = "listBoxWeapons";
+            this.listBoxWeapons.Size = new System.Drawing.Size(166, 56);
+            this.listBoxWeapons.TabIndex = 37;
+            // 
+            // listBoxArmour
+            // 
+            this.listBoxArmour.FormattingEnabled = true;
+            this.listBoxArmour.Location = new System.Drawing.Point(188, 522);
+            this.listBoxArmour.Name = "listBoxArmour";
+            this.listBoxArmour.Size = new System.Drawing.Size(166, 56);
+            this.listBoxArmour.TabIndex = 38;
+            // 
+            // buttonAddEquip
+            // 
+            this.buttonAddEquip.Location = new System.Drawing.Point(16, 584);
+            this.buttonAddEquip.Name = "buttonAddEquip";
+            this.buttonAddEquip.Size = new System.Drawing.Size(98, 23);
+            this.buttonAddEquip.TabIndex = 39;
+            this.buttonAddEquip.Text = "Add Equipment";
+            this.buttonAddEquip.UseVisualStyleBackColor = true;
+            this.buttonAddEquip.Click += new System.EventHandler(this.buttonAddEquip_Click);
+            // 
+            // buttonRemoveWeapon
+            // 
+            this.buttonRemoveWeapon.Location = new System.Drawing.Point(120, 584);
+            this.buttonRemoveWeapon.Name = "buttonRemoveWeapon";
+            this.buttonRemoveWeapon.Size = new System.Drawing.Size(110, 23);
+            this.buttonRemoveWeapon.TabIndex = 41;
+            this.buttonRemoveWeapon.Text = "Remove Weapon";
+            this.buttonRemoveWeapon.UseVisualStyleBackColor = true;
+            // 
+            // buttonRemoveArmour
+            // 
+            this.buttonRemoveArmour.Location = new System.Drawing.Point(236, 584);
+            this.buttonRemoveArmour.Name = "buttonRemoveArmour";
+            this.buttonRemoveArmour.Size = new System.Drawing.Size(110, 23);
+            this.buttonRemoveArmour.TabIndex = 42;
+            this.buttonRemoveArmour.Text = "Remove Armour";
+            this.buttonRemoveArmour.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 646);
+            this.Controls.Add(this.buttonRemoveArmour);
+            this.Controls.Add(this.buttonRemoveWeapon);
+            this.Controls.Add(this.buttonAddEquip);
+            this.Controls.Add(this.listBoxArmour);
+            this.Controls.Add(this.listBoxWeapons);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSkills);
             this.Controls.Add(this.checkBoxSkillToggle);
@@ -4594,6 +4648,11 @@
         private System.Windows.Forms.Label labelMana;
         private System.Windows.Forms.TextBox textBoxHP;
         private System.Windows.Forms.Label labelHP;
+        private System.Windows.Forms.ListBox listBoxWeapons;
+        private System.Windows.Forms.ListBox listBoxArmour;
+        private System.Windows.Forms.Button buttonAddEquip;
+        private System.Windows.Forms.Button buttonRemoveWeapon;
+        private System.Windows.Forms.Button buttonRemoveArmour;
     }
 }
 

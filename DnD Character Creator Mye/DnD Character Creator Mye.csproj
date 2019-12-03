@@ -71,6 +71,12 @@
     <Compile Include="SecondaryForms\AddClassForm.Designer.cs">
       <DependentUpon>AddClassForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SecondaryForms\EquipmentAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondaryForms\EquipmentAddForm.Designer.cs">
+      <DependentUpon>EquipmentAddForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SecondaryForms\NewCharacterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </Compile>
     <EmbeddedResource Include="SecondaryForms\AddClassForm.resx">
       <DependentUpon>AddClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecondaryForms\EquipmentAddForm.resx">
+      <DependentUpon>EquipmentAddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SecondaryForms\NewCharacterForm.resx">
       <DependentUpon>NewCharacterForm.cs</DependentUpon>

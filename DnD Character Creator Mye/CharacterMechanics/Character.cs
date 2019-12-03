@@ -260,5 +260,16 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         {
             return levelUpAttributeBonuses;
         }
+
+        public void addEquipment(Equipment equipment)
+        {
+            ownedEquipment.Add(equipment);
+            form.refreshSheet();
+        }
+
+        public List<Equipment> returnEquipment()
+        {
+            return ownedEquipment;
+        }
     }
 }

@@ -63,5 +63,22 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                 }
             }
         }
+
+        public string returnName()
+        {
+            return name;
+        }
+
+        public static Weapon findWeapon(string name)
+        {
+            foreach(Weapon weapon in weapons)
+            {
+                if(weapon.name == name)
+                {
+                    return weapon;
+                }
+            }
+            return null;
+        }
     }
 }
