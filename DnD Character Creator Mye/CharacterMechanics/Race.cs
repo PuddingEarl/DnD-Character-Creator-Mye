@@ -21,7 +21,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 
         public static void prepareRace()
         {
-
+            races = new List<Race>();
             races.Add(new Race("Human", new int[] { 0, 0, 0, 0, 0, 0 }, 48, 24));
             races[0].racialFeats.Add(new Feat("Human Racial Bonuses", "Grants the Human a permanent +1 to chosen attribute, as well as an additional feat at level 1.", null, null, 0, false, null, 0, true, false, false, false, false, Feat.getFeatList()));
             races[0].bonusSkills.Add(Skill.findSkills("Diplomacy"));
