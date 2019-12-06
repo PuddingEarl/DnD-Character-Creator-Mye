@@ -23,19 +23,34 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             string[] brokenInformation = armourInformation.Split(';');
             foreach(string information in brokenInformation)
             {
-                int type;
-                int ACBonus;
-                int maxDexBonus;
-                int armourPenalty;
-                int manaPenalty;
                 string[] split = information.Split('/');
-                int.TryParse(split[1], out type);
-                int.TryParse(split[2], out ACBonus);
-                int.TryParse(split[3], out maxDexBonus);
-                int.TryParse(split[4], out armourPenalty);
-                int.TryParse(split[5], out manaPenalty);
-                armours.Add(new Armour(split[0], type, ACBonus, maxDexBonus, armourPenalty, manaPenalty));
+                if (split.Count() == 6)
+                {
+                    int type;
+                    int ACBonus;
+                    int maxDexBonus;
+                    int armourPenalty;
+                    int manaPenalty;
+                    int.TryParse(split[1], out type);
+                    int.TryParse(split[2], out ACBonus);
+                    int.TryParse(split[3], out maxDexBonus);
+                    int.TryParse(split[4], out armourPenalty);
+                    int.TryParse(split[5], out manaPenalty);
+                    armours.Add(new Armour(split[0], type, ACBonus, maxDexBonus, armourPenalty, manaPenalty));
+                }
             }
+        }
+
+        static public Armour findArmour(string name)
+        {
+            foreach(Armour armour in armours)
+            {
+                if(armour.returnName() == name)
+                {
+                    return armour;
+                }
+            }
+            return null;
         }
 
         private Armour(string name, int type, int ACBonus, int maxDexBonus, int armourPenalty, int manaPenalty)

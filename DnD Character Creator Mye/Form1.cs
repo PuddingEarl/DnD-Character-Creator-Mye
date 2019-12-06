@@ -131,6 +131,8 @@ namespace DnD_Character_Creator_Mye
             WeaponQuality.initializeQualities(weaponQualities);
             string weapons = File.ReadAllText("WeaponDetails/Weapons.txt");
             Weapon.initializeWeapons(weapons);
+            string armour = File.ReadAllText("WeaponDetails/Armours.txt");
+            Armour.prepareArmours(armour);
             refreshSkill();
             refreshFeats();
         }
@@ -609,6 +611,10 @@ namespace DnD_Character_Creator_Mye
                     //This is bad. Check how to improve it in the near future.
                     //Weapon temp = (Weapon)equipment;
                     listBoxWeapons.Items.Add(equipment.returnName());
+                }
+                else if(equipment is Armour)
+                {
+                    listBoxArmour.Items.Add(equipment.returnName());
                 }
             }
         }

@@ -1,0 +1,12 @@
+Robes/0/0/8/0/0;
+Padded/0/1/8/0/5;
+Leather/1/2/6/0/10;
+Studded Leather/1/3/5/1/15;
+Hide/1/3/4/3/10;
+Chain Shirt/2/4/4/2/20;
+Scale Mail/2/4/3/4/25;
+Chainmail/2/5/2/5/30;
+Splint Mail/2/6/0/7/40;
+Breastplate/3/5/3/4/30;
+Half-Plate/3/6/1/5/35;
+Full Plate/3/8/1/8/40;

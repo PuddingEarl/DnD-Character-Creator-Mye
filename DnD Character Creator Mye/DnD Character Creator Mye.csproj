@@ -122,6 +122,9 @@
     <Content Include="CharacterClasses\BaseClasses\Artificer.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="WeaponDetails\Armours.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="WeaponDetails\WeaponQualities.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

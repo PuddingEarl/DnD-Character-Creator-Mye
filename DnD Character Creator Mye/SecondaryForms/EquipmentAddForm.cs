@@ -23,6 +23,10 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
             {
                 listBoxEquipment.Items.Add(weapon.returnName());
             }
+            foreach(Armour armour in Armour.armours)
+            {
+                listBoxEquipment.Items.Add(armour.returnName());
+            }
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -31,8 +35,14 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
             if(foundWeapon != null)
             {
                 currentCharacter.addEquipment(foundWeapon);
+                Close();
             }
-            Close();
+            Armour foundArmour = Armour.findArmour(listBoxEquipment.SelectedItem.ToString());
+            if(foundArmour != null)
+            {
+                currentCharacter.addEquipment(foundArmour);
+                Close();
+            }
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
