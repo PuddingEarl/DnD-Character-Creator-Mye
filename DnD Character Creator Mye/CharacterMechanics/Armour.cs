@@ -62,5 +62,44 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             this.armourPenalty = armourPenalty;
             this.manaPenalty = manaPenalty;
         }
+
+        public bool compareArmour(Armour toBeCompared, int dexBonus)
+        {
+            int value1 = returnValue(dexBonus);
+            int value2 = toBeCompared.returnValue(dexBonus);
+            if(value1 > value2)
+            {
+                return true;
+            }
+            else if(value2 > value1)
+            {
+                return false;
+            }
+            else if(toBeCompared.armourPenalty < armourPenalty)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        public int returnValue(int dexBonus)
+        {
+            if (dexBonus > maxDexBonus)
+            {
+                return ACBonus + maxDexBonus;
+            }
+            else
+            {
+                return ACBonus + dexBonus;
+            }
+        }
+
+        public int returnType()
+        {
+            return type;
+        }
     }
 }

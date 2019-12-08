@@ -87,31 +87,31 @@ namespace DnD_Character_Creator_Mye
             currentCharacter = new Character(points, name);
             textBoxName.Text = name;
 
-            textBoxStr.Text = "10";
-            textBoxStrBonus.Text = "+0";
-            textBoxStrPB.Text = "0";
+            //textBoxStr.Text = "10";
+            //textBoxStrBonus.Text = "+0";
+            //textBoxStrPB.Text = "0";
 
-            textBoxDex.Text = "10";
-            textBoxDexBonus.Text = "+0";
-            textBoxDexPB.Text = "0";
+            //textBoxDex.Text = "10";
+            //textBoxDexBonus.Text = "+0";
+            //textBoxDexPB.Text = "0";
 
-            textBoxCon.Text = "10";
-            textBoxConBonus.Text = "+0";
-            textBoxConPB.Text = "0";
+            //textBoxCon.Text = "10";
+            //textBoxConBonus.Text = "+0";
+            //textBoxConPB.Text = "0";
 
-            textBoxInt.Text = "10";
-            textBoxIntBonus.Text = "+0";
-            textBoxIntPB.Text = "0";
+            //textBoxInt.Text = "10";
+            //textBoxIntBonus.Text = "+0";
+            //textBoxIntPB.Text = "0";
 
-            textBoxWis.Text = "10";
-            textBoxWisBonus.Text = "+0";
-            textBoxWisPB.Text = "0";
+            //textBoxWis.Text = "10";
+            //textBoxWisBonus.Text = "+0";
+            //textBoxWisPB.Text = "0";
 
-            textBoxCha.Text = "10";
-            textBoxChaBonus.Text = "+0";
-            textBoxChaPB.Text = "0";
+            //textBoxCha.Text = "10";
+            //textBoxChaBonus.Text = "+0";
+            //textBoxChaPB.Text = "0";
 
-            textBoxPoints.Text = points.ToString();
+            //textBoxPoints.Text = points.ToString();
 
             Skill.initializeSkills();
             Race.prepareRace();
@@ -133,8 +133,8 @@ namespace DnD_Character_Creator_Mye
             Weapon.initializeWeapons(weapons);
             string armour = File.ReadAllText("WeaponDetails/Armours.txt");
             Armour.prepareArmours(armour);
-            refreshSkill();
-            refreshFeats();
+            currentCharacter.updateAC();
+            refreshSheet();
         }
 
         public void refreshSheet()
@@ -194,7 +194,8 @@ namespace DnD_Character_Creator_Mye
                 currentValues[attributeID] += changeValue;
                 currentCharacter.setAttributes(currentValues);
                 currentCharacter.spendPoint(pointsSpent - previousPointsValue);
-                refreshAttributes();
+                currentCharacter.updateAC();
+                refreshSheet();
             }
 
         }
@@ -291,7 +292,7 @@ namespace DnD_Character_Creator_Mye
         }
 
         //This method checks the attribute bonus
-        private int checkBonusValue(int value)
+        public int checkBonusValue(int value)
         {
             int toBeReturned;
             toBeReturned = (value - 10) / 2;
@@ -617,6 +618,8 @@ namespace DnD_Character_Creator_Mye
                     listBoxArmour.Items.Add(equipment.returnName());
                 }
             }
+            currentCharacter.updateAC();
+            refreshSheet();
         }
 
         #endregion

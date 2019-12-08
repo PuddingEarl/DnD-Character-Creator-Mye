@@ -28,6 +28,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         int fortSave;
         int refSave;
         int willSave;
+        List<int> weaponProficiencies;
+        List<int> armourProficiencies;
         List<Spell> knownSpells = new List<Spell>();
         List<Feat> ownedFeats = new List<Feat>();
         List<Equipment> ownedEquipment = new List<Equipment>();
@@ -270,6 +272,41 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         public List<Equipment> returnEquipment()
         {
             return ownedEquipment;
+        }
+
+        public void updateAC()
+        {
+            int dexBonus = form.checkBonusValue(dexterity);
+            Armour bestArmour = null;
+            foreach(Equipment equipment in ownedEquipment)
+            {
+                if(equipment is Armour)
+                {
+                    Armour tempArmour = (Armour)equipment;
+                    if(armourProficiencies.Contains(tempArmour.returnType()))
+                    {
+                        if (bestArmour == null)
+                        {
+                            bestArmour = tempArmour;
+                        }
+                        else
+                        {
+                            if (tempArmour.compareArmour(bestArmour, dexBonus))
+                            {
+                                bestArmour = tempArmour;
+                            }
+                        }
+                    }
+                }
+            }
+            if(bestArmour != null)
+            {
+                AC = 10 + bestArmour.returnValue(dexBonus);
+            }
+            else
+            {
+                AC = 10 + dexBonus;
+            }
         }
     }
 }
