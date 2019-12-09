@@ -98,6 +98,11 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return skillList;
         }
 
+        public List<int> returnProficiency()
+        {
+            return proficiencyIDs;
+        }
+
         public string returnName()
         {
             return name;

@@ -28,8 +28,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         int fortSave;
         int refSave;
         int willSave;
-        List<int> weaponProficiencies;
-        List<int> armourProficiencies;
+        List<int> proficiencies = new List<int>();
         List<Spell> knownSpells = new List<Spell>();
         List<Feat> ownedFeats = new List<Feat>();
         List<Equipment> ownedEquipment = new List<Equipment>();
@@ -249,6 +248,13 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                 {
                     skill.setClassSkill(true);
                 }
+                foreach(int ID in toBeAdded.returnClass().returnProficiency())
+                {
+                    if(proficiencies.Contains(ID) == false)
+                    {
+                        proficiencies.Add(ID);
+                    }
+                }
                 BAB += toBeAdded.returnBab();
                 fortSave += toBeAdded.returnFort();
                 refSave += toBeAdded.returnRef();
@@ -283,7 +289,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                 if(equipment is Armour)
                 {
                     Armour tempArmour = (Armour)equipment;
-                    if(armourProficiencies.Contains(tempArmour.returnType()))
+                    if(proficiencies.Contains(tempArmour.returnType()))
                     {
                         if (bestArmour == null)
                         {

@@ -139,12 +139,12 @@ namespace DnD_Character_Creator_Mye
 
         public void refreshSheet()
         {
+            refreshEquipment();
             refreshAttributes();
             refreshFeats();
             refreshSkill();
             refreshClassList();
             refreshSecondaryAttributes();
-            refreshEquipment();
         }
 
         #region Attributes
@@ -619,7 +619,6 @@ namespace DnD_Character_Creator_Mye
                 }
             }
             currentCharacter.updateAC();
-            refreshSheet();
         }
 
         #endregion
