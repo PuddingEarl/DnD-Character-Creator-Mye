@@ -1,4 +1,4 @@
-Artificer/Appraise,Concentration,Craft,Decipher Script,Diplomacy,Disable Device,Escape Artist,Forgery,Knowledge:Arcana,Knowledge:History,Listen,Open Lock,Profession,Search,Spellcraft,Spot,Use Magic Device/6/4/4/4/4/0,1,2,3,4,7,8,9,10,13,100,101,102/
+Artificer/Appraise,Concentration,Craft,Decipher Script,Diplomacy,Disable Device,Escape Artist,Forgery,Knowledge:Arcana,Knowledge:History,Listen,Open Lock,Profession,Search,Spellcraft,Spot,Use Magic Device/6/4/4/4/4/0,1,2,3,4,7,8,9,10,13,100,101,102,104/
 
 
 1=0=0=0=2=Artificing-You gain the disenchanting, basic enchanting, advanced enchanting and master enchanting feats. You must still meet all requirements of the item to be able to craft it.= #

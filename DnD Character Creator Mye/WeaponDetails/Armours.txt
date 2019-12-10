@@ -10,3 +10,6 @@ Splint Mail/102/6/0/7/40;
 Breastplate/103/5/3/4/30;
 Half-Plate/103/6/1/5/35;
 Full Plate/103/8/1/8/40;
+Buckler/104/1/16/0/0;
+Light Shield/104/1/8/1/5;
+Heavy Shield/104/2/6/1/10;

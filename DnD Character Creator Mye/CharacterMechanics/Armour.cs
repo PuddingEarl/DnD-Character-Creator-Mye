@@ -8,7 +8,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 {
     class Armour : Equipment
     {
-        public enum armourTypes { Cloth = 100, Leather = 101, Mail = 102, Plate = 103 };
+        public enum armourTypes { Cloth = 100, Leather = 101, Mail = 102, Plate = 103, Shield=104 };
         int type;
         int ACBonus;
         int maxDexBonus;
@@ -95,6 +95,33 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             {
                 return ACBonus + dexBonus;
             }
+        }
+
+        public int returnFlatBonus()
+        {
+            return ACBonus;
+        }
+
+        public int returnArmourShieldValue(int dexBonus, Armour shield)
+        {
+            int bonusCap;
+            if(shield.maxDexBonus >= maxDexBonus)
+            {
+                bonusCap = maxDexBonus;
+            }
+            else
+            {
+                bonusCap = shield.maxDexBonus;
+            }
+            if (dexBonus > maxDexBonus)
+            {
+                return ACBonus + maxDexBonus + shield.ACBonus;
+            }
+            else
+            {
+                return ACBonus + dexBonus + shield.ACBonus;
+            }
+
         }
 
         public int returnType()

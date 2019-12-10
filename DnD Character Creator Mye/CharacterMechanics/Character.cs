@@ -284,6 +284,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         {
             int dexBonus = form.checkBonusValue(dexterity);
             Armour bestArmour = null;
+            Armour bestShield = null;
             foreach(Equipment equipment in ownedEquipment)
             {
                 if(equipment is Armour)
@@ -291,27 +292,56 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                     Armour tempArmour = (Armour)equipment;
                     if(proficiencies.Contains(tempArmour.returnType()))
                     {
-                        if (bestArmour == null)
+                        if(tempArmour.returnType() != 104)
                         {
-                            bestArmour = tempArmour;
+                            if (bestArmour == null)
+                            {
+                                bestArmour = tempArmour;
+                            }
+                            else
+                            {
+                                if (tempArmour.compareArmour(bestArmour, dexBonus))
+                                {
+                                    bestArmour = tempArmour;
+                                }
+                            }
                         }
                         else
                         {
-                            if (tempArmour.compareArmour(bestArmour, dexBonus))
+                            if(bestShield == null)
                             {
-                                bestArmour = tempArmour;
+                                bestShield = tempArmour;
+                            }
+                            else
+                            {
+                                if (tempArmour.compareArmour(bestShield, dexBonus))
+                                {
+                                    bestShield = tempArmour;
+                                }
                             }
                         }
                     }
                 }
             }
+            AC = 10;
             if(bestArmour != null)
             {
-                AC = 10 + bestArmour.returnValue(dexBonus);
+                if(bestShield != null)
+                {
+                    AC += bestArmour.returnArmourShieldValue(dexBonus, bestShield);
+                }
+                else
+                {
+                    AC += bestArmour.returnValue(dexBonus);
+                }
+            }
+            else if(bestShield != null)
+            {
+                AC += bestShield.returnValue(dexBonus);
             }
             else
             {
-                AC = 10 + dexBonus;
+                AC += dexBonus;
             }
         }
     }
