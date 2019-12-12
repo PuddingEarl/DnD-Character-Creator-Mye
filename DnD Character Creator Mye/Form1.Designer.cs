@@ -407,6 +407,10 @@
             this.buttonAddEquip = new System.Windows.Forms.Button();
             this.buttonRemoveWeapon = new System.Windows.Forms.Button();
             this.buttonRemoveArmour = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPageFeats = new System.Windows.Forms.TabPage();
+            this.tabPageSkills = new System.Windows.Forms.TabPage();
+            this.tabPageSpells = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.panelSkills.SuspendLayout();
@@ -454,6 +458,9 @@
             this.panelBalance.SuspendLayout();
             this.panelAppraise.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPageFeats.SuspendLayout();
+            this.tabPageSkills.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxName
@@ -479,7 +486,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1086, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(745, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -968,24 +975,24 @@
             // listBoxFeats
             // 
             this.listBoxFeats.FormattingEnabled = true;
-            this.listBoxFeats.Location = new System.Drawing.Point(360, 109);
+            this.listBoxFeats.Location = new System.Drawing.Point(8, 6);
             this.listBoxFeats.Name = "listBoxFeats";
-            this.listBoxFeats.Size = new System.Drawing.Size(167, 173);
+            this.listBoxFeats.Size = new System.Drawing.Size(167, 212);
             this.listBoxFeats.TabIndex = 29;
             this.listBoxFeats.SelectedIndexChanged += new System.EventHandler(this.listBoxFeats_SelectedIndexChanged);
             // 
             // richTextBoxFeatDescription
             // 
-            this.richTextBoxFeatDescription.Location = new System.Drawing.Point(533, 111);
+            this.richTextBoxFeatDescription.Location = new System.Drawing.Point(181, 8);
             this.richTextBoxFeatDescription.Name = "richTextBoxFeatDescription";
-            this.richTextBoxFeatDescription.Size = new System.Drawing.Size(158, 256);
+            this.richTextBoxFeatDescription.Size = new System.Drawing.Size(158, 438);
             this.richTextBoxFeatDescription.TabIndex = 30;
             this.richTextBoxFeatDescription.Text = "";
             // 
             // checkBoxSkillToggle
             // 
             this.checkBoxSkillToggle.AutoSize = true;
-            this.checkBoxSkillToggle.Location = new System.Drawing.Point(725, 396);
+            this.checkBoxSkillToggle.Location = new System.Drawing.Point(6, 6);
             this.checkBoxSkillToggle.Name = "checkBoxSkillToggle";
             this.checkBoxSkillToggle.Size = new System.Drawing.Size(126, 17);
             this.checkBoxSkillToggle.TabIndex = 34;
@@ -1040,9 +1047,9 @@
             this.panelSkills.Controls.Add(this.panelBluff);
             this.panelSkills.Controls.Add(this.panelBalance);
             this.panelSkills.Controls.Add(this.panelAppraise);
-            this.panelSkills.Location = new System.Drawing.Point(724, 419);
+            this.panelSkills.Location = new System.Drawing.Point(5, 29);
             this.panelSkills.Name = "panelSkills";
-            this.panelSkills.Size = new System.Drawing.Size(350, 202);
+            this.panelSkills.Size = new System.Drawing.Size(350, 436);
             this.panelSkills.TabIndex = 35;
             // 
             // panelUseRope
@@ -4138,21 +4145,62 @@
             this.buttonRemoveArmour.Text = "Remove Armour";
             this.buttonRemoveArmour.UseVisualStyleBackColor = true;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPageFeats);
+            this.tabControl1.Controls.Add(this.tabPageSpells);
+            this.tabControl1.Controls.Add(this.tabPageSkills);
+            this.tabControl1.Location = new System.Drawing.Point(360, 110);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(370, 497);
+            this.tabControl1.TabIndex = 43;
+            // 
+            // tabPageFeats
+            // 
+            this.tabPageFeats.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageFeats.Controls.Add(this.listBoxFeats);
+            this.tabPageFeats.Controls.Add(this.richTextBoxFeatDescription);
+            this.tabPageFeats.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFeats.Name = "tabPageFeats";
+            this.tabPageFeats.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFeats.Size = new System.Drawing.Size(362, 471);
+            this.tabPageFeats.TabIndex = 0;
+            this.tabPageFeats.Text = "Feats";
+            // 
+            // tabPageSkills
+            // 
+            this.tabPageSkills.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageSkills.Controls.Add(this.panelSkills);
+            this.tabPageSkills.Controls.Add(this.checkBoxSkillToggle);
+            this.tabPageSkills.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSkills.Name = "tabPageSkills";
+            this.tabPageSkills.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSkills.Size = new System.Drawing.Size(362, 471);
+            this.tabPageSkills.TabIndex = 1;
+            this.tabPageSkills.Text = "Skills";
+            // 
+            // tabPageSpells
+            // 
+            this.tabPageSpells.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageSpells.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSpells.Name = "tabPageSpells";
+            this.tabPageSpells.Size = new System.Drawing.Size(362, 471);
+            this.tabPageSpells.TabIndex = 2;
+            this.tabPageSpells.Text = "Spells";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1086, 646);
+            this.ClientSize = new System.Drawing.Size(745, 626);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonRemoveArmour);
             this.Controls.Add(this.buttonRemoveWeapon);
             this.Controls.Add(this.buttonAddEquip);
             this.Controls.Add(this.listBoxArmour);
             this.Controls.Add(this.listBoxWeapons);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelSkills);
-            this.Controls.Add(this.checkBoxSkillToggle);
-            this.Controls.Add(this.richTextBoxFeatDescription);
-            this.Controls.Add(this.listBoxFeats);
             this.Controls.Add(this.buttonRemoveClassLevel);
             this.Controls.Add(this.buttonAddClass);
             this.Controls.Add(this.labelClasses);
@@ -4260,6 +4308,10 @@
             this.panelAppraise.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPageFeats.ResumeLayout(false);
+            this.tabPageSkills.ResumeLayout(false);
+            this.tabPageSkills.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4653,6 +4705,10 @@
         private System.Windows.Forms.Button buttonAddEquip;
         private System.Windows.Forms.Button buttonRemoveWeapon;
         private System.Windows.Forms.Button buttonRemoveArmour;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPageFeats;
+        private System.Windows.Forms.TabPage tabPageSkills;
+        private System.Windows.Forms.TabPage tabPageSpells;
     }
 }
 

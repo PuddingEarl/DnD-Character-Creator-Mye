@@ -18,6 +18,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         List<Skill> skillList;
         List<int> proficiencyIDs;
         List<Spell> learnableSpells;
+        int level1Spells;
+        int levelUpSpellGain;
 
         static List<Class> baseClasses = new List<Class>();
         static List<Class> prestigeClasses = new List<Class>();
@@ -59,14 +61,18 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                     proficiency.Add(temp);
                 }
             }
-            string[] levels = brokenString[8].Split('#');
+            int level1Spells;
+            int spellGain;
+            int.TryParse(brokenString[8], out level1Spells);
+            int.TryParse(brokenString[9], out spellGain);
+            string[] levels = brokenString[10].Split('#');
             List<ClassLevel> classLevels = new List<ClassLevel>();
             foreach(string level in levels)
             {
                 classLevels.Add(new ClassLevel(level));
             }
 
-            toBeReturned = new Class(name, classLevels, skillGain, hitPointGainDice, hitPointGainStatic, manaGainDice, manaGainStatic, skillList, proficiency);
+            toBeReturned = new Class(name, classLevels, skillGain, hitPointGainDice, hitPointGainStatic, manaGainDice, manaGainStatic, skillList, proficiency, level1Spells, spellGain);
             foreach(ClassLevel level in classLevels)
             {
                 level.setClass(toBeReturned);
@@ -80,7 +86,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         }
 
 
-        public Class(string name, List<ClassLevel> levels, int skillGain, int hitPointGainDice, int hitPointGainStatic, int manaGainDice, int manaGainStatic, List<Skill> skillList, List<int> proficiencyIDs)
+        public Class(string name, List<ClassLevel> levels, int skillGain, int hitPointGainDice, int hitPointGainStatic, int manaGainDice, int manaGainStatic, List<Skill> skillList, List<int> proficiencyIDs, int level1Spells, int spellGain)
         {
             this.name = name;
             this.levels = levels;
@@ -91,6 +97,8 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             this.manaGainDice = manaGainDice;
             this.manaGainStatic = manaGainStatic;
             this.proficiencyIDs = proficiencyIDs;
+            this.level1Spells = level1Spells;
+            levelUpSpellGain = spellGain;
         }
 
         public List<Skill> returnSkills()
