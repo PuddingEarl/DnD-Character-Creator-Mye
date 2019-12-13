@@ -85,116 +85,116 @@
             this.checkBoxSkillToggle = new System.Windows.Forms.CheckBox();
             this.panelSkills = new System.Windows.Forms.Panel();
             this.panelUseRope = new System.Windows.Forms.Panel();
-            this.button89 = new System.Windows.Forms.Button();
-            this.button90 = new System.Windows.Forms.Button();
-            this.textBox130 = new System.Windows.Forms.TextBox();
-            this.textBox131 = new System.Windows.Forms.TextBox();
-            this.textBox132 = new System.Windows.Forms.TextBox();
+            this.buttonUseRopePlus = new System.Windows.Forms.Button();
+            this.buttonUseRopeMinus = new System.Windows.Forms.Button();
+            this.textBoxUseRopeTotal = new System.Windows.Forms.TextBox();
+            this.textBoxUseRopeBonus = new System.Windows.Forms.TextBox();
+            this.textBoxUseRopeRanks = new System.Windows.Forms.TextBox();
             this.labelUseRope = new System.Windows.Forms.Label();
             this.panelUseMagicDevice = new System.Windows.Forms.Panel();
-            this.button87 = new System.Windows.Forms.Button();
-            this.button88 = new System.Windows.Forms.Button();
-            this.textBox127 = new System.Windows.Forms.TextBox();
-            this.textBox128 = new System.Windows.Forms.TextBox();
-            this.textBox129 = new System.Windows.Forms.TextBox();
+            this.buttonUseMagicDevicePlus = new System.Windows.Forms.Button();
+            this.buttonUseMagicDeviceMinus = new System.Windows.Forms.Button();
+            this.textBoxUseMagicDeviceTotal = new System.Windows.Forms.TextBox();
+            this.textBoxUseMagicDeviceBonus = new System.Windows.Forms.TextBox();
+            this.textBoxUseMagicDeviceRanks = new System.Windows.Forms.TextBox();
             this.labelUseMagicDevice = new System.Windows.Forms.Label();
             this.panelTumble = new System.Windows.Forms.Panel();
-            this.button85 = new System.Windows.Forms.Button();
-            this.button86 = new System.Windows.Forms.Button();
-            this.textBox124 = new System.Windows.Forms.TextBox();
-            this.textBox125 = new System.Windows.Forms.TextBox();
-            this.textBox126 = new System.Windows.Forms.TextBox();
+            this.buttonTumblePlus = new System.Windows.Forms.Button();
+            this.buttonTumbleMinus = new System.Windows.Forms.Button();
+            this.textBoxTumbleTotal = new System.Windows.Forms.TextBox();
+            this.textBoxTumbleBonus = new System.Windows.Forms.TextBox();
+            this.textBoxTumbleRanks = new System.Windows.Forms.TextBox();
             this.labelTumble = new System.Windows.Forms.Label();
             this.panelSwim = new System.Windows.Forms.Panel();
-            this.button83 = new System.Windows.Forms.Button();
-            this.button84 = new System.Windows.Forms.Button();
-            this.textBox121 = new System.Windows.Forms.TextBox();
-            this.textBox122 = new System.Windows.Forms.TextBox();
-            this.textBox123 = new System.Windows.Forms.TextBox();
+            this.buttonSwimPlus = new System.Windows.Forms.Button();
+            this.buttonSwimMinus = new System.Windows.Forms.Button();
+            this.textBoxSwimTotal = new System.Windows.Forms.TextBox();
+            this.textBoxSwimBonus = new System.Windows.Forms.TextBox();
+            this.textBoxSwimRanks = new System.Windows.Forms.TextBox();
             this.labelSwim = new System.Windows.Forms.Label();
             this.panelSurvival = new System.Windows.Forms.Panel();
-            this.button81 = new System.Windows.Forms.Button();
-            this.button82 = new System.Windows.Forms.Button();
-            this.textBox118 = new System.Windows.Forms.TextBox();
-            this.textBox119 = new System.Windows.Forms.TextBox();
-            this.textBox120 = new System.Windows.Forms.TextBox();
+            this.buttonSurvivalPlus = new System.Windows.Forms.Button();
+            this.buttonSurvivalMinus = new System.Windows.Forms.Button();
+            this.textBoxSurvivalTotal = new System.Windows.Forms.TextBox();
+            this.textBoxSurvivalBonus = new System.Windows.Forms.TextBox();
+            this.textBoxSurvivalRanks = new System.Windows.Forms.TextBox();
             this.labelSurvival = new System.Windows.Forms.Label();
             this.panelSpot = new System.Windows.Forms.Panel();
-            this.button79 = new System.Windows.Forms.Button();
-            this.button80 = new System.Windows.Forms.Button();
-            this.textBox115 = new System.Windows.Forms.TextBox();
-            this.textBox116 = new System.Windows.Forms.TextBox();
-            this.textBox117 = new System.Windows.Forms.TextBox();
+            this.buttonSpotPlus = new System.Windows.Forms.Button();
+            this.buttonSpotMinus = new System.Windows.Forms.Button();
+            this.textBoxSpotTotal = new System.Windows.Forms.TextBox();
+            this.textBoxSpotBonus = new System.Windows.Forms.TextBox();
+            this.textBoxSpotRanks = new System.Windows.Forms.TextBox();
             this.labelSpot = new System.Windows.Forms.Label();
             this.panelSpellcraft = new System.Windows.Forms.Panel();
-            this.button77 = new System.Windows.Forms.Button();
-            this.button78 = new System.Windows.Forms.Button();
-            this.textBox112 = new System.Windows.Forms.TextBox();
-            this.textBox113 = new System.Windows.Forms.TextBox();
-            this.textBox114 = new System.Windows.Forms.TextBox();
+            this.buttonSpellcraftPlus = new System.Windows.Forms.Button();
+            this.buttonSpellcraftMinus = new System.Windows.Forms.Button();
+            this.textBoxSpellcraftTotal = new System.Windows.Forms.TextBox();
+            this.textBoxSpellcraftBonus = new System.Windows.Forms.TextBox();
+            this.textBoxSpellcraftRanks = new System.Windows.Forms.TextBox();
             this.labelSpellcraft = new System.Windows.Forms.Label();
             this.panelSleightofHand = new System.Windows.Forms.Panel();
-            this.button75 = new System.Windows.Forms.Button();
-            this.button76 = new System.Windows.Forms.Button();
-            this.textBox109 = new System.Windows.Forms.TextBox();
-            this.textBox110 = new System.Windows.Forms.TextBox();
-            this.textBox111 = new System.Windows.Forms.TextBox();
+            this.buttonSleightofHandPlus = new System.Windows.Forms.Button();
+            this.buttonSleightofHandMinus = new System.Windows.Forms.Button();
+            this.textBoxSleightofHandTotal = new System.Windows.Forms.TextBox();
+            this.textBoxSleightofHandBonus = new System.Windows.Forms.TextBox();
+            this.textBoxSleightofHandRanks = new System.Windows.Forms.TextBox();
             this.labelSleightofHand = new System.Windows.Forms.Label();
             this.panelSenseMotive = new System.Windows.Forms.Panel();
-            this.button73 = new System.Windows.Forms.Button();
-            this.button74 = new System.Windows.Forms.Button();
-            this.textBox106 = new System.Windows.Forms.TextBox();
-            this.textBox107 = new System.Windows.Forms.TextBox();
-            this.textBox108 = new System.Windows.Forms.TextBox();
+            this.buttonSenseMotivePlus = new System.Windows.Forms.Button();
+            this.buttonSenseMotiveMinus = new System.Windows.Forms.Button();
+            this.textBoxSenseMotiveTotal = new System.Windows.Forms.TextBox();
+            this.textBoxSenseMotiveBonus = new System.Windows.Forms.TextBox();
+            this.textBoxSenseMotiveRanks = new System.Windows.Forms.TextBox();
             this.labelSenseMotive = new System.Windows.Forms.Label();
             this.panelSearch = new System.Windows.Forms.Panel();
-            this.button71 = new System.Windows.Forms.Button();
-            this.button72 = new System.Windows.Forms.Button();
-            this.textBox103 = new System.Windows.Forms.TextBox();
-            this.textBox104 = new System.Windows.Forms.TextBox();
-            this.textBox105 = new System.Windows.Forms.TextBox();
+            this.buttonSearchPlus = new System.Windows.Forms.Button();
+            this.buttonSearchMinus = new System.Windows.Forms.Button();
+            this.textBoxSearchTotal = new System.Windows.Forms.TextBox();
+            this.textBoxSearchBonus = new System.Windows.Forms.TextBox();
+            this.textBoxSearchRanks = new System.Windows.Forms.TextBox();
             this.labelSearch = new System.Windows.Forms.Label();
             this.panelRide = new System.Windows.Forms.Panel();
-            this.button69 = new System.Windows.Forms.Button();
-            this.button70 = new System.Windows.Forms.Button();
-            this.textBox100 = new System.Windows.Forms.TextBox();
-            this.textBox101 = new System.Windows.Forms.TextBox();
-            this.textBox102 = new System.Windows.Forms.TextBox();
+            this.buttonRidePlus = new System.Windows.Forms.Button();
+            this.buttonRideMinus = new System.Windows.Forms.Button();
+            this.textBoxRideTotal = new System.Windows.Forms.TextBox();
+            this.textBoxRideBonus = new System.Windows.Forms.TextBox();
+            this.textBoxRideRanks = new System.Windows.Forms.TextBox();
             this.labelRide = new System.Windows.Forms.Label();
             this.panelProfession = new System.Windows.Forms.Panel();
-            this.button67 = new System.Windows.Forms.Button();
-            this.button68 = new System.Windows.Forms.Button();
-            this.textBox97 = new System.Windows.Forms.TextBox();
-            this.textBox98 = new System.Windows.Forms.TextBox();
-            this.textBox99 = new System.Windows.Forms.TextBox();
+            this.buttonProfessionPlus = new System.Windows.Forms.Button();
+            this.buttonProfessionMinus = new System.Windows.Forms.Button();
+            this.textBoxProfessionTotal = new System.Windows.Forms.TextBox();
+            this.textBoxProfessionBonus = new System.Windows.Forms.TextBox();
+            this.textBoxProfessionRanks = new System.Windows.Forms.TextBox();
             this.labelProfession = new System.Windows.Forms.Label();
             this.panelPerform = new System.Windows.Forms.Panel();
-            this.button65 = new System.Windows.Forms.Button();
-            this.button66 = new System.Windows.Forms.Button();
-            this.textBox94 = new System.Windows.Forms.TextBox();
-            this.textBox95 = new System.Windows.Forms.TextBox();
-            this.textBox96 = new System.Windows.Forms.TextBox();
+            this.buttonPerformPlus = new System.Windows.Forms.Button();
+            this.buttonPerformMinus = new System.Windows.Forms.Button();
+            this.textBoxPerformTotal = new System.Windows.Forms.TextBox();
+            this.textBoxPerformBonus = new System.Windows.Forms.TextBox();
+            this.textBoxPerformRanks = new System.Windows.Forms.TextBox();
             this.labelPerform = new System.Windows.Forms.Label();
             this.panelOpenLock = new System.Windows.Forms.Panel();
-            this.button63 = new System.Windows.Forms.Button();
-            this.button64 = new System.Windows.Forms.Button();
-            this.textBox91 = new System.Windows.Forms.TextBox();
-            this.textBox92 = new System.Windows.Forms.TextBox();
-            this.textBox93 = new System.Windows.Forms.TextBox();
+            this.buttonOpenLockPlus = new System.Windows.Forms.Button();
+            this.buttonOpenLockMinus = new System.Windows.Forms.Button();
+            this.textBoxOpenLockTotal = new System.Windows.Forms.TextBox();
+            this.textBoxOpenLockBonus = new System.Windows.Forms.TextBox();
+            this.textBoxOpenLockRanks = new System.Windows.Forms.TextBox();
             this.labelOpenLock = new System.Windows.Forms.Label();
             this.panelMoveSilently = new System.Windows.Forms.Panel();
-            this.button61 = new System.Windows.Forms.Button();
-            this.button62 = new System.Windows.Forms.Button();
-            this.textBox88 = new System.Windows.Forms.TextBox();
-            this.textBox89 = new System.Windows.Forms.TextBox();
-            this.textBox90 = new System.Windows.Forms.TextBox();
+            this.buttonMoveSilentlyPlus = new System.Windows.Forms.Button();
+            this.buttonMoveSilentlyMinus = new System.Windows.Forms.Button();
+            this.textBoxMoveSilentlyTotal = new System.Windows.Forms.TextBox();
+            this.textBoxMoveSilentlyBonus = new System.Windows.Forms.TextBox();
+            this.textBoxMoveSilentlyRanks = new System.Windows.Forms.TextBox();
             this.labelMoveSilently = new System.Windows.Forms.Label();
             this.panelListen = new System.Windows.Forms.Panel();
-            this.button59 = new System.Windows.Forms.Button();
-            this.button60 = new System.Windows.Forms.Button();
-            this.textBox85 = new System.Windows.Forms.TextBox();
-            this.textBox86 = new System.Windows.Forms.TextBox();
-            this.textBox87 = new System.Windows.Forms.TextBox();
+            this.buttonListenPlus = new System.Windows.Forms.Button();
+            this.buttonListenMinus = new System.Windows.Forms.Button();
+            this.textBoxListenTotals = new System.Windows.Forms.TextBox();
+            this.textBoxListenBonus = new System.Windows.Forms.TextBox();
+            this.textBoxListenRanks = new System.Windows.Forms.TextBox();
             this.labelListen = new System.Windows.Forms.Label();
             this.panelKnowReligion = new System.Windows.Forms.Panel();
             this.buttonKnowReliPlus = new System.Windows.Forms.Button();
@@ -1058,11 +1058,11 @@
             // panelUseRope
             // 
             this.panelUseRope.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelUseRope.Controls.Add(this.button89);
-            this.panelUseRope.Controls.Add(this.button90);
-            this.panelUseRope.Controls.Add(this.textBox130);
-            this.panelUseRope.Controls.Add(this.textBox131);
-            this.panelUseRope.Controls.Add(this.textBox132);
+            this.panelUseRope.Controls.Add(this.buttonUseRopePlus);
+            this.panelUseRope.Controls.Add(this.buttonUseRopeMinus);
+            this.panelUseRope.Controls.Add(this.textBoxUseRopeTotal);
+            this.panelUseRope.Controls.Add(this.textBoxUseRopeBonus);
+            this.panelUseRope.Controls.Add(this.textBoxUseRopeRanks);
             this.panelUseRope.Controls.Add(this.labelUseRope);
             this.panelUseRope.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelUseRope.Location = new System.Drawing.Point(0, 2394);
@@ -1070,47 +1070,49 @@
             this.panelUseRope.Size = new System.Drawing.Size(331, 57);
             this.panelUseRope.TabIndex = 42;
             // 
-            // button89
+            // buttonUseRopePlus
             // 
-            this.button89.Location = new System.Drawing.Point(297, 19);
-            this.button89.Name = "button89";
-            this.button89.Size = new System.Drawing.Size(25, 20);
-            this.button89.TabIndex = 29;
-            this.button89.Text = "+";
-            this.button89.UseVisualStyleBackColor = true;
+            this.buttonUseRopePlus.AccessibleName = "Use Rope";
+            this.buttonUseRopePlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonUseRopePlus.Name = "buttonUseRopePlus";
+            this.buttonUseRopePlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonUseRopePlus.TabIndex = 29;
+            this.buttonUseRopePlus.Text = "+";
+            this.buttonUseRopePlus.UseVisualStyleBackColor = true;
             // 
-            // button90
+            // buttonUseRopeMinus
             // 
-            this.button90.Location = new System.Drawing.Point(266, 19);
-            this.button90.Name = "button90";
-            this.button90.Size = new System.Drawing.Size(25, 20);
-            this.button90.TabIndex = 24;
-            this.button90.Text = "-";
-            this.button90.UseVisualStyleBackColor = true;
+            this.buttonUseRopeMinus.AccessibleName = "Use Rope";
+            this.buttonUseRopeMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonUseRopeMinus.Name = "buttonUseRopeMinus";
+            this.buttonUseRopeMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonUseRopeMinus.TabIndex = 24;
+            this.buttonUseRopeMinus.Text = "-";
+            this.buttonUseRopeMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox130
+            // textBoxUseRopeTotal
             // 
-            this.textBox130.Location = new System.Drawing.Point(225, 18);
-            this.textBox130.Name = "textBox130";
-            this.textBox130.ReadOnly = true;
-            this.textBox130.Size = new System.Drawing.Size(35, 20);
-            this.textBox130.TabIndex = 27;
+            this.textBoxUseRopeTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxUseRopeTotal.Name = "textBoxUseRopeTotal";
+            this.textBoxUseRopeTotal.ReadOnly = true;
+            this.textBoxUseRopeTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxUseRopeTotal.TabIndex = 27;
             // 
-            // textBox131
+            // textBoxUseRopeBonus
             // 
-            this.textBox131.Location = new System.Drawing.Point(184, 18);
-            this.textBox131.Name = "textBox131";
-            this.textBox131.ReadOnly = true;
-            this.textBox131.Size = new System.Drawing.Size(35, 20);
-            this.textBox131.TabIndex = 28;
+            this.textBoxUseRopeBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxUseRopeBonus.Name = "textBoxUseRopeBonus";
+            this.textBoxUseRopeBonus.ReadOnly = true;
+            this.textBoxUseRopeBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxUseRopeBonus.TabIndex = 28;
             // 
-            // textBox132
+            // textBoxUseRopeRanks
             // 
-            this.textBox132.Location = new System.Drawing.Point(143, 18);
-            this.textBox132.Name = "textBox132";
-            this.textBox132.ReadOnly = true;
-            this.textBox132.Size = new System.Drawing.Size(35, 20);
-            this.textBox132.TabIndex = 25;
+            this.textBoxUseRopeRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxUseRopeRanks.Name = "textBoxUseRopeRanks";
+            this.textBoxUseRopeRanks.ReadOnly = true;
+            this.textBoxUseRopeRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxUseRopeRanks.TabIndex = 25;
             // 
             // labelUseRope
             // 
@@ -1125,11 +1127,11 @@
             // panelUseMagicDevice
             // 
             this.panelUseMagicDevice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelUseMagicDevice.Controls.Add(this.button87);
-            this.panelUseMagicDevice.Controls.Add(this.button88);
-            this.panelUseMagicDevice.Controls.Add(this.textBox127);
-            this.panelUseMagicDevice.Controls.Add(this.textBox128);
-            this.panelUseMagicDevice.Controls.Add(this.textBox129);
+            this.panelUseMagicDevice.Controls.Add(this.buttonUseMagicDevicePlus);
+            this.panelUseMagicDevice.Controls.Add(this.buttonUseMagicDeviceMinus);
+            this.panelUseMagicDevice.Controls.Add(this.textBoxUseMagicDeviceTotal);
+            this.panelUseMagicDevice.Controls.Add(this.textBoxUseMagicDeviceBonus);
+            this.panelUseMagicDevice.Controls.Add(this.textBoxUseMagicDeviceRanks);
             this.panelUseMagicDevice.Controls.Add(this.labelUseMagicDevice);
             this.panelUseMagicDevice.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelUseMagicDevice.Location = new System.Drawing.Point(0, 2337);
@@ -1137,47 +1139,49 @@
             this.panelUseMagicDevice.Size = new System.Drawing.Size(331, 57);
             this.panelUseMagicDevice.TabIndex = 41;
             // 
-            // button87
+            // buttonUseMagicDevicePlus
             // 
-            this.button87.Location = new System.Drawing.Point(297, 19);
-            this.button87.Name = "button87";
-            this.button87.Size = new System.Drawing.Size(25, 20);
-            this.button87.TabIndex = 29;
-            this.button87.Text = "+";
-            this.button87.UseVisualStyleBackColor = true;
+            this.buttonUseMagicDevicePlus.AccessibleName = "Use Magic Device";
+            this.buttonUseMagicDevicePlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonUseMagicDevicePlus.Name = "buttonUseMagicDevicePlus";
+            this.buttonUseMagicDevicePlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonUseMagicDevicePlus.TabIndex = 29;
+            this.buttonUseMagicDevicePlus.Text = "+";
+            this.buttonUseMagicDevicePlus.UseVisualStyleBackColor = true;
             // 
-            // button88
+            // buttonUseMagicDeviceMinus
             // 
-            this.button88.Location = new System.Drawing.Point(266, 19);
-            this.button88.Name = "button88";
-            this.button88.Size = new System.Drawing.Size(25, 20);
-            this.button88.TabIndex = 24;
-            this.button88.Text = "-";
-            this.button88.UseVisualStyleBackColor = true;
+            this.buttonUseMagicDeviceMinus.AccessibleName = "Use Magic Device";
+            this.buttonUseMagicDeviceMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonUseMagicDeviceMinus.Name = "buttonUseMagicDeviceMinus";
+            this.buttonUseMagicDeviceMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonUseMagicDeviceMinus.TabIndex = 24;
+            this.buttonUseMagicDeviceMinus.Text = "-";
+            this.buttonUseMagicDeviceMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox127
+            // textBoxUseMagicDeviceTotal
             // 
-            this.textBox127.Location = new System.Drawing.Point(225, 18);
-            this.textBox127.Name = "textBox127";
-            this.textBox127.ReadOnly = true;
-            this.textBox127.Size = new System.Drawing.Size(35, 20);
-            this.textBox127.TabIndex = 27;
+            this.textBoxUseMagicDeviceTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxUseMagicDeviceTotal.Name = "textBoxUseMagicDeviceTotal";
+            this.textBoxUseMagicDeviceTotal.ReadOnly = true;
+            this.textBoxUseMagicDeviceTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxUseMagicDeviceTotal.TabIndex = 27;
             // 
-            // textBox128
+            // textBoxUseMagicDeviceBonus
             // 
-            this.textBox128.Location = new System.Drawing.Point(184, 18);
-            this.textBox128.Name = "textBox128";
-            this.textBox128.ReadOnly = true;
-            this.textBox128.Size = new System.Drawing.Size(35, 20);
-            this.textBox128.TabIndex = 28;
+            this.textBoxUseMagicDeviceBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxUseMagicDeviceBonus.Name = "textBoxUseMagicDeviceBonus";
+            this.textBoxUseMagicDeviceBonus.ReadOnly = true;
+            this.textBoxUseMagicDeviceBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxUseMagicDeviceBonus.TabIndex = 28;
             // 
-            // textBox129
+            // textBoxUseMagicDeviceRanks
             // 
-            this.textBox129.Location = new System.Drawing.Point(143, 18);
-            this.textBox129.Name = "textBox129";
-            this.textBox129.ReadOnly = true;
-            this.textBox129.Size = new System.Drawing.Size(35, 20);
-            this.textBox129.TabIndex = 25;
+            this.textBoxUseMagicDeviceRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxUseMagicDeviceRanks.Name = "textBoxUseMagicDeviceRanks";
+            this.textBoxUseMagicDeviceRanks.ReadOnly = true;
+            this.textBoxUseMagicDeviceRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxUseMagicDeviceRanks.TabIndex = 25;
             // 
             // labelUseMagicDevice
             // 
@@ -1192,11 +1196,11 @@
             // panelTumble
             // 
             this.panelTumble.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelTumble.Controls.Add(this.button85);
-            this.panelTumble.Controls.Add(this.button86);
-            this.panelTumble.Controls.Add(this.textBox124);
-            this.panelTumble.Controls.Add(this.textBox125);
-            this.panelTumble.Controls.Add(this.textBox126);
+            this.panelTumble.Controls.Add(this.buttonTumblePlus);
+            this.panelTumble.Controls.Add(this.buttonTumbleMinus);
+            this.panelTumble.Controls.Add(this.textBoxTumbleTotal);
+            this.panelTumble.Controls.Add(this.textBoxTumbleBonus);
+            this.panelTumble.Controls.Add(this.textBoxTumbleRanks);
             this.panelTumble.Controls.Add(this.labelTumble);
             this.panelTumble.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTumble.Location = new System.Drawing.Point(0, 2280);
@@ -1204,47 +1208,49 @@
             this.panelTumble.Size = new System.Drawing.Size(331, 57);
             this.panelTumble.TabIndex = 40;
             // 
-            // button85
+            // buttonTumblePlus
             // 
-            this.button85.Location = new System.Drawing.Point(297, 19);
-            this.button85.Name = "button85";
-            this.button85.Size = new System.Drawing.Size(25, 20);
-            this.button85.TabIndex = 29;
-            this.button85.Text = "+";
-            this.button85.UseVisualStyleBackColor = true;
+            this.buttonTumblePlus.AccessibleName = "Tumble";
+            this.buttonTumblePlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonTumblePlus.Name = "buttonTumblePlus";
+            this.buttonTumblePlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonTumblePlus.TabIndex = 29;
+            this.buttonTumblePlus.Text = "+";
+            this.buttonTumblePlus.UseVisualStyleBackColor = true;
             // 
-            // button86
+            // buttonTumbleMinus
             // 
-            this.button86.Location = new System.Drawing.Point(266, 19);
-            this.button86.Name = "button86";
-            this.button86.Size = new System.Drawing.Size(25, 20);
-            this.button86.TabIndex = 24;
-            this.button86.Text = "-";
-            this.button86.UseVisualStyleBackColor = true;
+            this.buttonTumbleMinus.AccessibleName = "Tumble";
+            this.buttonTumbleMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonTumbleMinus.Name = "buttonTumbleMinus";
+            this.buttonTumbleMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonTumbleMinus.TabIndex = 24;
+            this.buttonTumbleMinus.Text = "-";
+            this.buttonTumbleMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox124
+            // textBoxTumbleTotal
             // 
-            this.textBox124.Location = new System.Drawing.Point(225, 18);
-            this.textBox124.Name = "textBox124";
-            this.textBox124.ReadOnly = true;
-            this.textBox124.Size = new System.Drawing.Size(35, 20);
-            this.textBox124.TabIndex = 27;
+            this.textBoxTumbleTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxTumbleTotal.Name = "textBoxTumbleTotal";
+            this.textBoxTumbleTotal.ReadOnly = true;
+            this.textBoxTumbleTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxTumbleTotal.TabIndex = 27;
             // 
-            // textBox125
+            // textBoxTumbleBonus
             // 
-            this.textBox125.Location = new System.Drawing.Point(184, 18);
-            this.textBox125.Name = "textBox125";
-            this.textBox125.ReadOnly = true;
-            this.textBox125.Size = new System.Drawing.Size(35, 20);
-            this.textBox125.TabIndex = 28;
+            this.textBoxTumbleBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxTumbleBonus.Name = "textBoxTumbleBonus";
+            this.textBoxTumbleBonus.ReadOnly = true;
+            this.textBoxTumbleBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxTumbleBonus.TabIndex = 28;
             // 
-            // textBox126
+            // textBoxTumbleRanks
             // 
-            this.textBox126.Location = new System.Drawing.Point(143, 18);
-            this.textBox126.Name = "textBox126";
-            this.textBox126.ReadOnly = true;
-            this.textBox126.Size = new System.Drawing.Size(35, 20);
-            this.textBox126.TabIndex = 25;
+            this.textBoxTumbleRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxTumbleRanks.Name = "textBoxTumbleRanks";
+            this.textBoxTumbleRanks.ReadOnly = true;
+            this.textBoxTumbleRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxTumbleRanks.TabIndex = 25;
             // 
             // labelTumble
             // 
@@ -1259,11 +1265,11 @@
             // panelSwim
             // 
             this.panelSwim.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSwim.Controls.Add(this.button83);
-            this.panelSwim.Controls.Add(this.button84);
-            this.panelSwim.Controls.Add(this.textBox121);
-            this.panelSwim.Controls.Add(this.textBox122);
-            this.panelSwim.Controls.Add(this.textBox123);
+            this.panelSwim.Controls.Add(this.buttonSwimPlus);
+            this.panelSwim.Controls.Add(this.buttonSwimMinus);
+            this.panelSwim.Controls.Add(this.textBoxSwimTotal);
+            this.panelSwim.Controls.Add(this.textBoxSwimBonus);
+            this.panelSwim.Controls.Add(this.textBoxSwimRanks);
             this.panelSwim.Controls.Add(this.labelSwim);
             this.panelSwim.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSwim.Location = new System.Drawing.Point(0, 2223);
@@ -1271,47 +1277,49 @@
             this.panelSwim.Size = new System.Drawing.Size(331, 57);
             this.panelSwim.TabIndex = 39;
             // 
-            // button83
+            // buttonSwimPlus
             // 
-            this.button83.Location = new System.Drawing.Point(297, 19);
-            this.button83.Name = "button83";
-            this.button83.Size = new System.Drawing.Size(25, 20);
-            this.button83.TabIndex = 29;
-            this.button83.Text = "+";
-            this.button83.UseVisualStyleBackColor = true;
+            this.buttonSwimPlus.AccessibleName = "Swim";
+            this.buttonSwimPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonSwimPlus.Name = "buttonSwimPlus";
+            this.buttonSwimPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSwimPlus.TabIndex = 29;
+            this.buttonSwimPlus.Text = "+";
+            this.buttonSwimPlus.UseVisualStyleBackColor = true;
             // 
-            // button84
+            // buttonSwimMinus
             // 
-            this.button84.Location = new System.Drawing.Point(266, 19);
-            this.button84.Name = "button84";
-            this.button84.Size = new System.Drawing.Size(25, 20);
-            this.button84.TabIndex = 24;
-            this.button84.Text = "-";
-            this.button84.UseVisualStyleBackColor = true;
+            this.buttonSwimMinus.AccessibleName = "Swim";
+            this.buttonSwimMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonSwimMinus.Name = "buttonSwimMinus";
+            this.buttonSwimMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSwimMinus.TabIndex = 24;
+            this.buttonSwimMinus.Text = "-";
+            this.buttonSwimMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox121
+            // textBoxSwimTotal
             // 
-            this.textBox121.Location = new System.Drawing.Point(225, 18);
-            this.textBox121.Name = "textBox121";
-            this.textBox121.ReadOnly = true;
-            this.textBox121.Size = new System.Drawing.Size(35, 20);
-            this.textBox121.TabIndex = 27;
+            this.textBoxSwimTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxSwimTotal.Name = "textBoxSwimTotal";
+            this.textBoxSwimTotal.ReadOnly = true;
+            this.textBoxSwimTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSwimTotal.TabIndex = 27;
             // 
-            // textBox122
+            // textBoxSwimBonus
             // 
-            this.textBox122.Location = new System.Drawing.Point(184, 18);
-            this.textBox122.Name = "textBox122";
-            this.textBox122.ReadOnly = true;
-            this.textBox122.Size = new System.Drawing.Size(35, 20);
-            this.textBox122.TabIndex = 28;
+            this.textBoxSwimBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxSwimBonus.Name = "textBoxSwimBonus";
+            this.textBoxSwimBonus.ReadOnly = true;
+            this.textBoxSwimBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSwimBonus.TabIndex = 28;
             // 
-            // textBox123
+            // textBoxSwimRanks
             // 
-            this.textBox123.Location = new System.Drawing.Point(143, 18);
-            this.textBox123.Name = "textBox123";
-            this.textBox123.ReadOnly = true;
-            this.textBox123.Size = new System.Drawing.Size(35, 20);
-            this.textBox123.TabIndex = 25;
+            this.textBoxSwimRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxSwimRanks.Name = "textBoxSwimRanks";
+            this.textBoxSwimRanks.ReadOnly = true;
+            this.textBoxSwimRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSwimRanks.TabIndex = 25;
             // 
             // labelSwim
             // 
@@ -1326,11 +1334,11 @@
             // panelSurvival
             // 
             this.panelSurvival.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSurvival.Controls.Add(this.button81);
-            this.panelSurvival.Controls.Add(this.button82);
-            this.panelSurvival.Controls.Add(this.textBox118);
-            this.panelSurvival.Controls.Add(this.textBox119);
-            this.panelSurvival.Controls.Add(this.textBox120);
+            this.panelSurvival.Controls.Add(this.buttonSurvivalPlus);
+            this.panelSurvival.Controls.Add(this.buttonSurvivalMinus);
+            this.panelSurvival.Controls.Add(this.textBoxSurvivalTotal);
+            this.panelSurvival.Controls.Add(this.textBoxSurvivalBonus);
+            this.panelSurvival.Controls.Add(this.textBoxSurvivalRanks);
             this.panelSurvival.Controls.Add(this.labelSurvival);
             this.panelSurvival.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSurvival.Location = new System.Drawing.Point(0, 2166);
@@ -1338,47 +1346,49 @@
             this.panelSurvival.Size = new System.Drawing.Size(331, 57);
             this.panelSurvival.TabIndex = 38;
             // 
-            // button81
+            // buttonSurvivalPlus
             // 
-            this.button81.Location = new System.Drawing.Point(297, 19);
-            this.button81.Name = "button81";
-            this.button81.Size = new System.Drawing.Size(25, 20);
-            this.button81.TabIndex = 29;
-            this.button81.Text = "+";
-            this.button81.UseVisualStyleBackColor = true;
+            this.buttonSurvivalPlus.AccessibleName = "Survival";
+            this.buttonSurvivalPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonSurvivalPlus.Name = "buttonSurvivalPlus";
+            this.buttonSurvivalPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSurvivalPlus.TabIndex = 29;
+            this.buttonSurvivalPlus.Text = "+";
+            this.buttonSurvivalPlus.UseVisualStyleBackColor = true;
             // 
-            // button82
+            // buttonSurvivalMinus
             // 
-            this.button82.Location = new System.Drawing.Point(266, 19);
-            this.button82.Name = "button82";
-            this.button82.Size = new System.Drawing.Size(25, 20);
-            this.button82.TabIndex = 24;
-            this.button82.Text = "-";
-            this.button82.UseVisualStyleBackColor = true;
+            this.buttonSurvivalMinus.AccessibleName = "Survival";
+            this.buttonSurvivalMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonSurvivalMinus.Name = "buttonSurvivalMinus";
+            this.buttonSurvivalMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSurvivalMinus.TabIndex = 24;
+            this.buttonSurvivalMinus.Text = "-";
+            this.buttonSurvivalMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox118
+            // textBoxSurvivalTotal
             // 
-            this.textBox118.Location = new System.Drawing.Point(225, 18);
-            this.textBox118.Name = "textBox118";
-            this.textBox118.ReadOnly = true;
-            this.textBox118.Size = new System.Drawing.Size(35, 20);
-            this.textBox118.TabIndex = 27;
+            this.textBoxSurvivalTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxSurvivalTotal.Name = "textBoxSurvivalTotal";
+            this.textBoxSurvivalTotal.ReadOnly = true;
+            this.textBoxSurvivalTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSurvivalTotal.TabIndex = 27;
             // 
-            // textBox119
+            // textBoxSurvivalBonus
             // 
-            this.textBox119.Location = new System.Drawing.Point(184, 18);
-            this.textBox119.Name = "textBox119";
-            this.textBox119.ReadOnly = true;
-            this.textBox119.Size = new System.Drawing.Size(35, 20);
-            this.textBox119.TabIndex = 28;
+            this.textBoxSurvivalBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxSurvivalBonus.Name = "textBoxSurvivalBonus";
+            this.textBoxSurvivalBonus.ReadOnly = true;
+            this.textBoxSurvivalBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSurvivalBonus.TabIndex = 28;
             // 
-            // textBox120
+            // textBoxSurvivalRanks
             // 
-            this.textBox120.Location = new System.Drawing.Point(143, 18);
-            this.textBox120.Name = "textBox120";
-            this.textBox120.ReadOnly = true;
-            this.textBox120.Size = new System.Drawing.Size(35, 20);
-            this.textBox120.TabIndex = 25;
+            this.textBoxSurvivalRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxSurvivalRanks.Name = "textBoxSurvivalRanks";
+            this.textBoxSurvivalRanks.ReadOnly = true;
+            this.textBoxSurvivalRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSurvivalRanks.TabIndex = 25;
             // 
             // labelSurvival
             // 
@@ -1393,11 +1403,11 @@
             // panelSpot
             // 
             this.panelSpot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSpot.Controls.Add(this.button79);
-            this.panelSpot.Controls.Add(this.button80);
-            this.panelSpot.Controls.Add(this.textBox115);
-            this.panelSpot.Controls.Add(this.textBox116);
-            this.panelSpot.Controls.Add(this.textBox117);
+            this.panelSpot.Controls.Add(this.buttonSpotPlus);
+            this.panelSpot.Controls.Add(this.buttonSpotMinus);
+            this.panelSpot.Controls.Add(this.textBoxSpotTotal);
+            this.panelSpot.Controls.Add(this.textBoxSpotBonus);
+            this.panelSpot.Controls.Add(this.textBoxSpotRanks);
             this.panelSpot.Controls.Add(this.labelSpot);
             this.panelSpot.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSpot.Location = new System.Drawing.Point(0, 2109);
@@ -1405,47 +1415,49 @@
             this.panelSpot.Size = new System.Drawing.Size(331, 57);
             this.panelSpot.TabIndex = 37;
             // 
-            // button79
+            // buttonSpotPlus
             // 
-            this.button79.Location = new System.Drawing.Point(297, 19);
-            this.button79.Name = "button79";
-            this.button79.Size = new System.Drawing.Size(25, 20);
-            this.button79.TabIndex = 29;
-            this.button79.Text = "+";
-            this.button79.UseVisualStyleBackColor = true;
+            this.buttonSpotPlus.AccessibleName = "Spot";
+            this.buttonSpotPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonSpotPlus.Name = "buttonSpotPlus";
+            this.buttonSpotPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSpotPlus.TabIndex = 29;
+            this.buttonSpotPlus.Text = "+";
+            this.buttonSpotPlus.UseVisualStyleBackColor = true;
             // 
-            // button80
+            // buttonSpotMinus
             // 
-            this.button80.Location = new System.Drawing.Point(266, 19);
-            this.button80.Name = "button80";
-            this.button80.Size = new System.Drawing.Size(25, 20);
-            this.button80.TabIndex = 24;
-            this.button80.Text = "-";
-            this.button80.UseVisualStyleBackColor = true;
+            this.buttonSpotMinus.AccessibleName = "Spot";
+            this.buttonSpotMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonSpotMinus.Name = "buttonSpotMinus";
+            this.buttonSpotMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSpotMinus.TabIndex = 24;
+            this.buttonSpotMinus.Text = "-";
+            this.buttonSpotMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox115
+            // textBoxSpotTotal
             // 
-            this.textBox115.Location = new System.Drawing.Point(225, 18);
-            this.textBox115.Name = "textBox115";
-            this.textBox115.ReadOnly = true;
-            this.textBox115.Size = new System.Drawing.Size(35, 20);
-            this.textBox115.TabIndex = 27;
+            this.textBoxSpotTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxSpotTotal.Name = "textBoxSpotTotal";
+            this.textBoxSpotTotal.ReadOnly = true;
+            this.textBoxSpotTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSpotTotal.TabIndex = 27;
             // 
-            // textBox116
+            // textBoxSpotBonus
             // 
-            this.textBox116.Location = new System.Drawing.Point(184, 18);
-            this.textBox116.Name = "textBox116";
-            this.textBox116.ReadOnly = true;
-            this.textBox116.Size = new System.Drawing.Size(35, 20);
-            this.textBox116.TabIndex = 28;
+            this.textBoxSpotBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxSpotBonus.Name = "textBoxSpotBonus";
+            this.textBoxSpotBonus.ReadOnly = true;
+            this.textBoxSpotBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSpotBonus.TabIndex = 28;
             // 
-            // textBox117
+            // textBoxSpotRanks
             // 
-            this.textBox117.Location = new System.Drawing.Point(143, 18);
-            this.textBox117.Name = "textBox117";
-            this.textBox117.ReadOnly = true;
-            this.textBox117.Size = new System.Drawing.Size(35, 20);
-            this.textBox117.TabIndex = 25;
+            this.textBoxSpotRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxSpotRanks.Name = "textBoxSpotRanks";
+            this.textBoxSpotRanks.ReadOnly = true;
+            this.textBoxSpotRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSpotRanks.TabIndex = 25;
             // 
             // labelSpot
             // 
@@ -1460,11 +1472,11 @@
             // panelSpellcraft
             // 
             this.panelSpellcraft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSpellcraft.Controls.Add(this.button77);
-            this.panelSpellcraft.Controls.Add(this.button78);
-            this.panelSpellcraft.Controls.Add(this.textBox112);
-            this.panelSpellcraft.Controls.Add(this.textBox113);
-            this.panelSpellcraft.Controls.Add(this.textBox114);
+            this.panelSpellcraft.Controls.Add(this.buttonSpellcraftPlus);
+            this.panelSpellcraft.Controls.Add(this.buttonSpellcraftMinus);
+            this.panelSpellcraft.Controls.Add(this.textBoxSpellcraftTotal);
+            this.panelSpellcraft.Controls.Add(this.textBoxSpellcraftBonus);
+            this.panelSpellcraft.Controls.Add(this.textBoxSpellcraftRanks);
             this.panelSpellcraft.Controls.Add(this.labelSpellcraft);
             this.panelSpellcraft.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSpellcraft.Location = new System.Drawing.Point(0, 2052);
@@ -1472,47 +1484,49 @@
             this.panelSpellcraft.Size = new System.Drawing.Size(331, 57);
             this.panelSpellcraft.TabIndex = 36;
             // 
-            // button77
+            // buttonSpellcraftPlus
             // 
-            this.button77.Location = new System.Drawing.Point(297, 19);
-            this.button77.Name = "button77";
-            this.button77.Size = new System.Drawing.Size(25, 20);
-            this.button77.TabIndex = 29;
-            this.button77.Text = "+";
-            this.button77.UseVisualStyleBackColor = true;
+            this.buttonSpellcraftPlus.AccessibleName = "Spellcraft";
+            this.buttonSpellcraftPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonSpellcraftPlus.Name = "buttonSpellcraftPlus";
+            this.buttonSpellcraftPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSpellcraftPlus.TabIndex = 29;
+            this.buttonSpellcraftPlus.Text = "+";
+            this.buttonSpellcraftPlus.UseVisualStyleBackColor = true;
             // 
-            // button78
+            // buttonSpellcraftMinus
             // 
-            this.button78.Location = new System.Drawing.Point(266, 19);
-            this.button78.Name = "button78";
-            this.button78.Size = new System.Drawing.Size(25, 20);
-            this.button78.TabIndex = 24;
-            this.button78.Text = "-";
-            this.button78.UseVisualStyleBackColor = true;
+            this.buttonSpellcraftMinus.AccessibleName = "Spellcraft";
+            this.buttonSpellcraftMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonSpellcraftMinus.Name = "buttonSpellcraftMinus";
+            this.buttonSpellcraftMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSpellcraftMinus.TabIndex = 24;
+            this.buttonSpellcraftMinus.Text = "-";
+            this.buttonSpellcraftMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox112
+            // textBoxSpellcraftTotal
             // 
-            this.textBox112.Location = new System.Drawing.Point(225, 18);
-            this.textBox112.Name = "textBox112";
-            this.textBox112.ReadOnly = true;
-            this.textBox112.Size = new System.Drawing.Size(35, 20);
-            this.textBox112.TabIndex = 27;
+            this.textBoxSpellcraftTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxSpellcraftTotal.Name = "textBoxSpellcraftTotal";
+            this.textBoxSpellcraftTotal.ReadOnly = true;
+            this.textBoxSpellcraftTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSpellcraftTotal.TabIndex = 27;
             // 
-            // textBox113
+            // textBoxSpellcraftBonus
             // 
-            this.textBox113.Location = new System.Drawing.Point(184, 18);
-            this.textBox113.Name = "textBox113";
-            this.textBox113.ReadOnly = true;
-            this.textBox113.Size = new System.Drawing.Size(35, 20);
-            this.textBox113.TabIndex = 28;
+            this.textBoxSpellcraftBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxSpellcraftBonus.Name = "textBoxSpellcraftBonus";
+            this.textBoxSpellcraftBonus.ReadOnly = true;
+            this.textBoxSpellcraftBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSpellcraftBonus.TabIndex = 28;
             // 
-            // textBox114
+            // textBoxSpellcraftRanks
             // 
-            this.textBox114.Location = new System.Drawing.Point(143, 18);
-            this.textBox114.Name = "textBox114";
-            this.textBox114.ReadOnly = true;
-            this.textBox114.Size = new System.Drawing.Size(35, 20);
-            this.textBox114.TabIndex = 25;
+            this.textBoxSpellcraftRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxSpellcraftRanks.Name = "textBoxSpellcraftRanks";
+            this.textBoxSpellcraftRanks.ReadOnly = true;
+            this.textBoxSpellcraftRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSpellcraftRanks.TabIndex = 25;
             // 
             // labelSpellcraft
             // 
@@ -1527,11 +1541,11 @@
             // panelSleightofHand
             // 
             this.panelSleightofHand.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSleightofHand.Controls.Add(this.button75);
-            this.panelSleightofHand.Controls.Add(this.button76);
-            this.panelSleightofHand.Controls.Add(this.textBox109);
-            this.panelSleightofHand.Controls.Add(this.textBox110);
-            this.panelSleightofHand.Controls.Add(this.textBox111);
+            this.panelSleightofHand.Controls.Add(this.buttonSleightofHandPlus);
+            this.panelSleightofHand.Controls.Add(this.buttonSleightofHandMinus);
+            this.panelSleightofHand.Controls.Add(this.textBoxSleightofHandTotal);
+            this.panelSleightofHand.Controls.Add(this.textBoxSleightofHandBonus);
+            this.panelSleightofHand.Controls.Add(this.textBoxSleightofHandRanks);
             this.panelSleightofHand.Controls.Add(this.labelSleightofHand);
             this.panelSleightofHand.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSleightofHand.Location = new System.Drawing.Point(0, 1995);
@@ -1539,47 +1553,49 @@
             this.panelSleightofHand.Size = new System.Drawing.Size(331, 57);
             this.panelSleightofHand.TabIndex = 35;
             // 
-            // button75
+            // buttonSleightofHandPlus
             // 
-            this.button75.Location = new System.Drawing.Point(297, 19);
-            this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(25, 20);
-            this.button75.TabIndex = 29;
-            this.button75.Text = "+";
-            this.button75.UseVisualStyleBackColor = true;
+            this.buttonSleightofHandPlus.AccessibleName = "Sleight of Hand";
+            this.buttonSleightofHandPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonSleightofHandPlus.Name = "buttonSleightofHandPlus";
+            this.buttonSleightofHandPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSleightofHandPlus.TabIndex = 29;
+            this.buttonSleightofHandPlus.Text = "+";
+            this.buttonSleightofHandPlus.UseVisualStyleBackColor = true;
             // 
-            // button76
+            // buttonSleightofHandMinus
             // 
-            this.button76.Location = new System.Drawing.Point(266, 19);
-            this.button76.Name = "button76";
-            this.button76.Size = new System.Drawing.Size(25, 20);
-            this.button76.TabIndex = 24;
-            this.button76.Text = "-";
-            this.button76.UseVisualStyleBackColor = true;
+            this.buttonSleightofHandMinus.AccessibleName = "Sleight of Hand";
+            this.buttonSleightofHandMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonSleightofHandMinus.Name = "buttonSleightofHandMinus";
+            this.buttonSleightofHandMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSleightofHandMinus.TabIndex = 24;
+            this.buttonSleightofHandMinus.Text = "-";
+            this.buttonSleightofHandMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox109
+            // textBoxSleightofHandTotal
             // 
-            this.textBox109.Location = new System.Drawing.Point(225, 18);
-            this.textBox109.Name = "textBox109";
-            this.textBox109.ReadOnly = true;
-            this.textBox109.Size = new System.Drawing.Size(35, 20);
-            this.textBox109.TabIndex = 27;
+            this.textBoxSleightofHandTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxSleightofHandTotal.Name = "textBoxSleightofHandTotal";
+            this.textBoxSleightofHandTotal.ReadOnly = true;
+            this.textBoxSleightofHandTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSleightofHandTotal.TabIndex = 27;
             // 
-            // textBox110
+            // textBoxSleightofHandBonus
             // 
-            this.textBox110.Location = new System.Drawing.Point(184, 18);
-            this.textBox110.Name = "textBox110";
-            this.textBox110.ReadOnly = true;
-            this.textBox110.Size = new System.Drawing.Size(35, 20);
-            this.textBox110.TabIndex = 28;
+            this.textBoxSleightofHandBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxSleightofHandBonus.Name = "textBoxSleightofHandBonus";
+            this.textBoxSleightofHandBonus.ReadOnly = true;
+            this.textBoxSleightofHandBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSleightofHandBonus.TabIndex = 28;
             // 
-            // textBox111
+            // textBoxSleightofHandRanks
             // 
-            this.textBox111.Location = new System.Drawing.Point(143, 18);
-            this.textBox111.Name = "textBox111";
-            this.textBox111.ReadOnly = true;
-            this.textBox111.Size = new System.Drawing.Size(35, 20);
-            this.textBox111.TabIndex = 25;
+            this.textBoxSleightofHandRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxSleightofHandRanks.Name = "textBoxSleightofHandRanks";
+            this.textBoxSleightofHandRanks.ReadOnly = true;
+            this.textBoxSleightofHandRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSleightofHandRanks.TabIndex = 25;
             // 
             // labelSleightofHand
             // 
@@ -1594,11 +1610,11 @@
             // panelSenseMotive
             // 
             this.panelSenseMotive.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSenseMotive.Controls.Add(this.button73);
-            this.panelSenseMotive.Controls.Add(this.button74);
-            this.panelSenseMotive.Controls.Add(this.textBox106);
-            this.panelSenseMotive.Controls.Add(this.textBox107);
-            this.panelSenseMotive.Controls.Add(this.textBox108);
+            this.panelSenseMotive.Controls.Add(this.buttonSenseMotivePlus);
+            this.panelSenseMotive.Controls.Add(this.buttonSenseMotiveMinus);
+            this.panelSenseMotive.Controls.Add(this.textBoxSenseMotiveTotal);
+            this.panelSenseMotive.Controls.Add(this.textBoxSenseMotiveBonus);
+            this.panelSenseMotive.Controls.Add(this.textBoxSenseMotiveRanks);
             this.panelSenseMotive.Controls.Add(this.labelSenseMotive);
             this.panelSenseMotive.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSenseMotive.Location = new System.Drawing.Point(0, 1938);
@@ -1606,47 +1622,49 @@
             this.panelSenseMotive.Size = new System.Drawing.Size(331, 57);
             this.panelSenseMotive.TabIndex = 34;
             // 
-            // button73
+            // buttonSenseMotivePlus
             // 
-            this.button73.Location = new System.Drawing.Point(297, 19);
-            this.button73.Name = "button73";
-            this.button73.Size = new System.Drawing.Size(25, 20);
-            this.button73.TabIndex = 29;
-            this.button73.Text = "+";
-            this.button73.UseVisualStyleBackColor = true;
+            this.buttonSenseMotivePlus.AccessibleName = "Sense Motive";
+            this.buttonSenseMotivePlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonSenseMotivePlus.Name = "buttonSenseMotivePlus";
+            this.buttonSenseMotivePlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSenseMotivePlus.TabIndex = 29;
+            this.buttonSenseMotivePlus.Text = "+";
+            this.buttonSenseMotivePlus.UseVisualStyleBackColor = true;
             // 
-            // button74
+            // buttonSenseMotiveMinus
             // 
-            this.button74.Location = new System.Drawing.Point(266, 19);
-            this.button74.Name = "button74";
-            this.button74.Size = new System.Drawing.Size(25, 20);
-            this.button74.TabIndex = 24;
-            this.button74.Text = "-";
-            this.button74.UseVisualStyleBackColor = true;
+            this.buttonSenseMotiveMinus.AccessibleName = "Sense Motive";
+            this.buttonSenseMotiveMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonSenseMotiveMinus.Name = "buttonSenseMotiveMinus";
+            this.buttonSenseMotiveMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSenseMotiveMinus.TabIndex = 24;
+            this.buttonSenseMotiveMinus.Text = "-";
+            this.buttonSenseMotiveMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox106
+            // textBoxSenseMotiveTotal
             // 
-            this.textBox106.Location = new System.Drawing.Point(225, 18);
-            this.textBox106.Name = "textBox106";
-            this.textBox106.ReadOnly = true;
-            this.textBox106.Size = new System.Drawing.Size(35, 20);
-            this.textBox106.TabIndex = 27;
+            this.textBoxSenseMotiveTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxSenseMotiveTotal.Name = "textBoxSenseMotiveTotal";
+            this.textBoxSenseMotiveTotal.ReadOnly = true;
+            this.textBoxSenseMotiveTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSenseMotiveTotal.TabIndex = 27;
             // 
-            // textBox107
+            // textBoxSenseMotiveBonus
             // 
-            this.textBox107.Location = new System.Drawing.Point(184, 18);
-            this.textBox107.Name = "textBox107";
-            this.textBox107.ReadOnly = true;
-            this.textBox107.Size = new System.Drawing.Size(35, 20);
-            this.textBox107.TabIndex = 28;
+            this.textBoxSenseMotiveBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxSenseMotiveBonus.Name = "textBoxSenseMotiveBonus";
+            this.textBoxSenseMotiveBonus.ReadOnly = true;
+            this.textBoxSenseMotiveBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSenseMotiveBonus.TabIndex = 28;
             // 
-            // textBox108
+            // textBoxSenseMotiveRanks
             // 
-            this.textBox108.Location = new System.Drawing.Point(143, 18);
-            this.textBox108.Name = "textBox108";
-            this.textBox108.ReadOnly = true;
-            this.textBox108.Size = new System.Drawing.Size(35, 20);
-            this.textBox108.TabIndex = 25;
+            this.textBoxSenseMotiveRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxSenseMotiveRanks.Name = "textBoxSenseMotiveRanks";
+            this.textBoxSenseMotiveRanks.ReadOnly = true;
+            this.textBoxSenseMotiveRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSenseMotiveRanks.TabIndex = 25;
             // 
             // labelSenseMotive
             // 
@@ -1661,11 +1679,11 @@
             // panelSearch
             // 
             this.panelSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelSearch.Controls.Add(this.button71);
-            this.panelSearch.Controls.Add(this.button72);
-            this.panelSearch.Controls.Add(this.textBox103);
-            this.panelSearch.Controls.Add(this.textBox104);
-            this.panelSearch.Controls.Add(this.textBox105);
+            this.panelSearch.Controls.Add(this.buttonSearchPlus);
+            this.panelSearch.Controls.Add(this.buttonSearchMinus);
+            this.panelSearch.Controls.Add(this.textBoxSearchTotal);
+            this.panelSearch.Controls.Add(this.textBoxSearchBonus);
+            this.panelSearch.Controls.Add(this.textBoxSearchRanks);
             this.panelSearch.Controls.Add(this.labelSearch);
             this.panelSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSearch.Location = new System.Drawing.Point(0, 1881);
@@ -1673,47 +1691,49 @@
             this.panelSearch.Size = new System.Drawing.Size(331, 57);
             this.panelSearch.TabIndex = 33;
             // 
-            // button71
+            // buttonSearchPlus
             // 
-            this.button71.Location = new System.Drawing.Point(297, 19);
-            this.button71.Name = "button71";
-            this.button71.Size = new System.Drawing.Size(25, 20);
-            this.button71.TabIndex = 29;
-            this.button71.Text = "+";
-            this.button71.UseVisualStyleBackColor = true;
+            this.buttonSearchPlus.AccessibleName = "Search";
+            this.buttonSearchPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonSearchPlus.Name = "buttonSearchPlus";
+            this.buttonSearchPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSearchPlus.TabIndex = 29;
+            this.buttonSearchPlus.Text = "+";
+            this.buttonSearchPlus.UseVisualStyleBackColor = true;
             // 
-            // button72
+            // buttonSearchMinus
             // 
-            this.button72.Location = new System.Drawing.Point(266, 19);
-            this.button72.Name = "button72";
-            this.button72.Size = new System.Drawing.Size(25, 20);
-            this.button72.TabIndex = 24;
-            this.button72.Text = "-";
-            this.button72.UseVisualStyleBackColor = true;
+            this.buttonSearchMinus.AccessibleName = "Search";
+            this.buttonSearchMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonSearchMinus.Name = "buttonSearchMinus";
+            this.buttonSearchMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonSearchMinus.TabIndex = 24;
+            this.buttonSearchMinus.Text = "-";
+            this.buttonSearchMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox103
+            // textBoxSearchTotal
             // 
-            this.textBox103.Location = new System.Drawing.Point(225, 18);
-            this.textBox103.Name = "textBox103";
-            this.textBox103.ReadOnly = true;
-            this.textBox103.Size = new System.Drawing.Size(35, 20);
-            this.textBox103.TabIndex = 27;
+            this.textBoxSearchTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxSearchTotal.Name = "textBoxSearchTotal";
+            this.textBoxSearchTotal.ReadOnly = true;
+            this.textBoxSearchTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSearchTotal.TabIndex = 27;
             // 
-            // textBox104
+            // textBoxSearchBonus
             // 
-            this.textBox104.Location = new System.Drawing.Point(184, 18);
-            this.textBox104.Name = "textBox104";
-            this.textBox104.ReadOnly = true;
-            this.textBox104.Size = new System.Drawing.Size(35, 20);
-            this.textBox104.TabIndex = 28;
+            this.textBoxSearchBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxSearchBonus.Name = "textBoxSearchBonus";
+            this.textBoxSearchBonus.ReadOnly = true;
+            this.textBoxSearchBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSearchBonus.TabIndex = 28;
             // 
-            // textBox105
+            // textBoxSearchRanks
             // 
-            this.textBox105.Location = new System.Drawing.Point(143, 18);
-            this.textBox105.Name = "textBox105";
-            this.textBox105.ReadOnly = true;
-            this.textBox105.Size = new System.Drawing.Size(35, 20);
-            this.textBox105.TabIndex = 25;
+            this.textBoxSearchRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxSearchRanks.Name = "textBoxSearchRanks";
+            this.textBoxSearchRanks.ReadOnly = true;
+            this.textBoxSearchRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxSearchRanks.TabIndex = 25;
             // 
             // labelSearch
             // 
@@ -1728,11 +1748,11 @@
             // panelRide
             // 
             this.panelRide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelRide.Controls.Add(this.button69);
-            this.panelRide.Controls.Add(this.button70);
-            this.panelRide.Controls.Add(this.textBox100);
-            this.panelRide.Controls.Add(this.textBox101);
-            this.panelRide.Controls.Add(this.textBox102);
+            this.panelRide.Controls.Add(this.buttonRidePlus);
+            this.panelRide.Controls.Add(this.buttonRideMinus);
+            this.panelRide.Controls.Add(this.textBoxRideTotal);
+            this.panelRide.Controls.Add(this.textBoxRideBonus);
+            this.panelRide.Controls.Add(this.textBoxRideRanks);
             this.panelRide.Controls.Add(this.labelRide);
             this.panelRide.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelRide.Location = new System.Drawing.Point(0, 1824);
@@ -1740,47 +1760,49 @@
             this.panelRide.Size = new System.Drawing.Size(331, 57);
             this.panelRide.TabIndex = 32;
             // 
-            // button69
+            // buttonRidePlus
             // 
-            this.button69.Location = new System.Drawing.Point(297, 19);
-            this.button69.Name = "button69";
-            this.button69.Size = new System.Drawing.Size(25, 20);
-            this.button69.TabIndex = 29;
-            this.button69.Text = "+";
-            this.button69.UseVisualStyleBackColor = true;
+            this.buttonRidePlus.AccessibleName = "Ride";
+            this.buttonRidePlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonRidePlus.Name = "buttonRidePlus";
+            this.buttonRidePlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonRidePlus.TabIndex = 29;
+            this.buttonRidePlus.Text = "+";
+            this.buttonRidePlus.UseVisualStyleBackColor = true;
             // 
-            // button70
+            // buttonRideMinus
             // 
-            this.button70.Location = new System.Drawing.Point(266, 19);
-            this.button70.Name = "button70";
-            this.button70.Size = new System.Drawing.Size(25, 20);
-            this.button70.TabIndex = 24;
-            this.button70.Text = "-";
-            this.button70.UseVisualStyleBackColor = true;
+            this.buttonRideMinus.AccessibleName = "Ride";
+            this.buttonRideMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonRideMinus.Name = "buttonRideMinus";
+            this.buttonRideMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonRideMinus.TabIndex = 24;
+            this.buttonRideMinus.Text = "-";
+            this.buttonRideMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox100
+            // textBoxRideTotal
             // 
-            this.textBox100.Location = new System.Drawing.Point(225, 18);
-            this.textBox100.Name = "textBox100";
-            this.textBox100.ReadOnly = true;
-            this.textBox100.Size = new System.Drawing.Size(35, 20);
-            this.textBox100.TabIndex = 27;
+            this.textBoxRideTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxRideTotal.Name = "textBoxRideTotal";
+            this.textBoxRideTotal.ReadOnly = true;
+            this.textBoxRideTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxRideTotal.TabIndex = 27;
             // 
-            // textBox101
+            // textBoxRideBonus
             // 
-            this.textBox101.Location = new System.Drawing.Point(184, 18);
-            this.textBox101.Name = "textBox101";
-            this.textBox101.ReadOnly = true;
-            this.textBox101.Size = new System.Drawing.Size(35, 20);
-            this.textBox101.TabIndex = 28;
+            this.textBoxRideBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxRideBonus.Name = "textBoxRideBonus";
+            this.textBoxRideBonus.ReadOnly = true;
+            this.textBoxRideBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxRideBonus.TabIndex = 28;
             // 
-            // textBox102
+            // textBoxRideRanks
             // 
-            this.textBox102.Location = new System.Drawing.Point(143, 18);
-            this.textBox102.Name = "textBox102";
-            this.textBox102.ReadOnly = true;
-            this.textBox102.Size = new System.Drawing.Size(35, 20);
-            this.textBox102.TabIndex = 25;
+            this.textBoxRideRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxRideRanks.Name = "textBoxRideRanks";
+            this.textBoxRideRanks.ReadOnly = true;
+            this.textBoxRideRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxRideRanks.TabIndex = 25;
             // 
             // labelRide
             // 
@@ -1795,11 +1817,11 @@
             // panelProfession
             // 
             this.panelProfession.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelProfession.Controls.Add(this.button67);
-            this.panelProfession.Controls.Add(this.button68);
-            this.panelProfession.Controls.Add(this.textBox97);
-            this.panelProfession.Controls.Add(this.textBox98);
-            this.panelProfession.Controls.Add(this.textBox99);
+            this.panelProfession.Controls.Add(this.buttonProfessionPlus);
+            this.panelProfession.Controls.Add(this.buttonProfessionMinus);
+            this.panelProfession.Controls.Add(this.textBoxProfessionTotal);
+            this.panelProfession.Controls.Add(this.textBoxProfessionBonus);
+            this.panelProfession.Controls.Add(this.textBoxProfessionRanks);
             this.panelProfession.Controls.Add(this.labelProfession);
             this.panelProfession.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelProfession.Location = new System.Drawing.Point(0, 1767);
@@ -1807,47 +1829,49 @@
             this.panelProfession.Size = new System.Drawing.Size(331, 57);
             this.panelProfession.TabIndex = 31;
             // 
-            // button67
+            // buttonProfessionPlus
             // 
-            this.button67.Location = new System.Drawing.Point(297, 19);
-            this.button67.Name = "button67";
-            this.button67.Size = new System.Drawing.Size(25, 20);
-            this.button67.TabIndex = 29;
-            this.button67.Text = "+";
-            this.button67.UseVisualStyleBackColor = true;
+            this.buttonProfessionPlus.AccessibleName = "Profession";
+            this.buttonProfessionPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonProfessionPlus.Name = "buttonProfessionPlus";
+            this.buttonProfessionPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonProfessionPlus.TabIndex = 29;
+            this.buttonProfessionPlus.Text = "+";
+            this.buttonProfessionPlus.UseVisualStyleBackColor = true;
             // 
-            // button68
+            // buttonProfessionMinus
             // 
-            this.button68.Location = new System.Drawing.Point(266, 19);
-            this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(25, 20);
-            this.button68.TabIndex = 24;
-            this.button68.Text = "-";
-            this.button68.UseVisualStyleBackColor = true;
+            this.buttonProfessionMinus.AccessibleName = "Profession";
+            this.buttonProfessionMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonProfessionMinus.Name = "buttonProfessionMinus";
+            this.buttonProfessionMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonProfessionMinus.TabIndex = 24;
+            this.buttonProfessionMinus.Text = "-";
+            this.buttonProfessionMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox97
+            // textBoxProfessionTotal
             // 
-            this.textBox97.Location = new System.Drawing.Point(225, 18);
-            this.textBox97.Name = "textBox97";
-            this.textBox97.ReadOnly = true;
-            this.textBox97.Size = new System.Drawing.Size(35, 20);
-            this.textBox97.TabIndex = 27;
+            this.textBoxProfessionTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxProfessionTotal.Name = "textBoxProfessionTotal";
+            this.textBoxProfessionTotal.ReadOnly = true;
+            this.textBoxProfessionTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxProfessionTotal.TabIndex = 27;
             // 
-            // textBox98
+            // textBoxProfessionBonus
             // 
-            this.textBox98.Location = new System.Drawing.Point(184, 18);
-            this.textBox98.Name = "textBox98";
-            this.textBox98.ReadOnly = true;
-            this.textBox98.Size = new System.Drawing.Size(35, 20);
-            this.textBox98.TabIndex = 28;
+            this.textBoxProfessionBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxProfessionBonus.Name = "textBoxProfessionBonus";
+            this.textBoxProfessionBonus.ReadOnly = true;
+            this.textBoxProfessionBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxProfessionBonus.TabIndex = 28;
             // 
-            // textBox99
+            // textBoxProfessionRanks
             // 
-            this.textBox99.Location = new System.Drawing.Point(143, 18);
-            this.textBox99.Name = "textBox99";
-            this.textBox99.ReadOnly = true;
-            this.textBox99.Size = new System.Drawing.Size(35, 20);
-            this.textBox99.TabIndex = 25;
+            this.textBoxProfessionRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxProfessionRanks.Name = "textBoxProfessionRanks";
+            this.textBoxProfessionRanks.ReadOnly = true;
+            this.textBoxProfessionRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxProfessionRanks.TabIndex = 25;
             // 
             // labelProfession
             // 
@@ -1862,11 +1886,11 @@
             // panelPerform
             // 
             this.panelPerform.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPerform.Controls.Add(this.button65);
-            this.panelPerform.Controls.Add(this.button66);
-            this.panelPerform.Controls.Add(this.textBox94);
-            this.panelPerform.Controls.Add(this.textBox95);
-            this.panelPerform.Controls.Add(this.textBox96);
+            this.panelPerform.Controls.Add(this.buttonPerformPlus);
+            this.panelPerform.Controls.Add(this.buttonPerformMinus);
+            this.panelPerform.Controls.Add(this.textBoxPerformTotal);
+            this.panelPerform.Controls.Add(this.textBoxPerformBonus);
+            this.panelPerform.Controls.Add(this.textBoxPerformRanks);
             this.panelPerform.Controls.Add(this.labelPerform);
             this.panelPerform.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPerform.Location = new System.Drawing.Point(0, 1710);
@@ -1874,47 +1898,49 @@
             this.panelPerform.Size = new System.Drawing.Size(331, 57);
             this.panelPerform.TabIndex = 30;
             // 
-            // button65
+            // buttonPerformPlus
             // 
-            this.button65.Location = new System.Drawing.Point(297, 19);
-            this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(25, 20);
-            this.button65.TabIndex = 29;
-            this.button65.Text = "+";
-            this.button65.UseVisualStyleBackColor = true;
+            this.buttonPerformPlus.AccessibleName = "Perform";
+            this.buttonPerformPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonPerformPlus.Name = "buttonPerformPlus";
+            this.buttonPerformPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonPerformPlus.TabIndex = 29;
+            this.buttonPerformPlus.Text = "+";
+            this.buttonPerformPlus.UseVisualStyleBackColor = true;
             // 
-            // button66
+            // buttonPerformMinus
             // 
-            this.button66.Location = new System.Drawing.Point(266, 19);
-            this.button66.Name = "button66";
-            this.button66.Size = new System.Drawing.Size(25, 20);
-            this.button66.TabIndex = 24;
-            this.button66.Text = "-";
-            this.button66.UseVisualStyleBackColor = true;
+            this.buttonPerformMinus.AccessibleName = "Perform";
+            this.buttonPerformMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonPerformMinus.Name = "buttonPerformMinus";
+            this.buttonPerformMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonPerformMinus.TabIndex = 24;
+            this.buttonPerformMinus.Text = "-";
+            this.buttonPerformMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox94
+            // textBoxPerformTotal
             // 
-            this.textBox94.Location = new System.Drawing.Point(225, 18);
-            this.textBox94.Name = "textBox94";
-            this.textBox94.ReadOnly = true;
-            this.textBox94.Size = new System.Drawing.Size(35, 20);
-            this.textBox94.TabIndex = 27;
+            this.textBoxPerformTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxPerformTotal.Name = "textBoxPerformTotal";
+            this.textBoxPerformTotal.ReadOnly = true;
+            this.textBoxPerformTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxPerformTotal.TabIndex = 27;
             // 
-            // textBox95
+            // textBoxPerformBonus
             // 
-            this.textBox95.Location = new System.Drawing.Point(184, 18);
-            this.textBox95.Name = "textBox95";
-            this.textBox95.ReadOnly = true;
-            this.textBox95.Size = new System.Drawing.Size(35, 20);
-            this.textBox95.TabIndex = 28;
+            this.textBoxPerformBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxPerformBonus.Name = "textBoxPerformBonus";
+            this.textBoxPerformBonus.ReadOnly = true;
+            this.textBoxPerformBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxPerformBonus.TabIndex = 28;
             // 
-            // textBox96
+            // textBoxPerformRanks
             // 
-            this.textBox96.Location = new System.Drawing.Point(143, 18);
-            this.textBox96.Name = "textBox96";
-            this.textBox96.ReadOnly = true;
-            this.textBox96.Size = new System.Drawing.Size(35, 20);
-            this.textBox96.TabIndex = 25;
+            this.textBoxPerformRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxPerformRanks.Name = "textBoxPerformRanks";
+            this.textBoxPerformRanks.ReadOnly = true;
+            this.textBoxPerformRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxPerformRanks.TabIndex = 25;
             // 
             // labelPerform
             // 
@@ -1929,11 +1955,11 @@
             // panelOpenLock
             // 
             this.panelOpenLock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelOpenLock.Controls.Add(this.button63);
-            this.panelOpenLock.Controls.Add(this.button64);
-            this.panelOpenLock.Controls.Add(this.textBox91);
-            this.panelOpenLock.Controls.Add(this.textBox92);
-            this.panelOpenLock.Controls.Add(this.textBox93);
+            this.panelOpenLock.Controls.Add(this.buttonOpenLockPlus);
+            this.panelOpenLock.Controls.Add(this.buttonOpenLockMinus);
+            this.panelOpenLock.Controls.Add(this.textBoxOpenLockTotal);
+            this.panelOpenLock.Controls.Add(this.textBoxOpenLockBonus);
+            this.panelOpenLock.Controls.Add(this.textBoxOpenLockRanks);
             this.panelOpenLock.Controls.Add(this.labelOpenLock);
             this.panelOpenLock.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelOpenLock.Location = new System.Drawing.Point(0, 1653);
@@ -1941,47 +1967,49 @@
             this.panelOpenLock.Size = new System.Drawing.Size(331, 57);
             this.panelOpenLock.TabIndex = 29;
             // 
-            // button63
+            // buttonOpenLockPlus
             // 
-            this.button63.Location = new System.Drawing.Point(297, 19);
-            this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(25, 20);
-            this.button63.TabIndex = 29;
-            this.button63.Text = "+";
-            this.button63.UseVisualStyleBackColor = true;
+            this.buttonOpenLockPlus.AccessibleName = "Open Lock";
+            this.buttonOpenLockPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonOpenLockPlus.Name = "buttonOpenLockPlus";
+            this.buttonOpenLockPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonOpenLockPlus.TabIndex = 29;
+            this.buttonOpenLockPlus.Text = "+";
+            this.buttonOpenLockPlus.UseVisualStyleBackColor = true;
             // 
-            // button64
+            // buttonOpenLockMinus
             // 
-            this.button64.Location = new System.Drawing.Point(266, 19);
-            this.button64.Name = "button64";
-            this.button64.Size = new System.Drawing.Size(25, 20);
-            this.button64.TabIndex = 24;
-            this.button64.Text = "-";
-            this.button64.UseVisualStyleBackColor = true;
+            this.buttonOpenLockMinus.AccessibleName = "Open Lock";
+            this.buttonOpenLockMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonOpenLockMinus.Name = "buttonOpenLockMinus";
+            this.buttonOpenLockMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonOpenLockMinus.TabIndex = 24;
+            this.buttonOpenLockMinus.Text = "-";
+            this.buttonOpenLockMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox91
+            // textBoxOpenLockTotal
             // 
-            this.textBox91.Location = new System.Drawing.Point(225, 18);
-            this.textBox91.Name = "textBox91";
-            this.textBox91.ReadOnly = true;
-            this.textBox91.Size = new System.Drawing.Size(35, 20);
-            this.textBox91.TabIndex = 27;
+            this.textBoxOpenLockTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxOpenLockTotal.Name = "textBoxOpenLockTotal";
+            this.textBoxOpenLockTotal.ReadOnly = true;
+            this.textBoxOpenLockTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxOpenLockTotal.TabIndex = 27;
             // 
-            // textBox92
+            // textBoxOpenLockBonus
             // 
-            this.textBox92.Location = new System.Drawing.Point(184, 18);
-            this.textBox92.Name = "textBox92";
-            this.textBox92.ReadOnly = true;
-            this.textBox92.Size = new System.Drawing.Size(35, 20);
-            this.textBox92.TabIndex = 28;
+            this.textBoxOpenLockBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxOpenLockBonus.Name = "textBoxOpenLockBonus";
+            this.textBoxOpenLockBonus.ReadOnly = true;
+            this.textBoxOpenLockBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxOpenLockBonus.TabIndex = 28;
             // 
-            // textBox93
+            // textBoxOpenLockRanks
             // 
-            this.textBox93.Location = new System.Drawing.Point(143, 18);
-            this.textBox93.Name = "textBox93";
-            this.textBox93.ReadOnly = true;
-            this.textBox93.Size = new System.Drawing.Size(35, 20);
-            this.textBox93.TabIndex = 25;
+            this.textBoxOpenLockRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxOpenLockRanks.Name = "textBoxOpenLockRanks";
+            this.textBoxOpenLockRanks.ReadOnly = true;
+            this.textBoxOpenLockRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxOpenLockRanks.TabIndex = 25;
             // 
             // labelOpenLock
             // 
@@ -1996,11 +2024,11 @@
             // panelMoveSilently
             // 
             this.panelMoveSilently.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMoveSilently.Controls.Add(this.button61);
-            this.panelMoveSilently.Controls.Add(this.button62);
-            this.panelMoveSilently.Controls.Add(this.textBox88);
-            this.panelMoveSilently.Controls.Add(this.textBox89);
-            this.panelMoveSilently.Controls.Add(this.textBox90);
+            this.panelMoveSilently.Controls.Add(this.buttonMoveSilentlyPlus);
+            this.panelMoveSilently.Controls.Add(this.buttonMoveSilentlyMinus);
+            this.panelMoveSilently.Controls.Add(this.textBoxMoveSilentlyTotal);
+            this.panelMoveSilently.Controls.Add(this.textBoxMoveSilentlyBonus);
+            this.panelMoveSilently.Controls.Add(this.textBoxMoveSilentlyRanks);
             this.panelMoveSilently.Controls.Add(this.labelMoveSilently);
             this.panelMoveSilently.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMoveSilently.Location = new System.Drawing.Point(0, 1596);
@@ -2008,47 +2036,49 @@
             this.panelMoveSilently.Size = new System.Drawing.Size(331, 57);
             this.panelMoveSilently.TabIndex = 28;
             // 
-            // button61
+            // buttonMoveSilentlyPlus
             // 
-            this.button61.Location = new System.Drawing.Point(297, 19);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(25, 20);
-            this.button61.TabIndex = 29;
-            this.button61.Text = "+";
-            this.button61.UseVisualStyleBackColor = true;
+            this.buttonMoveSilentlyPlus.AccessibleName = "Move Silently";
+            this.buttonMoveSilentlyPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonMoveSilentlyPlus.Name = "buttonMoveSilentlyPlus";
+            this.buttonMoveSilentlyPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonMoveSilentlyPlus.TabIndex = 29;
+            this.buttonMoveSilentlyPlus.Text = "+";
+            this.buttonMoveSilentlyPlus.UseVisualStyleBackColor = true;
             // 
-            // button62
+            // buttonMoveSilentlyMinus
             // 
-            this.button62.Location = new System.Drawing.Point(266, 19);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(25, 20);
-            this.button62.TabIndex = 24;
-            this.button62.Text = "-";
-            this.button62.UseVisualStyleBackColor = true;
+            this.buttonMoveSilentlyMinus.AccessibleName = "Move Silently";
+            this.buttonMoveSilentlyMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonMoveSilentlyMinus.Name = "buttonMoveSilentlyMinus";
+            this.buttonMoveSilentlyMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonMoveSilentlyMinus.TabIndex = 24;
+            this.buttonMoveSilentlyMinus.Text = "-";
+            this.buttonMoveSilentlyMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox88
+            // textBoxMoveSilentlyTotal
             // 
-            this.textBox88.Location = new System.Drawing.Point(225, 18);
-            this.textBox88.Name = "textBox88";
-            this.textBox88.ReadOnly = true;
-            this.textBox88.Size = new System.Drawing.Size(35, 20);
-            this.textBox88.TabIndex = 27;
+            this.textBoxMoveSilentlyTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxMoveSilentlyTotal.Name = "textBoxMoveSilentlyTotal";
+            this.textBoxMoveSilentlyTotal.ReadOnly = true;
+            this.textBoxMoveSilentlyTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxMoveSilentlyTotal.TabIndex = 27;
             // 
-            // textBox89
+            // textBoxMoveSilentlyBonus
             // 
-            this.textBox89.Location = new System.Drawing.Point(184, 18);
-            this.textBox89.Name = "textBox89";
-            this.textBox89.ReadOnly = true;
-            this.textBox89.Size = new System.Drawing.Size(35, 20);
-            this.textBox89.TabIndex = 28;
+            this.textBoxMoveSilentlyBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxMoveSilentlyBonus.Name = "textBoxMoveSilentlyBonus";
+            this.textBoxMoveSilentlyBonus.ReadOnly = true;
+            this.textBoxMoveSilentlyBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxMoveSilentlyBonus.TabIndex = 28;
             // 
-            // textBox90
+            // textBoxMoveSilentlyRanks
             // 
-            this.textBox90.Location = new System.Drawing.Point(143, 18);
-            this.textBox90.Name = "textBox90";
-            this.textBox90.ReadOnly = true;
-            this.textBox90.Size = new System.Drawing.Size(35, 20);
-            this.textBox90.TabIndex = 25;
+            this.textBoxMoveSilentlyRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxMoveSilentlyRanks.Name = "textBoxMoveSilentlyRanks";
+            this.textBoxMoveSilentlyRanks.ReadOnly = true;
+            this.textBoxMoveSilentlyRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxMoveSilentlyRanks.TabIndex = 25;
             // 
             // labelMoveSilently
             // 
@@ -2063,11 +2093,11 @@
             // panelListen
             // 
             this.panelListen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelListen.Controls.Add(this.button59);
-            this.panelListen.Controls.Add(this.button60);
-            this.panelListen.Controls.Add(this.textBox85);
-            this.panelListen.Controls.Add(this.textBox86);
-            this.panelListen.Controls.Add(this.textBox87);
+            this.panelListen.Controls.Add(this.buttonListenPlus);
+            this.panelListen.Controls.Add(this.buttonListenMinus);
+            this.panelListen.Controls.Add(this.textBoxListenTotals);
+            this.panelListen.Controls.Add(this.textBoxListenBonus);
+            this.panelListen.Controls.Add(this.textBoxListenRanks);
             this.panelListen.Controls.Add(this.labelListen);
             this.panelListen.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelListen.Location = new System.Drawing.Point(0, 1539);
@@ -2075,47 +2105,49 @@
             this.panelListen.Size = new System.Drawing.Size(331, 57);
             this.panelListen.TabIndex = 27;
             // 
-            // button59
+            // buttonListenPlus
             // 
-            this.button59.Location = new System.Drawing.Point(297, 19);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(25, 20);
-            this.button59.TabIndex = 29;
-            this.button59.Text = "+";
-            this.button59.UseVisualStyleBackColor = true;
+            this.buttonListenPlus.AccessibleName = "Listen";
+            this.buttonListenPlus.Location = new System.Drawing.Point(297, 19);
+            this.buttonListenPlus.Name = "buttonListenPlus";
+            this.buttonListenPlus.Size = new System.Drawing.Size(25, 20);
+            this.buttonListenPlus.TabIndex = 29;
+            this.buttonListenPlus.Text = "+";
+            this.buttonListenPlus.UseVisualStyleBackColor = true;
             // 
-            // button60
+            // buttonListenMinus
             // 
-            this.button60.Location = new System.Drawing.Point(266, 19);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(25, 20);
-            this.button60.TabIndex = 24;
-            this.button60.Text = "-";
-            this.button60.UseVisualStyleBackColor = true;
+            this.buttonListenMinus.AccessibleName = "Listen";
+            this.buttonListenMinus.Location = new System.Drawing.Point(266, 19);
+            this.buttonListenMinus.Name = "buttonListenMinus";
+            this.buttonListenMinus.Size = new System.Drawing.Size(25, 20);
+            this.buttonListenMinus.TabIndex = 24;
+            this.buttonListenMinus.Text = "-";
+            this.buttonListenMinus.UseVisualStyleBackColor = true;
             // 
-            // textBox85
+            // textBoxListenTotals
             // 
-            this.textBox85.Location = new System.Drawing.Point(225, 18);
-            this.textBox85.Name = "textBox85";
-            this.textBox85.ReadOnly = true;
-            this.textBox85.Size = new System.Drawing.Size(35, 20);
-            this.textBox85.TabIndex = 27;
+            this.textBoxListenTotals.Location = new System.Drawing.Point(225, 18);
+            this.textBoxListenTotals.Name = "textBoxListenTotals";
+            this.textBoxListenTotals.ReadOnly = true;
+            this.textBoxListenTotals.Size = new System.Drawing.Size(35, 20);
+            this.textBoxListenTotals.TabIndex = 27;
             // 
-            // textBox86
+            // textBoxListenBonus
             // 
-            this.textBox86.Location = new System.Drawing.Point(184, 18);
-            this.textBox86.Name = "textBox86";
-            this.textBox86.ReadOnly = true;
-            this.textBox86.Size = new System.Drawing.Size(35, 20);
-            this.textBox86.TabIndex = 28;
+            this.textBoxListenBonus.Location = new System.Drawing.Point(184, 18);
+            this.textBoxListenBonus.Name = "textBoxListenBonus";
+            this.textBoxListenBonus.ReadOnly = true;
+            this.textBoxListenBonus.Size = new System.Drawing.Size(35, 20);
+            this.textBoxListenBonus.TabIndex = 28;
             // 
-            // textBox87
+            // textBoxListenRanks
             // 
-            this.textBox87.Location = new System.Drawing.Point(143, 18);
-            this.textBox87.Name = "textBox87";
-            this.textBox87.ReadOnly = true;
-            this.textBox87.Size = new System.Drawing.Size(35, 20);
-            this.textBox87.TabIndex = 25;
+            this.textBoxListenRanks.Location = new System.Drawing.Point(143, 18);
+            this.textBoxListenRanks.Name = "textBoxListenRanks";
+            this.textBoxListenRanks.ReadOnly = true;
+            this.textBoxListenRanks.Size = new System.Drawing.Size(35, 20);
+            this.textBoxListenRanks.TabIndex = 25;
             // 
             // labelListen
             // 
@@ -4620,67 +4652,67 @@
         private System.Windows.Forms.TextBox textBoxConcentrationRanks;
         private System.Windows.Forms.Label labelConcentration;
         private System.Windows.Forms.Panel panelSleightofHand;
-        private System.Windows.Forms.Button button75;
-        private System.Windows.Forms.Button button76;
-        private System.Windows.Forms.TextBox textBox109;
-        private System.Windows.Forms.TextBox textBox110;
-        private System.Windows.Forms.TextBox textBox111;
+        private System.Windows.Forms.Button buttonSleightofHandPlus;
+        private System.Windows.Forms.Button buttonSleightofHandMinus;
+        private System.Windows.Forms.TextBox textBoxSleightofHandTotal;
+        private System.Windows.Forms.TextBox textBoxSleightofHandBonus;
+        private System.Windows.Forms.TextBox textBoxSleightofHandRanks;
         private System.Windows.Forms.Label labelSleightofHand;
         private System.Windows.Forms.Panel panelSenseMotive;
-        private System.Windows.Forms.Button button73;
-        private System.Windows.Forms.Button button74;
-        private System.Windows.Forms.TextBox textBox106;
-        private System.Windows.Forms.TextBox textBox107;
-        private System.Windows.Forms.TextBox textBox108;
+        private System.Windows.Forms.Button buttonSenseMotivePlus;
+        private System.Windows.Forms.Button buttonSenseMotiveMinus;
+        private System.Windows.Forms.TextBox textBoxSenseMotiveTotal;
+        private System.Windows.Forms.TextBox textBoxSenseMotiveBonus;
+        private System.Windows.Forms.TextBox textBoxSenseMotiveRanks;
         private System.Windows.Forms.Label labelSenseMotive;
         private System.Windows.Forms.Panel panelSearch;
-        private System.Windows.Forms.Button button71;
-        private System.Windows.Forms.Button button72;
-        private System.Windows.Forms.TextBox textBox103;
-        private System.Windows.Forms.TextBox textBox104;
-        private System.Windows.Forms.TextBox textBox105;
+        private System.Windows.Forms.Button buttonSearchPlus;
+        private System.Windows.Forms.Button buttonSearchMinus;
+        private System.Windows.Forms.TextBox textBoxSearchTotal;
+        private System.Windows.Forms.TextBox textBoxSearchBonus;
+        private System.Windows.Forms.TextBox textBoxSearchRanks;
         private System.Windows.Forms.Label labelSearch;
         private System.Windows.Forms.Panel panelRide;
-        private System.Windows.Forms.Button button69;
-        private System.Windows.Forms.Button button70;
-        private System.Windows.Forms.TextBox textBox100;
-        private System.Windows.Forms.TextBox textBox101;
-        private System.Windows.Forms.TextBox textBox102;
+        private System.Windows.Forms.Button buttonRidePlus;
+        private System.Windows.Forms.Button buttonRideMinus;
+        private System.Windows.Forms.TextBox textBoxRideTotal;
+        private System.Windows.Forms.TextBox textBoxRideBonus;
+        private System.Windows.Forms.TextBox textBoxRideRanks;
         private System.Windows.Forms.Label labelRide;
         private System.Windows.Forms.Panel panelProfession;
-        private System.Windows.Forms.Button button67;
-        private System.Windows.Forms.Button button68;
-        private System.Windows.Forms.TextBox textBox97;
-        private System.Windows.Forms.TextBox textBox98;
-        private System.Windows.Forms.TextBox textBox99;
+        private System.Windows.Forms.Button buttonProfessionPlus;
+        private System.Windows.Forms.Button buttonProfessionMinus;
+        private System.Windows.Forms.TextBox textBoxProfessionTotal;
+        private System.Windows.Forms.TextBox textBoxProfessionBonus;
+        private System.Windows.Forms.TextBox textBoxProfessionRanks;
         private System.Windows.Forms.Label labelProfession;
         private System.Windows.Forms.Panel panelPerform;
-        private System.Windows.Forms.Button button65;
-        private System.Windows.Forms.Button button66;
-        private System.Windows.Forms.TextBox textBox94;
-        private System.Windows.Forms.TextBox textBox95;
-        private System.Windows.Forms.TextBox textBox96;
+        private System.Windows.Forms.Button buttonPerformPlus;
+        private System.Windows.Forms.Button buttonPerformMinus;
+        private System.Windows.Forms.TextBox textBoxPerformTotal;
+        private System.Windows.Forms.TextBox textBoxPerformBonus;
+        private System.Windows.Forms.TextBox textBoxPerformRanks;
         private System.Windows.Forms.Label labelPerform;
         private System.Windows.Forms.Panel panelOpenLock;
-        private System.Windows.Forms.Button button63;
-        private System.Windows.Forms.Button button64;
-        private System.Windows.Forms.TextBox textBox91;
-        private System.Windows.Forms.TextBox textBox92;
-        private System.Windows.Forms.TextBox textBox93;
+        private System.Windows.Forms.Button buttonOpenLockPlus;
+        private System.Windows.Forms.Button buttonOpenLockMinus;
+        private System.Windows.Forms.TextBox textBoxOpenLockTotal;
+        private System.Windows.Forms.TextBox textBoxOpenLockBonus;
+        private System.Windows.Forms.TextBox textBoxOpenLockRanks;
         private System.Windows.Forms.Label labelOpenLock;
         private System.Windows.Forms.Panel panelMoveSilently;
-        private System.Windows.Forms.Button button61;
-        private System.Windows.Forms.Button button62;
-        private System.Windows.Forms.TextBox textBox88;
-        private System.Windows.Forms.TextBox textBox89;
-        private System.Windows.Forms.TextBox textBox90;
+        private System.Windows.Forms.Button buttonMoveSilentlyPlus;
+        private System.Windows.Forms.Button buttonMoveSilentlyMinus;
+        private System.Windows.Forms.TextBox textBoxMoveSilentlyTotal;
+        private System.Windows.Forms.TextBox textBoxMoveSilentlyBonus;
+        private System.Windows.Forms.TextBox textBoxMoveSilentlyRanks;
         private System.Windows.Forms.Label labelMoveSilently;
         private System.Windows.Forms.Panel panelListen;
-        private System.Windows.Forms.Button button59;
-        private System.Windows.Forms.Button button60;
-        private System.Windows.Forms.TextBox textBox85;
-        private System.Windows.Forms.TextBox textBox86;
-        private System.Windows.Forms.TextBox textBox87;
+        private System.Windows.Forms.Button buttonListenPlus;
+        private System.Windows.Forms.Button buttonListenMinus;
+        private System.Windows.Forms.TextBox textBoxListenTotals;
+        private System.Windows.Forms.TextBox textBoxListenBonus;
+        private System.Windows.Forms.TextBox textBoxListenRanks;
         private System.Windows.Forms.Label labelListen;
         private System.Windows.Forms.Panel panelKnowReligion;
         private System.Windows.Forms.Button buttonKnowReliPlus;
@@ -4704,53 +4736,53 @@
         private System.Windows.Forms.TextBox textBoxKnowNatureRanks;
         private System.Windows.Forms.Label labelKnowNature;
         private System.Windows.Forms.Panel panelUseRope;
-        private System.Windows.Forms.Button button89;
-        private System.Windows.Forms.Button button90;
-        private System.Windows.Forms.TextBox textBox130;
-        private System.Windows.Forms.TextBox textBox131;
-        private System.Windows.Forms.TextBox textBox132;
+        private System.Windows.Forms.Button buttonUseRopePlus;
+        private System.Windows.Forms.Button buttonUseRopeMinus;
+        private System.Windows.Forms.TextBox textBoxUseRopeTotal;
+        private System.Windows.Forms.TextBox textBoxUseRopeBonus;
+        private System.Windows.Forms.TextBox textBoxUseRopeRanks;
         private System.Windows.Forms.Label labelUseRope;
         private System.Windows.Forms.Panel panelUseMagicDevice;
-        private System.Windows.Forms.Button button87;
-        private System.Windows.Forms.Button button88;
-        private System.Windows.Forms.TextBox textBox127;
-        private System.Windows.Forms.TextBox textBox128;
-        private System.Windows.Forms.TextBox textBox129;
+        private System.Windows.Forms.Button buttonUseMagicDevicePlus;
+        private System.Windows.Forms.Button buttonUseMagicDeviceMinus;
+        private System.Windows.Forms.TextBox textBoxUseMagicDeviceTotal;
+        private System.Windows.Forms.TextBox textBoxUseMagicDeviceBonus;
+        private System.Windows.Forms.TextBox textBoxUseMagicDeviceRanks;
         private System.Windows.Forms.Label labelUseMagicDevice;
         private System.Windows.Forms.Panel panelTumble;
-        private System.Windows.Forms.Button button85;
-        private System.Windows.Forms.Button button86;
-        private System.Windows.Forms.TextBox textBox124;
-        private System.Windows.Forms.TextBox textBox125;
-        private System.Windows.Forms.TextBox textBox126;
+        private System.Windows.Forms.Button buttonTumblePlus;
+        private System.Windows.Forms.Button buttonTumbleMinus;
+        private System.Windows.Forms.TextBox textBoxTumbleTotal;
+        private System.Windows.Forms.TextBox textBoxTumbleBonus;
+        private System.Windows.Forms.TextBox textBoxTumbleRanks;
         private System.Windows.Forms.Label labelTumble;
         private System.Windows.Forms.Panel panelSwim;
-        private System.Windows.Forms.Button button83;
-        private System.Windows.Forms.Button button84;
-        private System.Windows.Forms.TextBox textBox121;
-        private System.Windows.Forms.TextBox textBox122;
-        private System.Windows.Forms.TextBox textBox123;
+        private System.Windows.Forms.Button buttonSwimPlus;
+        private System.Windows.Forms.Button buttonSwimMinus;
+        private System.Windows.Forms.TextBox textBoxSwimTotal;
+        private System.Windows.Forms.TextBox textBoxSwimBonus;
+        private System.Windows.Forms.TextBox textBoxSwimRanks;
         private System.Windows.Forms.Label labelSwim;
         private System.Windows.Forms.Panel panelSurvival;
-        private System.Windows.Forms.Button button81;
-        private System.Windows.Forms.Button button82;
-        private System.Windows.Forms.TextBox textBox118;
-        private System.Windows.Forms.TextBox textBox119;
-        private System.Windows.Forms.TextBox textBox120;
+        private System.Windows.Forms.Button buttonSurvivalPlus;
+        private System.Windows.Forms.Button buttonSurvivalMinus;
+        private System.Windows.Forms.TextBox textBoxSurvivalTotal;
+        private System.Windows.Forms.TextBox textBoxSurvivalBonus;
+        private System.Windows.Forms.TextBox textBoxSurvivalRanks;
         private System.Windows.Forms.Label labelSurvival;
         private System.Windows.Forms.Panel panelSpot;
-        private System.Windows.Forms.Button button79;
-        private System.Windows.Forms.Button button80;
-        private System.Windows.Forms.TextBox textBox115;
-        private System.Windows.Forms.TextBox textBox116;
-        private System.Windows.Forms.TextBox textBox117;
+        private System.Windows.Forms.Button buttonSpotPlus;
+        private System.Windows.Forms.Button buttonSpotMinus;
+        private System.Windows.Forms.TextBox textBoxSpotTotal;
+        private System.Windows.Forms.TextBox textBoxSpotBonus;
+        private System.Windows.Forms.TextBox textBoxSpotRanks;
         private System.Windows.Forms.Label labelSpot;
         private System.Windows.Forms.Panel panelSpellcraft;
-        private System.Windows.Forms.Button button77;
-        private System.Windows.Forms.Button button78;
-        private System.Windows.Forms.TextBox textBox112;
-        private System.Windows.Forms.TextBox textBox113;
-        private System.Windows.Forms.TextBox textBox114;
+        private System.Windows.Forms.Button buttonSpellcraftPlus;
+        private System.Windows.Forms.Button buttonSpellcraftMinus;
+        private System.Windows.Forms.TextBox textBoxSpellcraftTotal;
+        private System.Windows.Forms.TextBox textBoxSpellcraftBonus;
+        private System.Windows.Forms.TextBox textBoxSpellcraftRanks;
         private System.Windows.Forms.Label labelSpellcraft;
         private System.Windows.Forms.Panel panelJump;
         private System.Windows.Forms.Button buttonJumpPlus;
