@@ -168,11 +168,26 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return toBeReturned;
         }
 
+        public string returnHPValue()
+        {
+            return "2d" + hitPointGainDice.ToString() + " + " + hitPointGainStatic.ToString(); 
+        }
+
         public int rollMana()
         {
             int toBeReturned = manaGainStatic;
             toBeReturned += Form1.rand.Next(1, manaGainDice + 1);
             return toBeReturned;
+        }
+
+        public string returnManaValue()
+        {
+            return "1d" + manaGainDice.ToString() + " + " + manaGainStatic.ToString();
+        }
+
+        public int returnSkillGain()
+        {
+            return skillGain;
         }
     }
 }

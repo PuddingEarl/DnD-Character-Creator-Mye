@@ -148,6 +148,7 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
                                     comboBoxOptionalFeature.Items.Add(feat.returnName());
                                 }
                             }
+                            setDescription(currentlyChosenLevel);
                         }
                     }
                 }
@@ -167,6 +168,36 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
                     }
                 }
             }
+        }
+
+        private void setDescription(ClassLevel level)
+        {
+            string toBeSet = level.returnClass().returnName() + "\nSkill List: ";
+            int count = 0;
+            List<Skill> skillList = level.returnClass().returnSkills();
+            foreach(Skill skill in skillList)
+            {
+                count += 1;
+                if(skillList.Count() == count)
+                {
+                    toBeSet += skill.returnName();
+                }
+                else
+                {
+                    toBeSet += skill.returnName() + ", ";
+                }
+            }
+            toBeSet += "\nSkill Points: " + level.returnClass().returnSkillGain().ToString();
+            toBeSet += "\nHP Gain: " + level.returnClass().returnHPValue();
+            toBeSet += "\nMana Gain:" + level.returnClass().returnManaValue();
+            //Add proficiencies here
+            toBeSet += "\nLevel: " + level.returnLevel().ToString();
+            toBeSet += "\nBAB: +" + level.returnBab().ToString() + "     Fort: +" + level.returnFort().ToString() + "     Ref: +" +level.returnRef().ToString() + "     Will: +" + level.returnWill().ToString();
+            foreach(Feat feat in level.returnFeats())
+            {
+                toBeSet += "\n\n" + feat.returnName() + ": " + feat.returnDescription();
+            }
+            richTextBoxDescription.Text = toBeSet;
         }
     }
 }
