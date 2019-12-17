@@ -28,8 +28,13 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
 
         private WeaponQuality(string name, string description)
         {
-            this.name = name;
+            this.name = name.Replace("\r\n", string.Empty);
             this.description = description;
+        }
+
+        public string returnName()
+        {
+            return name;
         }
 
         static public WeaponQuality findQuality(string name)

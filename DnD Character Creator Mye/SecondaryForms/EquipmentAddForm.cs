@@ -45,9 +45,28 @@ namespace DnD_Character_Creator_Mye.SecondaryForms
             }
         }
 
+        private void updateDescription()
+        {
+            Weapon foundWeapon = Weapon.findWeapon(listBoxEquipment.SelectedItem.ToString());
+            if (foundWeapon != null)
+            {
+                richTextBoxDescription.Text = foundWeapon.returnInfo();
+            }
+            Armour foundArmour = Armour.findArmour(listBoxEquipment.SelectedItem.ToString());
+            if (foundArmour != null)
+            {
+
+            }
+        }
+
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void listBoxEquipment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            updateDescription();
         }
     }
 }

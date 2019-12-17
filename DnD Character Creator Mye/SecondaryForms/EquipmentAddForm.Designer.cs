@@ -42,6 +42,7 @@
             this.listBoxEquipment.Name = "listBoxEquipment";
             this.listBoxEquipment.Size = new System.Drawing.Size(416, 160);
             this.listBoxEquipment.TabIndex = 0;
+            this.listBoxEquipment.SelectedIndexChanged += new System.EventHandler(this.listBoxEquipment_SelectedIndexChanged);
             // 
             // richTextBoxDescription
             // 
