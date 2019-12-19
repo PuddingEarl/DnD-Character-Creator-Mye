@@ -160,5 +160,28 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         {
             return classSkill;
         }
+
+        public int returnSkillValue()
+        {
+            return value;
+        }
+
+        public void changeSkill(bool increasing, int level)
+        {
+            if(increasing)
+            {
+                if(value <= level + 3 && value != 20)
+                {
+                    value += 1;
+                }
+            }
+            else
+            {
+                if(value != 0)
+                {
+                    value -= 1;
+                }
+            }
+        }
     }
 }

@@ -410,9 +410,9 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageFeats = new System.Windows.Forms.TabPage();
             this.tabPageSpells = new System.Windows.Forms.TabPage();
-            this.tabPageSkills = new System.Windows.Forms.TabPage();
             this.listBoxSpells = new System.Windows.Forms.ListBox();
             this.richTextBoxSpellDescription = new System.Windows.Forms.RichTextBox();
+            this.tabPageSkills = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.panelSkills.SuspendLayout();
@@ -3908,6 +3908,7 @@
             this.buttonBalancePlus.TabIndex = 29;
             this.buttonBalancePlus.Text = "+";
             this.buttonBalancePlus.UseVisualStyleBackColor = true;
+            this.buttonBalancePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonBalanceMinus
             // 
@@ -3918,6 +3919,7 @@
             this.buttonBalanceMinus.TabIndex = 24;
             this.buttonBalanceMinus.Text = "-";
             this.buttonBalanceMinus.UseVisualStyleBackColor = true;
+            this.buttonBalanceMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxBalanceTotal
             // 
@@ -3977,6 +3979,7 @@
             this.buttonAppraisePlus.TabIndex = 29;
             this.buttonAppraisePlus.Text = "+";
             this.buttonAppraisePlus.UseVisualStyleBackColor = true;
+            this.buttonAppraisePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonAppraiseMinus
             // 
@@ -3987,6 +3990,7 @@
             this.buttonAppraiseMinus.TabIndex = 24;
             this.buttonAppraiseMinus.Text = "-";
             this.buttonAppraiseMinus.UseVisualStyleBackColor = true;
+            this.buttonAppraiseMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxAppraiseTotal
             // 
@@ -4268,18 +4272,6 @@
             this.tabPageSpells.TabIndex = 2;
             this.tabPageSpells.Text = "Spells";
             // 
-            // tabPageSkills
-            // 
-            this.tabPageSkills.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPageSkills.Controls.Add(this.panelSkills);
-            this.tabPageSkills.Controls.Add(this.checkBoxSkillToggle);
-            this.tabPageSkills.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSkills.Name = "tabPageSkills";
-            this.tabPageSkills.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSkills.Size = new System.Drawing.Size(362, 471);
-            this.tabPageSkills.TabIndex = 1;
-            this.tabPageSkills.Text = "Skills";
-            // 
             // listBoxSpells
             // 
             this.listBoxSpells.FormattingEnabled = true;
@@ -4295,6 +4287,18 @@
             this.richTextBoxSpellDescription.Size = new System.Drawing.Size(158, 438);
             this.richTextBoxSpellDescription.TabIndex = 32;
             this.richTextBoxSpellDescription.Text = "";
+            // 
+            // tabPageSkills
+            // 
+            this.tabPageSkills.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageSkills.Controls.Add(this.panelSkills);
+            this.tabPageSkills.Controls.Add(this.checkBoxSkillToggle);
+            this.tabPageSkills.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSkills.Name = "tabPageSkills";
+            this.tabPageSkills.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSkills.Size = new System.Drawing.Size(362, 471);
+            this.tabPageSkills.TabIndex = 1;
+            this.tabPageSkills.Text = "Skills";
             // 
             // Form1
             // 

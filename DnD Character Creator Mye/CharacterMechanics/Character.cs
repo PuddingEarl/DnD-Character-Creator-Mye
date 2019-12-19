@@ -38,6 +38,9 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         int pointBuyTotal;
         int pointBuyCurrent;
 
+        int skillPointTotal;
+        int skillPointCurrent;
+
         static public Form1 form;
 
         public Character(int pointBuyValue, string name)
@@ -262,6 +265,14 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             }
             hp += toBeAdded.returnHP();
             mana += toBeAdded.returnMana();
+            if(takenLevels.Count == 1)
+            {
+                skillPointTotal = toBeAdded.returnClass().returnSkillGain() * 5;
+            }
+            else
+            {
+                skillPointTotal += toBeAdded.returnClass().returnSkillGain();
+            }
         }
 
         public List<int> returnLevelUpBonuses()
@@ -342,6 +353,94 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             else
             {
                 AC += dexBonus;
+            }
+        }
+
+        public void changeSkillValue(Skill targetSkill, bool increase)
+        {
+            if(increase)
+            {
+                int increaseCost = 0;
+                switch (targetSkill.returnSkillValue())
+                {
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                    case 9:
+                        increaseCost = 1;
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                        increaseCost = 2;
+                        break;
+                    case 15:
+                    case 16:
+                    case 17:
+                    case 18:
+                    case 19:
+                        increaseCost = 3;
+                        break;
+                }
+                if(targetSkill.getClassSkill() == false)
+                {
+                    increaseCost = increaseCost * 2;
+                }
+                if(skillPointCurrent + increaseCost <= skillPointTotal)
+                {
+                    targetSkill.changeSkill(true, takenLevels.Count());
+                    skillPointCurrent += increaseCost;
+                }
+            }
+            else
+            {
+                int increaseCost = 0;
+                switch (targetSkill.returnSkillValue())
+                {
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                    case 6:
+                    case 7:
+                    case 8:
+                    case 9:
+                        increaseCost = 1;
+                        break;
+                    case 10:
+                    case 11:
+                    case 12:
+                    case 13:
+                    case 14:
+                        increaseCost = 2;
+                        break;
+                    case 15:
+                    case 16:
+                    case 17:
+                    case 18:
+                    case 19:
+                        increaseCost = 3;
+                        break;
+                }
+                if (targetSkill.getClassSkill() == false)
+                {
+                    increaseCost = increaseCost * 2;
+                }
+                if (targetSkill.returnSkillValue() != 0)
+                {
+                    targetSkill.changeSkill(false, takenLevels.Count());
+                    skillPointCurrent -= increaseCost;
+                }
             }
         }
     }

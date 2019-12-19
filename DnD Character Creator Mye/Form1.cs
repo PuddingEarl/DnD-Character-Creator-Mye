@@ -674,5 +674,25 @@ namespace DnD_Character_Creator_Mye
             EquipmentAddForm form = new EquipmentAddForm(currentCharacter);
             form.Show();
         }
+
+        private void buttonIncreaseSkill(object sender, EventArgs e)
+        {
+            if(sender is Button)
+            {
+                Button relevant = (Button)sender;
+                Skill targetSkill = Skill.findSkills(relevant.AccessibleName);
+                currentCharacter.changeSkillValue(targetSkill, true);
+            }
+        }
+
+        private void buttonDecreaseSkill(object sender, EventArgs e)
+        {
+            if (sender is Button)
+            {
+                Button relevant = (Button)sender;
+                Skill targetSkill = Skill.findSkills(relevant.AccessibleName);
+                currentCharacter.changeSkillValue(targetSkill, false);
+            }
+        }
     }
 }
