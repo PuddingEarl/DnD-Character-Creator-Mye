@@ -135,6 +135,7 @@ namespace DnD_Character_Creator_Mye
             Armour.prepareArmours(armour);
             currentCharacter.updateAC();
             refreshSheet();
+            refreshSkill(true);
         }
 
         public void refreshSheet()
@@ -142,7 +143,7 @@ namespace DnD_Character_Creator_Mye
             refreshEquipment();
             refreshAttributes();
             refreshFeats();
-            refreshSkill();
+            refreshSkill(false);
             refreshClassList();
             refreshSecondaryAttributes();
         }
@@ -396,7 +397,7 @@ namespace DnD_Character_Creator_Mye
 
         #region Skills
 
-        private void refreshSkill()
+        public void refreshSkill(bool updateClass)
         {
             if(currentCharacter != null)
             {
@@ -411,7 +412,10 @@ namespace DnD_Character_Creator_Mye
                 {
                     foreach(Panel panel in skillPanels)
                     {
-                        panel.Hide();
+                        if(updateClass == true)
+                        {
+                            panel.Hide();
+                        }
                         List<Skill> skills = currentCharacter.getSkills();
                         foreach (Skill skill in skills)
                         {
@@ -422,131 +426,260 @@ namespace DnD_Character_Creator_Mye
                                 {
                                     case "Appraise":
                                         panelAppraise.Show();
+                                        textBoxAppraiseRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxAppraiseBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxAppraiseTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         break;
                                     case "Balance":
+                                        textBoxBalanceRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxBalanceBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxBalanceTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelBalance.Show();
                                         break;
                                     case "Bluff":
+                                        textBoxBluffRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxBluffBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxBluffTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelBluff.Show();
                                         break;
                                     case "Climb":
+                                        textBoxClimbRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxClimbBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxClimbTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelClimb.Show();
                                         break;
                                     case "Concentration":
+                                        textBoxConcentrationRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxConcentrationBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxConcentrationTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelConcentration.Show();
                                         break;
                                     case "Craft":
+                                        textBoxCraftRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxCraftBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxCraftTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelCraft.Show();
                                         break;
                                     case "Decipher Script":
+                                        textBoxDecipherScriptRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxDecipherScriptBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxDecipherScriptTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelDecipher.Show();
                                         break;
                                     case "Diplomacy":
+                                        textBoxDiplomacyRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxDiplomacyBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxDiplomacyTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelDiplomacy.Show();
                                         break;
                                     case "Disable Device":
+                                        textBoxDisableDeviceRank.Text = skill.returnSkillValue().ToString();
+                                        textBoxDisableDeviceBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxDisableDeviceTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelDisableDevice.Show();
                                         break;
                                     case "Disguise":
+                                        textBoxDisguiseRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxDisguiseBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxDisguiseTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelDisguise.Show();
                                         break;
                                     case "Escape Artist":
+                                        textBoxEscapeArtistRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxEscapeArtistBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxEscapeArtistTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelEscapeArtist.Show();
                                         break;
                                     case "Forgery":
+                                        textBoxForgeryRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxForgeryBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxForgeryTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelForgery.Show();
                                         break;
                                     case "Gather Info":
+                                        textBoxGatherInfoRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxGatherInfoBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxGatherInfoTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelGatherInfo.Show();
                                         break;
                                     case "Handle Animal":
+                                        textBoxHandleAnimalRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxHandleAnimalBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxHandleAnimalTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelHandleAnimal.Show();
                                         break;
                                     case "Heal":
+                                        textBoxHealRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxHealBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxHealTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelHeal.Show();
                                         break;
                                     case "Hide":
+                                        textBoxHideRank.Text = skill.returnSkillValue().ToString();
+                                        textBoxHideBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxHideTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelHide.Show();
                                         break;
                                     case "Intimidate":
+                                        textBoxIntimidateRank.Text = skill.returnSkillValue().ToString();
+                                        textBoxIntimidateBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxIntimidateTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelIntimidate.Show();
                                         break;
                                     case "Jump":
+                                        textBoxJumpRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxJumpBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxJumpTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelJump.Show();
                                         break;
                                     case "Knowledge:Arcana":
+                                        textBoxKnowArcanaRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowArcanaBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowArcanaTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowArcana.Show();
                                         break;
                                     case "Knowledge:Architecture and Engineering":
+                                        textBoxKnowArchiRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowArchiBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowArchiTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowArch.Show();
                                         break;
                                     case "Knowledge:Geography":
+                                        textBoxKnowGeoRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowGeoBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowGeoTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowGeo.Show();
                                         break;
                                     case "Knowledge:History":
+                                        textBoxKnowHistoryRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowHistoryBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowHistoryTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowHis.Show();
                                         break;
                                     case "Knowledge:Local":
+                                        textBoxKnowLocalRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowLocalBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowLocalTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowLocal.Show();
                                         break;
                                     case "Knowledge:Military":
+                                        textBoxKnowMilitaryRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowMilitaryBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowMilitaryTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowMilitary.Show();
                                         break;
                                     case "Knowledge:Nature":
+                                        textBoxKnowNatureRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowNatureBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowNatureTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowNature.Show();
                                         break;
                                     case "Knowledge:Nobility":
+                                        textBoxKnowNobilityRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowNobilityBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowNobilityTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowNobility.Show();
                                         break;
                                     case "Knowledge:Religion":
+                                        textBoxKnowReliRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxKnowReliBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxKnowReliTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelKnowReligion.Show();
                                         break;
                                     case "Listen":
+                                        textBoxListenRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxListenBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxListenTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelListen.Show();
                                         break;
                                     case "Move Silently":
+                                        textBoxMoveSilentlyRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxMoveSilentlyBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxMoveSilentlyTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelMoveSilently.Show();
                                         break;
                                     case "Open Lock":
+                                        textBoxOpenLockRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxOpenLockBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxOpenLockTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelOpenLock.Show();
                                         break;
                                     case "Perform":
+                                        textBoxPerformRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxPerformBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxPerformTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelPerform.Show();
                                         break;
                                     case "Profession":
+                                        textBoxProfessionRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxProfessionBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxProfessionTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelProfession.Show();
                                         break;
                                     case "Ride":
+                                        textBoxRideRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxRideBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxRideTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelRide.Show();
                                         break;
                                     case "Search":
+                                        textBoxSearchRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxSearchBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxSearchTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelSearch.Show();
                                         break;
                                     case "Sense Motive":
+                                        textBoxSenseMotiveRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxSenseMotiveBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxSenseMotiveTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelSenseMotive.Show();
                                         break;
                                     case "Sleight of Hand":
+                                        textBoxSleightofHandRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxSleightofHandBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxSleightofHandTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelSleightofHand.Show();
                                         break;
                                     case "Spellcraft":
+                                        textBoxSpellcraftRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxSpellcraftBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxSpellcraftTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelSpellcraft.Show();
                                         break;
                                     case "Spot":
+                                        textBoxSpotRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxSpotBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxSpotTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelSpot.Show();
                                         break;
                                     case "Survival":
+                                        textBoxSurvivalRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxSurvivalBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxSurvivalTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelSurvival.Show();
                                         break;
                                     case "Swim":
+                                        textBoxSwimRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxSwimBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxSwimTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelSwim.Show();
                                         break;
                                     case "Tumble":
+                                        textBoxTumbleRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxTumbleBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxTumbleTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelTumble.Show();
                                         break;
                                     case "Use Magic Device":
+                                        textBoxUseMagicDeviceRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxUseMagicDeviceBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxUseMagicDeviceTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelUseMagicDevice.Show();
                                         break;
                                     case "Use Rope":
+                                        textBoxUseRopeRanks.Text = skill.returnSkillValue().ToString();
+                                        textBoxUseRopeBonus.Text = (skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
+                                        textBoxUseRopeTotal.Text = (skill.returnSkillValue() + skill.returnBonus() + checkBonusValue(currentCharacter.getAttributes()[skill.returnAttribute()])).ToString();
                                         panelUseRope.Show();
                                         break;
                                 }
@@ -554,6 +687,28 @@ namespace DnD_Character_Creator_Mye
                         }
                     }
                 }
+            }
+        }
+
+        private void buttonIncreaseSkill(object sender, EventArgs e)
+        {
+            if (sender is Button)
+            {
+                Button relevant = (Button)sender;
+                Skill targetSkill = Skill.findSkills(relevant.AccessibleName);
+                currentCharacter.changeSkillValue(targetSkill, true);
+                refreshSheet();
+            }
+        }
+
+        private void buttonDecreaseSkill(object sender, EventArgs e)
+        {
+            if (sender is Button)
+            {
+                Button relevant = (Button)sender;
+                Skill targetSkill = Skill.findSkills(relevant.AccessibleName);
+                currentCharacter.changeSkillValue(targetSkill, false);
+                refreshSheet();
             }
         }
 
@@ -644,7 +799,7 @@ namespace DnD_Character_Creator_Mye
 
         private void checkBoxSkillToggle_CheckedChanged(object sender, EventArgs e)
         {
-            refreshSkill();
+            refreshSkill(true);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -673,26 +828,6 @@ namespace DnD_Character_Creator_Mye
         {
             EquipmentAddForm form = new EquipmentAddForm(currentCharacter);
             form.Show();
-        }
-
-        private void buttonIncreaseSkill(object sender, EventArgs e)
-        {
-            if(sender is Button)
-            {
-                Button relevant = (Button)sender;
-                Skill targetSkill = Skill.findSkills(relevant.AccessibleName);
-                currentCharacter.changeSkillValue(targetSkill, true);
-            }
-        }
-
-        private void buttonDecreaseSkill(object sender, EventArgs e)
-        {
-            if (sender is Button)
-            {
-                Button relevant = (Button)sender;
-                Skill targetSkill = Skill.findSkills(relevant.AccessibleName);
-                currentCharacter.changeSkillValue(targetSkill, false);
-            }
         }
     }
 }

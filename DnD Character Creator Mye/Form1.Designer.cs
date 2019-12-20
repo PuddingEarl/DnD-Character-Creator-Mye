@@ -192,7 +192,7 @@
             this.panelListen = new System.Windows.Forms.Panel();
             this.buttonListenPlus = new System.Windows.Forms.Button();
             this.buttonListenMinus = new System.Windows.Forms.Button();
-            this.textBoxListenTotals = new System.Windows.Forms.TextBox();
+            this.textBoxListenTotal = new System.Windows.Forms.TextBox();
             this.textBoxListenBonus = new System.Windows.Forms.TextBox();
             this.textBoxListenRanks = new System.Windows.Forms.TextBox();
             this.labelListen = new System.Windows.Forms.Label();
@@ -255,7 +255,7 @@
             this.panelKnowArcana = new System.Windows.Forms.Panel();
             this.buttonKnowArcanaPlus = new System.Windows.Forms.Button();
             this.buttonKnowArcanaMinus = new System.Windows.Forms.Button();
-            this.textBoxKnowArcana = new System.Windows.Forms.TextBox();
+            this.textBoxKnowArcanaTotal = new System.Windows.Forms.TextBox();
             this.textBoxKnowArcanaBonus = new System.Windows.Forms.TextBox();
             this.textBoxKnowArcanaRanks = new System.Windows.Forms.TextBox();
             this.labelKnowArcana = new System.Windows.Forms.Label();
@@ -1079,6 +1079,7 @@
             this.buttonUseRopePlus.TabIndex = 29;
             this.buttonUseRopePlus.Text = "+";
             this.buttonUseRopePlus.UseVisualStyleBackColor = true;
+            this.buttonUseRopePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonUseRopeMinus
             // 
@@ -1089,6 +1090,7 @@
             this.buttonUseRopeMinus.TabIndex = 24;
             this.buttonUseRopeMinus.Text = "-";
             this.buttonUseRopeMinus.UseVisualStyleBackColor = true;
+            this.buttonUseRopeMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxUseRopeTotal
             // 
@@ -1148,6 +1150,7 @@
             this.buttonUseMagicDevicePlus.TabIndex = 29;
             this.buttonUseMagicDevicePlus.Text = "+";
             this.buttonUseMagicDevicePlus.UseVisualStyleBackColor = true;
+            this.buttonUseMagicDevicePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonUseMagicDeviceMinus
             // 
@@ -1158,6 +1161,7 @@
             this.buttonUseMagicDeviceMinus.TabIndex = 24;
             this.buttonUseMagicDeviceMinus.Text = "-";
             this.buttonUseMagicDeviceMinus.UseVisualStyleBackColor = true;
+            this.buttonUseMagicDeviceMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxUseMagicDeviceTotal
             // 
@@ -1217,6 +1221,7 @@
             this.buttonTumblePlus.TabIndex = 29;
             this.buttonTumblePlus.Text = "+";
             this.buttonTumblePlus.UseVisualStyleBackColor = true;
+            this.buttonTumblePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonTumbleMinus
             // 
@@ -1227,6 +1232,7 @@
             this.buttonTumbleMinus.TabIndex = 24;
             this.buttonTumbleMinus.Text = "-";
             this.buttonTumbleMinus.UseVisualStyleBackColor = true;
+            this.buttonTumbleMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxTumbleTotal
             // 
@@ -1286,6 +1292,7 @@
             this.buttonSwimPlus.TabIndex = 29;
             this.buttonSwimPlus.Text = "+";
             this.buttonSwimPlus.UseVisualStyleBackColor = true;
+            this.buttonSwimPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonSwimMinus
             // 
@@ -1296,6 +1303,7 @@
             this.buttonSwimMinus.TabIndex = 24;
             this.buttonSwimMinus.Text = "-";
             this.buttonSwimMinus.UseVisualStyleBackColor = true;
+            this.buttonSwimMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxSwimTotal
             // 
@@ -1355,6 +1363,7 @@
             this.buttonSurvivalPlus.TabIndex = 29;
             this.buttonSurvivalPlus.Text = "+";
             this.buttonSurvivalPlus.UseVisualStyleBackColor = true;
+            this.buttonSurvivalPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonSurvivalMinus
             // 
@@ -1365,6 +1374,7 @@
             this.buttonSurvivalMinus.TabIndex = 24;
             this.buttonSurvivalMinus.Text = "-";
             this.buttonSurvivalMinus.UseVisualStyleBackColor = true;
+            this.buttonSurvivalMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxSurvivalTotal
             // 
@@ -1424,6 +1434,7 @@
             this.buttonSpotPlus.TabIndex = 29;
             this.buttonSpotPlus.Text = "+";
             this.buttonSpotPlus.UseVisualStyleBackColor = true;
+            this.buttonSpotPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonSpotMinus
             // 
@@ -1434,6 +1445,7 @@
             this.buttonSpotMinus.TabIndex = 24;
             this.buttonSpotMinus.Text = "-";
             this.buttonSpotMinus.UseVisualStyleBackColor = true;
+            this.buttonSpotMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxSpotTotal
             // 
@@ -1493,6 +1505,7 @@
             this.buttonSpellcraftPlus.TabIndex = 29;
             this.buttonSpellcraftPlus.Text = "+";
             this.buttonSpellcraftPlus.UseVisualStyleBackColor = true;
+            this.buttonSpellcraftPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonSpellcraftMinus
             // 
@@ -1503,6 +1516,7 @@
             this.buttonSpellcraftMinus.TabIndex = 24;
             this.buttonSpellcraftMinus.Text = "-";
             this.buttonSpellcraftMinus.UseVisualStyleBackColor = true;
+            this.buttonSpellcraftMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxSpellcraftTotal
             // 
@@ -1562,6 +1576,7 @@
             this.buttonSleightofHandPlus.TabIndex = 29;
             this.buttonSleightofHandPlus.Text = "+";
             this.buttonSleightofHandPlus.UseVisualStyleBackColor = true;
+            this.buttonSleightofHandPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonSleightofHandMinus
             // 
@@ -1572,6 +1587,7 @@
             this.buttonSleightofHandMinus.TabIndex = 24;
             this.buttonSleightofHandMinus.Text = "-";
             this.buttonSleightofHandMinus.UseVisualStyleBackColor = true;
+            this.buttonSleightofHandMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxSleightofHandTotal
             // 
@@ -1631,6 +1647,7 @@
             this.buttonSenseMotivePlus.TabIndex = 29;
             this.buttonSenseMotivePlus.Text = "+";
             this.buttonSenseMotivePlus.UseVisualStyleBackColor = true;
+            this.buttonSenseMotivePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonSenseMotiveMinus
             // 
@@ -1641,6 +1658,7 @@
             this.buttonSenseMotiveMinus.TabIndex = 24;
             this.buttonSenseMotiveMinus.Text = "-";
             this.buttonSenseMotiveMinus.UseVisualStyleBackColor = true;
+            this.buttonSenseMotiveMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxSenseMotiveTotal
             // 
@@ -1700,6 +1718,7 @@
             this.buttonSearchPlus.TabIndex = 29;
             this.buttonSearchPlus.Text = "+";
             this.buttonSearchPlus.UseVisualStyleBackColor = true;
+            this.buttonSearchPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonSearchMinus
             // 
@@ -1710,6 +1729,7 @@
             this.buttonSearchMinus.TabIndex = 24;
             this.buttonSearchMinus.Text = "-";
             this.buttonSearchMinus.UseVisualStyleBackColor = true;
+            this.buttonSearchMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxSearchTotal
             // 
@@ -1769,6 +1789,7 @@
             this.buttonRidePlus.TabIndex = 29;
             this.buttonRidePlus.Text = "+";
             this.buttonRidePlus.UseVisualStyleBackColor = true;
+            this.buttonRidePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonRideMinus
             // 
@@ -1779,6 +1800,7 @@
             this.buttonRideMinus.TabIndex = 24;
             this.buttonRideMinus.Text = "-";
             this.buttonRideMinus.UseVisualStyleBackColor = true;
+            this.buttonRideMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxRideTotal
             // 
@@ -1838,6 +1860,7 @@
             this.buttonProfessionPlus.TabIndex = 29;
             this.buttonProfessionPlus.Text = "+";
             this.buttonProfessionPlus.UseVisualStyleBackColor = true;
+            this.buttonProfessionPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonProfessionMinus
             // 
@@ -1848,6 +1871,7 @@
             this.buttonProfessionMinus.TabIndex = 24;
             this.buttonProfessionMinus.Text = "-";
             this.buttonProfessionMinus.UseVisualStyleBackColor = true;
+            this.buttonProfessionMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxProfessionTotal
             // 
@@ -1907,6 +1931,7 @@
             this.buttonPerformPlus.TabIndex = 29;
             this.buttonPerformPlus.Text = "+";
             this.buttonPerformPlus.UseVisualStyleBackColor = true;
+            this.buttonPerformPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonPerformMinus
             // 
@@ -1917,6 +1942,7 @@
             this.buttonPerformMinus.TabIndex = 24;
             this.buttonPerformMinus.Text = "-";
             this.buttonPerformMinus.UseVisualStyleBackColor = true;
+            this.buttonPerformMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxPerformTotal
             // 
@@ -1976,6 +2002,7 @@
             this.buttonOpenLockPlus.TabIndex = 29;
             this.buttonOpenLockPlus.Text = "+";
             this.buttonOpenLockPlus.UseVisualStyleBackColor = true;
+            this.buttonOpenLockPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonOpenLockMinus
             // 
@@ -1986,6 +2013,7 @@
             this.buttonOpenLockMinus.TabIndex = 24;
             this.buttonOpenLockMinus.Text = "-";
             this.buttonOpenLockMinus.UseVisualStyleBackColor = true;
+            this.buttonOpenLockMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxOpenLockTotal
             // 
@@ -2045,6 +2073,7 @@
             this.buttonMoveSilentlyPlus.TabIndex = 29;
             this.buttonMoveSilentlyPlus.Text = "+";
             this.buttonMoveSilentlyPlus.UseVisualStyleBackColor = true;
+            this.buttonMoveSilentlyPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonMoveSilentlyMinus
             // 
@@ -2055,6 +2084,7 @@
             this.buttonMoveSilentlyMinus.TabIndex = 24;
             this.buttonMoveSilentlyMinus.Text = "-";
             this.buttonMoveSilentlyMinus.UseVisualStyleBackColor = true;
+            this.buttonMoveSilentlyMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxMoveSilentlyTotal
             // 
@@ -2095,7 +2125,7 @@
             this.panelListen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelListen.Controls.Add(this.buttonListenPlus);
             this.panelListen.Controls.Add(this.buttonListenMinus);
-            this.panelListen.Controls.Add(this.textBoxListenTotals);
+            this.panelListen.Controls.Add(this.textBoxListenTotal);
             this.panelListen.Controls.Add(this.textBoxListenBonus);
             this.panelListen.Controls.Add(this.textBoxListenRanks);
             this.panelListen.Controls.Add(this.labelListen);
@@ -2114,6 +2144,7 @@
             this.buttonListenPlus.TabIndex = 29;
             this.buttonListenPlus.Text = "+";
             this.buttonListenPlus.UseVisualStyleBackColor = true;
+            this.buttonListenPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonListenMinus
             // 
@@ -2124,14 +2155,15 @@
             this.buttonListenMinus.TabIndex = 24;
             this.buttonListenMinus.Text = "-";
             this.buttonListenMinus.UseVisualStyleBackColor = true;
+            this.buttonListenMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
-            // textBoxListenTotals
+            // textBoxListenTotal
             // 
-            this.textBoxListenTotals.Location = new System.Drawing.Point(225, 18);
-            this.textBoxListenTotals.Name = "textBoxListenTotals";
-            this.textBoxListenTotals.ReadOnly = true;
-            this.textBoxListenTotals.Size = new System.Drawing.Size(35, 20);
-            this.textBoxListenTotals.TabIndex = 27;
+            this.textBoxListenTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxListenTotal.Name = "textBoxListenTotal";
+            this.textBoxListenTotal.ReadOnly = true;
+            this.textBoxListenTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxListenTotal.TabIndex = 27;
             // 
             // textBoxListenBonus
             // 
@@ -2183,6 +2215,7 @@
             this.buttonKnowReliPlus.TabIndex = 29;
             this.buttonKnowReliPlus.Text = "+";
             this.buttonKnowReliPlus.UseVisualStyleBackColor = true;
+            this.buttonKnowReliPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowReliMinus
             // 
@@ -2193,6 +2226,7 @@
             this.buttonKnowReliMinus.TabIndex = 24;
             this.buttonKnowReliMinus.Text = "-";
             this.buttonKnowReliMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowReliMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxKnowReliTotal
             // 
@@ -2252,6 +2286,7 @@
             this.buttonKnowNobilityPlus.TabIndex = 29;
             this.buttonKnowNobilityPlus.Text = "+";
             this.buttonKnowNobilityPlus.UseVisualStyleBackColor = true;
+            this.buttonKnowNobilityPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowNobilityMinus
             // 
@@ -2262,6 +2297,7 @@
             this.buttonKnowNobilityMinus.TabIndex = 24;
             this.buttonKnowNobilityMinus.Text = "-";
             this.buttonKnowNobilityMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowNobilityMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxKnowNobilityTotal
             // 
@@ -2321,6 +2357,7 @@
             this.buttonKnowNaturePlus.TabIndex = 29;
             this.buttonKnowNaturePlus.Text = "+";
             this.buttonKnowNaturePlus.UseVisualStyleBackColor = true;
+            this.buttonKnowNaturePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowNatureMinus
             // 
@@ -2331,6 +2368,7 @@
             this.buttonKnowNatureMinus.TabIndex = 24;
             this.buttonKnowNatureMinus.Text = "-";
             this.buttonKnowNatureMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowNatureMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxKnowNatureTotal
             // 
@@ -2390,6 +2428,7 @@
             this.buttonKnowMilitaryPlus.TabIndex = 29;
             this.buttonKnowMilitaryPlus.Text = "+";
             this.buttonKnowMilitaryPlus.UseVisualStyleBackColor = true;
+            this.buttonKnowMilitaryPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowMilitaryMinus
             // 
@@ -2400,6 +2439,7 @@
             this.buttonKnowMilitaryMinus.TabIndex = 24;
             this.buttonKnowMilitaryMinus.Text = "-";
             this.buttonKnowMilitaryMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowMilitaryMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxKnowMilitaryTotal
             // 
@@ -2459,6 +2499,7 @@
             this.buttonKnowLocalPlus.TabIndex = 29;
             this.buttonKnowLocalPlus.Text = "+";
             this.buttonKnowLocalPlus.UseVisualStyleBackColor = true;
+            this.buttonKnowLocalPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowLocalMinus
             // 
@@ -2469,6 +2510,7 @@
             this.buttonKnowLocalMinus.TabIndex = 24;
             this.buttonKnowLocalMinus.Text = "-";
             this.buttonKnowLocalMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowLocalMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxKnowLocalTotal
             // 
@@ -2528,6 +2570,7 @@
             this.buttonKnowHistoryPlus.TabIndex = 29;
             this.buttonKnowHistoryPlus.Text = "+";
             this.buttonKnowHistoryPlus.UseVisualStyleBackColor = true;
+            this.buttonKnowHistoryPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowHistoryMinus
             // 
@@ -2538,6 +2581,7 @@
             this.buttonKnowHistoryMinus.TabIndex = 24;
             this.buttonKnowHistoryMinus.Text = "-";
             this.buttonKnowHistoryMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowHistoryMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxKnowHistoryTotal
             // 
@@ -2597,6 +2641,7 @@
             this.buttonKnowGeoPlus.TabIndex = 29;
             this.buttonKnowGeoPlus.Text = "+";
             this.buttonKnowGeoPlus.UseVisualStyleBackColor = true;
+            this.buttonKnowGeoPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowGeoMinus
             // 
@@ -2607,6 +2652,7 @@
             this.buttonKnowGeoMinus.TabIndex = 24;
             this.buttonKnowGeoMinus.Text = "-";
             this.buttonKnowGeoMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowGeoMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxKnowGeoTotal
             // 
@@ -2666,6 +2712,7 @@
             this.buttonKnowArchiPlus.TabIndex = 29;
             this.buttonKnowArchiPlus.Text = "+";
             this.buttonKnowArchiPlus.UseVisualStyleBackColor = true;
+            this.buttonKnowArchiPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowArchiMinus
             // 
@@ -2676,6 +2723,7 @@
             this.buttonKnowArchiMinus.TabIndex = 24;
             this.buttonKnowArchiMinus.Text = "-";
             this.buttonKnowArchiMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowArchiMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxKnowArchiTotal
             // 
@@ -2716,7 +2764,7 @@
             this.panelKnowArcana.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelKnowArcana.Controls.Add(this.buttonKnowArcanaPlus);
             this.panelKnowArcana.Controls.Add(this.buttonKnowArcanaMinus);
-            this.panelKnowArcana.Controls.Add(this.textBoxKnowArcana);
+            this.panelKnowArcana.Controls.Add(this.textBoxKnowArcanaTotal);
             this.panelKnowArcana.Controls.Add(this.textBoxKnowArcanaBonus);
             this.panelKnowArcana.Controls.Add(this.textBoxKnowArcanaRanks);
             this.panelKnowArcana.Controls.Add(this.labelKnowArcana);
@@ -2735,6 +2783,7 @@
             this.buttonKnowArcanaPlus.TabIndex = 29;
             this.buttonKnowArcanaPlus.Text = "+";
             this.buttonKnowArcanaPlus.UseVisualStyleBackColor = true;
+            this.buttonKnowArcanaPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonKnowArcanaMinus
             // 
@@ -2745,14 +2794,15 @@
             this.buttonKnowArcanaMinus.TabIndex = 24;
             this.buttonKnowArcanaMinus.Text = "-";
             this.buttonKnowArcanaMinus.UseVisualStyleBackColor = true;
+            this.buttonKnowArcanaMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
-            // textBoxKnowArcana
+            // textBoxKnowArcanaTotal
             // 
-            this.textBoxKnowArcana.Location = new System.Drawing.Point(225, 18);
-            this.textBoxKnowArcana.Name = "textBoxKnowArcana";
-            this.textBoxKnowArcana.ReadOnly = true;
-            this.textBoxKnowArcana.Size = new System.Drawing.Size(35, 20);
-            this.textBoxKnowArcana.TabIndex = 27;
+            this.textBoxKnowArcanaTotal.Location = new System.Drawing.Point(225, 18);
+            this.textBoxKnowArcanaTotal.Name = "textBoxKnowArcanaTotal";
+            this.textBoxKnowArcanaTotal.ReadOnly = true;
+            this.textBoxKnowArcanaTotal.Size = new System.Drawing.Size(35, 20);
+            this.textBoxKnowArcanaTotal.TabIndex = 27;
             // 
             // textBoxKnowArcanaBonus
             // 
@@ -2804,6 +2854,7 @@
             this.buttonJumpPlus.TabIndex = 29;
             this.buttonJumpPlus.Text = "+";
             this.buttonJumpPlus.UseVisualStyleBackColor = true;
+            this.buttonJumpPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonJumpMinus
             // 
@@ -2814,6 +2865,7 @@
             this.buttonJumpMinus.TabIndex = 24;
             this.buttonJumpMinus.Text = "-";
             this.buttonJumpMinus.UseVisualStyleBackColor = true;
+            this.buttonJumpMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxJumpTotal
             // 
@@ -2873,6 +2925,7 @@
             this.buttonIntimidatePlus.TabIndex = 29;
             this.buttonIntimidatePlus.Text = "+";
             this.buttonIntimidatePlus.UseVisualStyleBackColor = true;
+            this.buttonIntimidatePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonIntimidateMinus
             // 
@@ -2883,6 +2936,7 @@
             this.buttonIntimidateMinus.TabIndex = 24;
             this.buttonIntimidateMinus.Text = "-";
             this.buttonIntimidateMinus.UseVisualStyleBackColor = true;
+            this.buttonIntimidateMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxIntimidateTotal
             // 
@@ -2942,6 +2996,7 @@
             this.buttonHidePlus.TabIndex = 29;
             this.buttonHidePlus.Text = "+";
             this.buttonHidePlus.UseVisualStyleBackColor = true;
+            this.buttonHidePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonHideMinus
             // 
@@ -2952,6 +3007,7 @@
             this.buttonHideMinus.TabIndex = 24;
             this.buttonHideMinus.Text = "-";
             this.buttonHideMinus.UseVisualStyleBackColor = true;
+            this.buttonHideMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxHideTotal
             // 
@@ -3011,6 +3067,7 @@
             this.buttonHealPlus.TabIndex = 29;
             this.buttonHealPlus.Text = "+";
             this.buttonHealPlus.UseVisualStyleBackColor = true;
+            this.buttonHealPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonHealMinus
             // 
@@ -3021,6 +3078,7 @@
             this.buttonHealMinus.TabIndex = 24;
             this.buttonHealMinus.Text = "-";
             this.buttonHealMinus.UseVisualStyleBackColor = true;
+            this.buttonHealMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxHealTotal
             // 
@@ -3080,6 +3138,7 @@
             this.buttonHandleAnimalPlus.TabIndex = 29;
             this.buttonHandleAnimalPlus.Text = "+";
             this.buttonHandleAnimalPlus.UseVisualStyleBackColor = true;
+            this.buttonHandleAnimalPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonHandleAnimalMinus
             // 
@@ -3090,6 +3149,7 @@
             this.buttonHandleAnimalMinus.TabIndex = 24;
             this.buttonHandleAnimalMinus.Text = "-";
             this.buttonHandleAnimalMinus.UseVisualStyleBackColor = true;
+            this.buttonHandleAnimalMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxHandleAnimalTotal
             // 
@@ -3149,6 +3209,7 @@
             this.buttonGatherInfoPlus.TabIndex = 29;
             this.buttonGatherInfoPlus.Text = "+";
             this.buttonGatherInfoPlus.UseVisualStyleBackColor = true;
+            this.buttonGatherInfoPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonGatherInfoMinus
             // 
@@ -3159,6 +3220,7 @@
             this.buttonGatherInfoMinus.TabIndex = 24;
             this.buttonGatherInfoMinus.Text = "-";
             this.buttonGatherInfoMinus.UseVisualStyleBackColor = true;
+            this.buttonGatherInfoMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxGatherInfoTotal
             // 
@@ -3218,6 +3280,7 @@
             this.buttonForgeryPlus.TabIndex = 29;
             this.buttonForgeryPlus.Text = "+";
             this.buttonForgeryPlus.UseVisualStyleBackColor = true;
+            this.buttonForgeryPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonForgeryMinus
             // 
@@ -3228,6 +3291,7 @@
             this.buttonForgeryMinus.TabIndex = 24;
             this.buttonForgeryMinus.Text = "-";
             this.buttonForgeryMinus.UseVisualStyleBackColor = true;
+            this.buttonForgeryMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxForgeryTotal
             // 
@@ -3287,6 +3351,7 @@
             this.buttonEscapeArtistPlus.TabIndex = 29;
             this.buttonEscapeArtistPlus.Text = "+";
             this.buttonEscapeArtistPlus.UseVisualStyleBackColor = true;
+            this.buttonEscapeArtistPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonEscapeArtistMinus
             // 
@@ -3297,6 +3362,7 @@
             this.buttonEscapeArtistMinus.TabIndex = 24;
             this.buttonEscapeArtistMinus.Text = "-";
             this.buttonEscapeArtistMinus.UseVisualStyleBackColor = true;
+            this.buttonEscapeArtistMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxEscapeArtistTotal
             // 
@@ -3356,6 +3422,7 @@
             this.buttonDisguisePlus.TabIndex = 29;
             this.buttonDisguisePlus.Text = "+";
             this.buttonDisguisePlus.UseVisualStyleBackColor = true;
+            this.buttonDisguisePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonDisguiseMinus
             // 
@@ -3366,6 +3433,7 @@
             this.buttonDisguiseMinus.TabIndex = 24;
             this.buttonDisguiseMinus.Text = "-";
             this.buttonDisguiseMinus.UseVisualStyleBackColor = true;
+            this.buttonDisguiseMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxDisguiseTotal
             // 
@@ -3425,6 +3493,7 @@
             this.buttonDisableDevicePlus.TabIndex = 29;
             this.buttonDisableDevicePlus.Text = "+";
             this.buttonDisableDevicePlus.UseVisualStyleBackColor = true;
+            this.buttonDisableDevicePlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonDisableDeviceMinus
             // 
@@ -3435,6 +3504,7 @@
             this.buttonDisableDeviceMinus.TabIndex = 24;
             this.buttonDisableDeviceMinus.Text = "-";
             this.buttonDisableDeviceMinus.UseVisualStyleBackColor = true;
+            this.buttonDisableDeviceMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxDisableDeviceTotal
             // 
@@ -3494,6 +3564,7 @@
             this.buttonDiplomacyPlus.TabIndex = 29;
             this.buttonDiplomacyPlus.Text = "+";
             this.buttonDiplomacyPlus.UseVisualStyleBackColor = true;
+            this.buttonDiplomacyPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonDiplomacyMinus
             // 
@@ -3504,6 +3575,7 @@
             this.buttonDiplomacyMinus.TabIndex = 24;
             this.buttonDiplomacyMinus.Text = "-";
             this.buttonDiplomacyMinus.UseVisualStyleBackColor = true;
+            this.buttonDiplomacyMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxDiplomacyTotal
             // 
@@ -3563,6 +3635,7 @@
             this.buttonDecipherScriptPlus.TabIndex = 29;
             this.buttonDecipherScriptPlus.Text = "+";
             this.buttonDecipherScriptPlus.UseVisualStyleBackColor = true;
+            this.buttonDecipherScriptPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonDecipherScriptMinus
             // 
@@ -3573,6 +3646,7 @@
             this.buttonDecipherScriptMinus.TabIndex = 24;
             this.buttonDecipherScriptMinus.Text = "-";
             this.buttonDecipherScriptMinus.UseVisualStyleBackColor = true;
+            this.buttonDecipherScriptMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxDecipherScriptTotal
             // 
@@ -3632,6 +3706,7 @@
             this.buttonCraftPlus.TabIndex = 29;
             this.buttonCraftPlus.Text = "+";
             this.buttonCraftPlus.UseVisualStyleBackColor = true;
+            this.buttonCraftPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonCraftMinus
             // 
@@ -3642,6 +3717,7 @@
             this.buttonCraftMinus.TabIndex = 24;
             this.buttonCraftMinus.Text = "-";
             this.buttonCraftMinus.UseVisualStyleBackColor = true;
+            this.buttonCraftMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxCraftTotal
             // 
@@ -3701,6 +3777,7 @@
             this.buttonConcentrationPlus.TabIndex = 29;
             this.buttonConcentrationPlus.Text = "+";
             this.buttonConcentrationPlus.UseVisualStyleBackColor = true;
+            this.buttonConcentrationPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonConcentrationMinus
             // 
@@ -3711,6 +3788,7 @@
             this.buttonConcentrationMinus.TabIndex = 24;
             this.buttonConcentrationMinus.Text = "-";
             this.buttonConcentrationMinus.UseVisualStyleBackColor = true;
+            this.buttonConcentrationMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxConcentrationTotal
             // 
@@ -3770,6 +3848,7 @@
             this.buttonClimbPlus.TabIndex = 29;
             this.buttonClimbPlus.Text = "+";
             this.buttonClimbPlus.UseVisualStyleBackColor = true;
+            this.buttonClimbPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonClimbMinus
             // 
@@ -3780,6 +3859,7 @@
             this.buttonClimbMinus.TabIndex = 24;
             this.buttonClimbMinus.Text = "-";
             this.buttonClimbMinus.UseVisualStyleBackColor = true;
+            this.buttonClimbMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxClimbTotal
             // 
@@ -3839,6 +3919,7 @@
             this.buttonBluffPlus.TabIndex = 29;
             this.buttonBluffPlus.Text = "+";
             this.buttonBluffPlus.UseVisualStyleBackColor = true;
+            this.buttonBluffPlus.Click += new System.EventHandler(this.buttonIncreaseSkill);
             // 
             // buttonBluffMinus
             // 
@@ -3849,6 +3930,7 @@
             this.buttonBluffMinus.TabIndex = 24;
             this.buttonBluffMinus.Text = "-";
             this.buttonBluffMinus.UseVisualStyleBackColor = true;
+            this.buttonBluffMinus.Click += new System.EventHandler(this.buttonDecreaseSkill);
             // 
             // textBoxBluffTotal
             // 
@@ -4560,7 +4642,7 @@
         private System.Windows.Forms.Panel panelKnowArcana;
         private System.Windows.Forms.Button buttonKnowArcanaPlus;
         private System.Windows.Forms.Button buttonKnowArcanaMinus;
-        private System.Windows.Forms.TextBox textBoxKnowArcana;
+        private System.Windows.Forms.TextBox textBoxKnowArcanaTotal;
         private System.Windows.Forms.TextBox textBoxKnowArcanaBonus;
         private System.Windows.Forms.TextBox textBoxKnowArcanaRanks;
         private System.Windows.Forms.Label labelKnowArcana;
@@ -4714,7 +4796,7 @@
         private System.Windows.Forms.Panel panelListen;
         private System.Windows.Forms.Button buttonListenPlus;
         private System.Windows.Forms.Button buttonListenMinus;
-        private System.Windows.Forms.TextBox textBoxListenTotals;
+        private System.Windows.Forms.TextBox textBoxListenTotal;
         private System.Windows.Forms.TextBox textBoxListenBonus;
         private System.Windows.Forms.TextBox textBoxListenRanks;
         private System.Windows.Forms.Label labelListen;

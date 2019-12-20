@@ -124,6 +124,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             {
                 Skill.findSkills(skill.returnName(), skills).setClassSkill(true);
             }
+            form.refreshSkill(true);
         }
 
         public List<Skill> getSkills()
@@ -251,6 +252,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                 {
                     skill.setClassSkill(true);
                 }
+                form.refreshSkill(true);
                 foreach(int ID in toBeAdded.returnClass().returnProficiency())
                 {
                     if(proficiencies.Contains(ID) == false)

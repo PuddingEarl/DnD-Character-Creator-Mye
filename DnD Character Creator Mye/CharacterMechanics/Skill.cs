@@ -12,6 +12,7 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
         private string name;
         private int value;
         private int associatedAttribute;
+        private int bonus;
         private bool classSkill;
 
         static public void initializeSkills()
@@ -182,6 +183,16 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
                     value -= 1;
                 }
             }
+        }
+
+        public int returnBonus()
+        {
+            return bonus;
+        }
+
+        public int returnAttribute()
+        {
+            return associatedAttribute;
         }
     }
 }
