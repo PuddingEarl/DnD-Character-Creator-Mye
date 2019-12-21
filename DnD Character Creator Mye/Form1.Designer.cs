@@ -413,6 +413,8 @@
             this.listBoxSpells = new System.Windows.Forms.ListBox();
             this.richTextBoxSpellDescription = new System.Windows.Forms.RichTextBox();
             this.tabPageSkills = new System.Windows.Forms.TabPage();
+            this.textBoxAvailableSkillPoints = new System.Windows.Forms.TextBox();
+            this.labelSkillPoints = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panelAttributes.SuspendLayout();
             this.panelSkills.SuspendLayout();
@@ -4373,6 +4375,8 @@
             // tabPageSkills
             // 
             this.tabPageSkills.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPageSkills.Controls.Add(this.labelSkillPoints);
+            this.tabPageSkills.Controls.Add(this.textBoxAvailableSkillPoints);
             this.tabPageSkills.Controls.Add(this.panelSkills);
             this.tabPageSkills.Controls.Add(this.checkBoxSkillToggle);
             this.tabPageSkills.Location = new System.Drawing.Point(4, 22);
@@ -4381,6 +4385,24 @@
             this.tabPageSkills.Size = new System.Drawing.Size(362, 471);
             this.tabPageSkills.TabIndex = 1;
             this.tabPageSkills.Text = "Skills";
+            // 
+            // textBoxAvailableSkillPoints
+            // 
+            this.textBoxAvailableSkillPoints.Location = new System.Drawing.Point(304, 6);
+            this.textBoxAvailableSkillPoints.Name = "textBoxAvailableSkillPoints";
+            this.textBoxAvailableSkillPoints.ReadOnly = true;
+            this.textBoxAvailableSkillPoints.Size = new System.Drawing.Size(51, 20);
+            this.textBoxAvailableSkillPoints.TabIndex = 30;
+            // 
+            // labelSkillPoints
+            // 
+            this.labelSkillPoints.AutoSize = true;
+            this.labelSkillPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSkillPoints.Location = new System.Drawing.Point(146, 6);
+            this.labelSkillPoints.Name = "labelSkillPoints";
+            this.labelSkillPoints.Size = new System.Drawing.Size(152, 20);
+            this.labelSkillPoints.TabIndex = 30;
+            this.labelSkillPoints.Text = "Available Skill Points";
             // 
             // Form1
             // 
@@ -4905,6 +4927,8 @@
         private System.Windows.Forms.TabPage tabPageSpells;
         private System.Windows.Forms.ListBox listBoxSpells;
         private System.Windows.Forms.RichTextBox richTextBoxSpellDescription;
+        private System.Windows.Forms.Label labelSkillPoints;
+        private System.Windows.Forms.TextBox textBoxAvailableSkillPoints;
     }
 }
 

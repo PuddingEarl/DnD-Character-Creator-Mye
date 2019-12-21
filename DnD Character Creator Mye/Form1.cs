@@ -401,6 +401,7 @@ namespace DnD_Character_Creator_Mye
         {
             if(currentCharacter != null)
             {
+                textBoxAvailableSkillPoints.Text = (currentCharacter.checkSkillCap() - currentCharacter.checkSkillPoint()).ToString();
                 if(checkBoxSkillToggle.Checked == true)
                 {
                     foreach(Panel panel in skillPanels)

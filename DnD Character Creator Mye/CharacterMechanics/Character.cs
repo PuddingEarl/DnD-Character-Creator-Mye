@@ -85,6 +85,16 @@ namespace DnD_Character_Creator_Mye.CharacterMechanics
             return pointBuyTotal;
         }
 
+        public int checkSkillCap()
+        {
+            return skillPointTotal;
+        }
+
+        public int checkSkillPoint()
+        {
+            return skillPointCurrent;
+        }
+
         public Race getRace()
         {
             return race;
